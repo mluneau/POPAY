@@ -11,7 +11,7 @@ class User < ApplicationRecord
   has_many :hr_discussions, foreign_key: :hr_id, class_name: "Discussion"
 
   belongs_to :company
-  has_many :bank_accounts
+  has_many :bank_accounts, dependent: :destroy
   has_many :messages
   has_many :transactions
 end

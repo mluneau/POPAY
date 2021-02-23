@@ -1,4 +1,4 @@
 class BankAccount < ApplicationRecord
-  belongs_to :user, foreign_key: true
-  has_many :transactions, foreign_key: true
+  belongs_to :user
+  has_many :transactions, dependent: :nullify
 end
