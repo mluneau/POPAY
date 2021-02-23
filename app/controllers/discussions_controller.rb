@@ -3,7 +3,6 @@ class DiscussionsController < ApplicationController
 
   def index
     @discussions = policy_scope(Discussion)
-    
   end
 
   def show
