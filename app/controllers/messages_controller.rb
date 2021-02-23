@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
     @message.user = current_user
     @message.discussion = @discussion
     if @message.save
-      redirect_to discussion_path(@discussion, anchor: "message-#{@message.id}")
+      redirect_to discussion_path(@discussion, anchor: "messages")
     else
       render :new
     end
