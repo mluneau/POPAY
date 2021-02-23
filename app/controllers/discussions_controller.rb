@@ -1,9 +1,9 @@
 class DiscussionsController < ApplicationController
-  before_action :authenticate_user
+  before_action :authenticate_user!
   before_action :find_discussion, only: [:show]
 
   def index
-    @discussions = @discussion.all
+    @discussions = Discussion.all
   end
 
   def show
