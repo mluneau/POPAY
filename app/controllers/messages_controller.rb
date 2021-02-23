@@ -1,10 +1,6 @@
 class MessagesController < ApplicationController
   before_action :authenticate_user!
 
-  def index
-    @messages = @message.all
-  end
-
   def create
     @discussion = Discussion.find(params[:discussion_id])    
     @message = Message.new(message_params)

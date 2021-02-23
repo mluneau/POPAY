@@ -1,4 +1,4 @@
-class DiscussionPolicy < ApplicationPolicy
+class AppointmentPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
       scope.all
@@ -17,9 +17,7 @@ class DiscussionPolicy < ApplicationPolicy
     true
   end
 
-
   def create?
     record.user == user
   end
-
 end
