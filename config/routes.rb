@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'subscriptions/new'
+  get 'subscriptions/create'
   namespace :employee do
     get 'transactions/index'
     get 'transactions/create'
@@ -29,4 +31,5 @@ Rails.application.routes.draw do
   end
 
   resources :bank_accounts, only: [:new, :create]
+  resources :subscriptions, only: [:new, :create]
 end
