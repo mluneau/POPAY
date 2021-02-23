@@ -1,5 +1,5 @@
 class Discussion < ApplicationRecord
   belongs_to :employee, class_name: "User"
   belongs_to :hr, class_name: "User"
-  has_many :messages, foreign_key: true
+  has_many :messages
 end

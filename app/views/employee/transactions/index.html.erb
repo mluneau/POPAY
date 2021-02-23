@@ -1,0 +1,11 @@
+<h1>Employee::Transactions#index</h1>
+<ul>
+<% @transactions.each do |transaction|  %>
+  <li>
+    <p><strong>Due date : </strong><%= transaction.due_date %></p>
+    <p><strong>User id : </strong><%= transaction.user_id %></p>
+
+
+  </li>
+<% end %>
+</ul>

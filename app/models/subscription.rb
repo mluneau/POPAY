@@ -1,3 +1,3 @@
 class Subscription < ApplicationRecord
-  has_many :companies, foreign_key: true
+  has_many :companies
 end

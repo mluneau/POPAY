@@ -10,8 +10,8 @@ class User < ApplicationRecord
   has_many :discussions, foreign_key: :employee_id
   has_many :hr_discussions, foreign_key: :hr_id, class_name: "Discussion"
 
-  belongs_to :company, foreign_key: true
-  has_many :bank_accounts, foreign_key: true
-  has_many :messages, foreign_key: true
-  has_many :transactions, foreign_key: true
+  belongs_to :company
+  has_many :bank_accounts
+  has_many :messages
+  has_many :transactions
 end
