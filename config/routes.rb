@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:show, :index]
 
-  resources :discussions, only: [:new, :create] do
-    resources :messages, only: [:create]
+  resources :discussions, only: [:new, :create, :index, :show, :delete] do
+    resources :messages, only: [:new, :create]
   end
 
   namespace :hr do
@@ -22,15 +22,19 @@ Rails.application.routes.draw do
 
   get 'subscriptions/new'
   get 'subscriptions/create'
+
   namespace :employee do
     get 'transactions/index'
     get 'transactions/create'
     get 'transactions/new'
   end
+
   namespace :hr do
     get 'transactions/index'
   end
   
   resources :bank_accounts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
+
+  get 'about_us', to: "pages#about_us"
 end
