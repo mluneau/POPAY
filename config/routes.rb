@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'appointments/index'
+  get 'appointments/show'
+  get 'appointments/new'
+  get 'appointments/create'
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
@@ -23,6 +27,7 @@ Rails.application.routes.draw do
   resources :bank_accounts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
   resources :companies, only: [:new, :create]
+  resources :appointments, only: [:new, :create, :index, :show]
 
   get 'about_us', to: "pages#about_us"
 
