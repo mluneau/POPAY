@@ -1,13 +1,18 @@
 class MessagesController < ApplicationController
-  before_action :find_discussion
-  before_action :authenticate_user
+  before_action :authenticate_user!
+
+  def index
+    @messages = @message.all
+  end
 
   def create
+    @discussion = Discussion.find(params[:discussion_id])    
     @message = Message.new(message_params)
     authorize @message
     @message.user = current_user
+    @message.discussion = @discussion
     if @message.save
-      redirect_to message_path(@message)
+      redirect_to discussion_path(@discussion, anchor: "messages")
     else
       render :new
     end
@@ -15,13 +20,9 @@ class MessagesController < ApplicationController
 
   private
 
-  def find_discussion
-    @equipment = Discussion.find(params[:equipment_id])
-  end
-  
   def message_params
     params.require(:message)
-          .permit([:content, :discussion_id, :user_id])
+          .permit([:content])
   end
 
 end

@@ -3,6 +3,7 @@ class BankAccountsController < ApplicationController
   def new
     @bank_account = BankAccount.new
   end
+  
   def create
     @bank_account = BankAccount.new(bank_account_params)
     @bank_account.user = current_user

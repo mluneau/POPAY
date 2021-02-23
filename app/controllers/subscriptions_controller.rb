@@ -1,4 +1,5 @@
 class SubscriptionsController < ApplicationController
+  
   def new
     @subscription = Subscription.new
     authorize @subscription

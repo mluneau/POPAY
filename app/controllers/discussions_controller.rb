@@ -1,6 +1,13 @@
 class DiscussionsController < ApplicationController
-  before_action :authenticate_user
-  
+  before_action :find_discussion, only: [:show]
+
+  def index
+    @discussions = policy_scope(Discussion)
+  end
+
+  def show
+  end
+
   def new
     @discussion = Discussion.new
     authorize @discussion
@@ -11,8 +18,7 @@ class DiscussionsController < ApplicationController
     authorize @discussion
     @discussion.user = current_user
     if @discussion.save
-      flash.notice = "Discussion created !"
-      redirect_to discussion_path(@discussion)
+      redirect_to root_path
     else
       render :new
     end
@@ -24,8 +30,9 @@ class DiscussionsController < ApplicationController
     @discussion = Discussion.find(params[:id])
     authorize @discussion
   end
+
   def discussion_params
     params.require(:discussion)
-          .permit([:employee_id, :hr_id, :topic])
+          .permit([:topic])
   end
 end
