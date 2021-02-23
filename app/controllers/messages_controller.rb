@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  before_action :find_discussion
   before_action :authenticate_user
 
   def create
@@ -14,6 +15,10 @@ class MessagesController < ApplicationController
 
   private
 
+  def find_discussion
+    @equipment = Discussion.find(params[:equipment_id])
+  end
+  
   def message_params
     params.require(:message)
           .permit([:content, :discussion_id, :user_id])

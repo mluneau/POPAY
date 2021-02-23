@@ -11,6 +11,7 @@ class DiscussionsController < ApplicationController
     authorize @discussion
     @discussion.user = current_user
     if @discussion.save
+      flash.notice = "Discussion created !"
       redirect_to discussion_path(@discussion)
     else
       render :new
