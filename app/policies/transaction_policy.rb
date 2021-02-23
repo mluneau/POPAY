@@ -1,11 +1,16 @@
 class TransactionPolicy < ApplicationPolicy
   class Scope < Scope
     def resolve
-      scope.all
+      if user.position == "employee"
+        scope.where(user: user)
+      else
+        scope.all
+      end
     end
   end
 
-  def index?
-    true
+  def create?
+    record.user == user
   end
+
 end
