@@ -20,10 +20,26 @@ Rails.application.routes.draw do
     resources :transactions, only: [:index, :new, :create]
   end
 
+  get 'subscriptions/new'
+  get 'subscriptions/create'
+
+  namespace :employee do
+    get 'transactions/index'
+    get 'transactions/create'
+    get 'transactions/new'
+  end
+
+  namespace :hr do
+    get 'transactions/index'
+  end
+
   resources :bank_accounts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
-  resources :companies, only: [:new, :create]
+<<<<<<< HEAD
 
   get 'about_us', to: "pages#about_us"
+=======
+  resources :companies, only: [:new, :create]
 
+>>>>>>> 3f622edef49f0925f20aca2acc0ad7d8372166d0
 end
