@@ -1,0 +1,7 @@
+<h1>Create a bank account</h1>
+  <%= form_form(@user, @bank_account) do |f| %>
+  <%= f.input :bank_name %>
+  <%= f.input :bank_address %>
+  <%= f.input :bank_iban %>
+  <%= f.input :bank_swift %>
+<% end %>
