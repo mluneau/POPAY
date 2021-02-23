@@ -51,6 +51,8 @@ puts "Creating bank accounts for Xtrem..."
 bank_account_louis_xtrem = BankAccount.create!(user: louis_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
 bank_account_max_xtrem = BankAccount.create!(user: max_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_nico_xtrem = BankAccount.create!(user: nico_xtrem, bank_name: "Société Générale", bank_address: "1, Avenue de la moulah", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_nico_xtrem2 = BankAccount.create!(user: nico_xtrem, bank_name: "BNP Paribas", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1O50")
+
 bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 
 
@@ -62,7 +64,7 @@ bank_account_pierre_popay = BankAccount.create!(user: pierre_popay, bank_name: "
 
 puts "Creating transactions for Xtrem"
 Transaction.create!(user: nico_xtrem, amount: 1500, due_date: "15/03/2021", status: "pending", bank_account: bank_account_nico_xtrem)
-Transaction.create!(user: nico_xtrem, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "paid", bank_account: bank_account_nico_xtrem)
+Transaction.create!(user: nico_xtrem, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "paid", bank_account: bank_account_nico_xtrem2)
 Transaction.create!(user: nico_xtrem, amount: 800, due_date: "15/12/2020", transfer_date: "16/01/2020", status: "paid", bank_account: bank_account_nico_xtrem)
 Transaction.create!(user: louis_xtrem, amount: 700, due_date: "15/04/2021", status: "pending", bank_account: bank_account_louis_xtrem)
 Transaction.create!(user: louis_xtrem, amount: 500, due_date: "16/12/2020", transfer_date: "16/01/2020", status: "paid", bank_account: bank_account_louis_xtrem)
@@ -70,12 +72,12 @@ Transaction.create!(user: pierre_xtrem, amount: 700, due_date: "15/04/2021", sta
 Transaction.create!(user: max_xtrem, amount: 700, due_date: "15/05/2021", status: "pending", bank_account: bank_account_max_xtrem)
 
 puts "Creating transactions for Popay"
-Transaction.create!(user: pierre_xtrem, amount: 1500, due_date: "15/03/2021", status: "pending", bank_account: bank_account_pierre_popay)
-Transaction.create!(user: pierre_xtrem, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "paid", bank_account: bank_account_pierre_popay)
-Transaction.create!(user: pierre_xtrem, amount: 800, due_date: "15/12/2020", transfer_date: "16/01/2020", status: "paid", bank_account: bank_account_pierre_popay)
-Transaction.create!(user: louis_xtrem, amount: 700, due_date: "15/04/2021", status: "pending", bank_account: bank_account_louis_popay)
-Transaction.create!(user: louis_xtrem, amount: 500, due_date: "16/12/2020", transfer_date: "16/01/2020", status: "paid", bank_account: bank_account_louis_popay)
-Transaction.create!(user: pierre_xtrem, amount: 700, due_date: "15/04/2021", status: "pending", bank_account: bank_account_pierre_popay)
-Transaction.create!(user: max_xtrem, amount: 700, due_date: "15/05/2021", status: "pending", bank_account: bank_account_max_popay)
-Transaction.create!(user: nico_xtrem, amount: 200, due_date: "15/06/2021", status: "pending", bank_account: bank_account_nico_popay)
+Transaction.create!(user: pierre_popay, amount: 1500, due_date: "15/03/2021", status: "pending", bank_account: bank_account_pierre_popay)
+Transaction.create!(user: pierre_popay, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "paid", bank_account: bank_account_pierre_popay)
+Transaction.create!(user: pierre_popay, amount: 800, due_date: "15/12/2020", transfer_date: "16/01/2020", status: "paid", bank_account: bank_account_pierre_popay)
+Transaction.create!(user: louis_popay, amount: 700, due_date: "15/04/2021", status: "pending", bank_account: bank_account_louis_popay)
+Transaction.create!(user: louis_popay, amount: 500, due_date: "16/12/2020", transfer_date: "16/01/2020", status: "paid", bank_account: bank_account_louis_popay)
+Transaction.create!(user: pierre_popay, amount: 700, due_date: "15/04/2021", status: "pending", bank_account: bank_account_pierre_popay)
+Transaction.create!(user: max_popay, amount: 700, due_date: "15/05/2021", status: "pending", bank_account: bank_account_max_popay)
+Transaction.create!(user: nico_popay, amount: 200, due_date: "15/06/2021", status: "pending", bank_account: bank_account_nico_popay)
 

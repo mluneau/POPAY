@@ -1,11 +1,16 @@
-<h1>Employee::Transactions#index</h1>
-<ul>
+<h1>My transactions</h1>
+<ul class="list-unstyled">
 <% @transactions.each do |transaction|  %>
   <li>
-    <p><strong>Due date : </strong><%= transaction.due_date %></p>
-    <p><strong>User id : </strong><%= transaction.user_id %></p>
-
-
+    <br>
+    <p><strong>Transaction Id: </strong><%= transaction.id %></p>
+    <p><strong>Bank Account: </strong><%= transaction.bank_account.bank_name %> - <%= transaction.bank_account.iban %></p>
+    <p><strong>Due date: </strong><%= transaction.due_date %></p>
+    <p><strong>Amount: </strong><%= transaction.amount %></p>
+    <p><strong>Status: </strong><%= transaction.status %></p>
+    <% if transaction.status == "paid" %>
+      <p><strong>Transfer Date: </strong><%= transaction.transfer_date %></p>
+    <% end %>
   </li>
 <% end %>
 </ul>
