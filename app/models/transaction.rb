@@ -1,4 +1,4 @@
 class Transaction < ApplicationRecord
-  belongs_to :user
-  belongs_to :bank_account
+  belongs_to :user, foreign_key: true
+  belongs_to :bank_accounts, foreign_key: true
 end
