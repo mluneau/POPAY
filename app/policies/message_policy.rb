@@ -9,7 +9,7 @@ class MessagePolicy < ApplicationPolicy
     true
   end
 
-  def create?
-    true
+  def create
+    record.user = user
   end
 end

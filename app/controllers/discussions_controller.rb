@@ -1,9 +1,9 @@
 class DiscussionsController < ApplicationController
-  before_action :authenticate_user!
   before_action :find_discussion, only: [:show]
 
   def index
-    @discussions = Discussion.all
+    @discussions = policy_scope(Discussion)
+    
   end
 
   def show
@@ -19,7 +19,6 @@ class DiscussionsController < ApplicationController
     authorize @discussion
     @discussion.user = current_user
     if @discussion.save
-      flash.notice = "Discussion created !"
       redirect_to root_path
     else
       render :new
