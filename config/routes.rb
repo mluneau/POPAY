@@ -30,7 +30,9 @@ Rails.application.routes.draw do
   namespace :hr do
     get 'transactions/index'
   end
-  
+
   resources :bank_accounts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
+  resources :companies, only: [:new, :create]
+
 end

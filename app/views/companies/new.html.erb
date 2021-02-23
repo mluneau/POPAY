@@ -1,0 +1,6 @@
+<%= simple_form_for [ @company ] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :number_of_employees %>
+  <%= f.association :subscription %>
+  <%= f.submit %>
+<% end %>
