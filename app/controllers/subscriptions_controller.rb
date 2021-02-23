@@ -1,10 +1,12 @@
 class SubscriptionsController < ApplicationController
   def new
     @subscription = Subscription.new
+    authorize @subscription
   end
 
   def create
     @subscription = Subscription.new(subscription_params)
+    authorize @subscription
     if @subscription.save
       redirect_to root_path
     else
@@ -15,6 +17,6 @@ class SubscriptionsController < ApplicationController
   private
 
   def subscription_params
-    params.permit(:subscription).require(:monthly_price, :name)
+    params.require(:subscription).permit([:monthly_price, :name])
   end
 end

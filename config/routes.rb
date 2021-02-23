@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'companies/new'
+  get 'companies/create'
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
@@ -30,7 +32,9 @@ Rails.application.routes.draw do
   namespace :hr do
     get 'transactions/index'
   end
-  
+
   resources :bank_accounts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
+  resources :companies, only: [:new, :create]
+
 end
