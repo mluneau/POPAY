@@ -11,7 +11,7 @@ class Employee::TransactionsController < ApplicationController
 
   def create
     @transaction = Transaction.new(transaction_params)
-    @transaction.bank_account = BankAccount.find(params[:transaction][:bank_account])
+    # @transaction.bank_account = BankAccount.find(params[:transaction][:bank_account])
     @transaction.user = current_user
     authorize @transaction
 
