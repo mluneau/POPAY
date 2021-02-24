@@ -1,0 +1,13 @@
+<h1>Appointments#index</h1>
+
+<br>
+
+<% @appointments.each do |appointment| %>
+  <div class="appointment-container" id="appointment-<%= appointment.id %>">
+    <i class="topic">
+      <span><%= appointment.meeting_date %></span>
+    </i>
+    <p><%= appointment.employee_id %></p>
+    <p><%= appointment.hr_id %></p>
+  </div>
+<% end %>

@@ -1,8 +1,24 @@
-<h1>Create a new transation</h1>
-<%= simple_form_for(@transaction, url: employee_transactions_path) do |f| %>
-  <%= f.input :amount %>
-  <%= f.input :due_date %>
-  <%= f.input :bank_account, collection: current_user.bank_accounts %>
-  <%= f.submit %>
-<% end %>
+<div class="container action-container">
+  <div data-controller="form">
+    <%= simple_form_for(@transaction, url: employee_transactions_path) do |f| %>
+      <div data-form-target="amount">
+        <p>Vous voulez demander: <strong><span data-form-target="spanAmount">0</span> €</strong></p>
+        <%= f.input :amount, label: false, as: :range, input_html: { "data-form-target": "sliderAmount", "data-action": "change->form#updateAmount", "max": "1500", "value": "0" }%>
+        <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goToDate">Suivant</a>
+      </div>
+      <div data-form-target="date" class="d-none">
+        <h4>Quand souhaitez-vous toucher votre acompte ?</h4>
+        <%= f.input :due_date, as: :string, required: false, input_html: { "data-form-target": "selectDate", "data-action": "change->form#updateDate", class: "datepicker", style: "display: none;" } %>
+        <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goToSubmit">Suivant</a>
+      </div>
+      <div data-form-target="submit" class="d-none">
+        <h1>💰</h1>
+        <p class="amount">Vous avez demandé</p>
+        <h2><span data-form-target="displayAmount">350</span>   €</h2>
+        <p>à partir du <span data-form-target="dateValue">15 novembre 2021</span> </p>
+        <%= f.submit "Confirmer", class: "btn btn-primary btn-confirm" %>
+      </div>
+  <% end %>
+  </div>
+</div>
 

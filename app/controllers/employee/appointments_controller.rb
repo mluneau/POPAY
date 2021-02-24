@@ -1,8 +1,8 @@
-class AppointmentsController < ApplicationController
+class Employee::AppointmentsController < ApplicationController
   before_action :find_appointment, only: [:show]
   
   def index
-    @appointments = policy_scope(appointment)
+    @appointments = policy_scope(Appointment)
   end
 
   def show
@@ -16,7 +16,7 @@ class AppointmentsController < ApplicationController
   def create
     @appointment = Appointment.new(appointment_params)
     authorize @appointment
-    @appointment.user = current_user
+    @appointment.user   = current_user
     if @discussion.save
       redirect_to root_path
     else

@@ -1,17 +1,32 @@
-<h1><%= @discussion.topic %></h1>
-<div id="messages" data-discussion-id="<%= @discussion.id %>">
-  <% @discussion.messages.each do |message| %>
-    <div class="message-container" id="message-<%= message.id %>">
-      <i class="author">
-        <span><%= message.user.first_name %></span>
-        <small><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
-      </i>
-      <p><%= message.content %></p>
-    </div>
-  <% end %>
-</div>
+<div class="container action-container">
 
-<%= simple_form_for [ @discussion, Message.new ] do |f| %>
-  <%= f.input :content, label: false, placeholder: "Message ##{@discussion.topic}" %>
-  <%= f.submit class: 'btn btn-primary' %>
-<% end %>
+  <div id="messages" data-discussion-id="<%= @discussion.id %>" class="discussion-container">
+  
+    <h4>
+      <%= @discussion.hr.first_name %>
+      <%= @discussion.hr.last_name %>
+    </h4>
+
+    <div class="message-wrapper">
+      <% @discussion.messages.each do |message| %>
+        <div class="message <%= "current_user" if current_user.id == message.user_id %>">  
+          <div class="chat-bubble" id="message-<%= message.id %>">
+            <p><%= message.content %></p>
+          </div> 
+          <i class="time">
+            <small><%= message.created_at.strftime("%l:%M%p") %></small>
+          </i>
+        </div>
+      <% end %>
+    </div>
+    
+    <div class="message-form">
+      <%= simple_form_for [ @discussion, Message.new ] do |f| %>
+        <%= f.input :content, label: false, placeholder: "Message ##{@discussion.topic}" %>
+        <%= f.submit '>', class: 'btn btn-primary btn-confirm' %>
+      <% end %>
+    </div>
+
+  </div>
+
+</div>

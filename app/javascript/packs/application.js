@@ -28,3 +28,9 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+import "controllers"
+
+import { initFlatpickr } from "../plugins/flatpickr";
+
+initFlatpickr();
