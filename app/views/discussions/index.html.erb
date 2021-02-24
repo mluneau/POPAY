@@ -2,7 +2,14 @@
 
 <div>
   <% @discussions.each do |discussion| %>
-    <%= link_to discussion.topic, discussion_path(discussion) %>
+    <% if policy(discussion).index? %>
+    
+      <%= link_to discussion.topic, discussion_path(discussion) %>
+    
+    
+    <% end %>
+    
+    <br>
   <% end %>
 
 </div>
