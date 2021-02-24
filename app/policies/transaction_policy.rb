@@ -4,7 +4,7 @@ class TransactionPolicy < ApplicationPolicy
       if user.position == "employee"
         scope.where(user: user)
       else
-        scope.all
+        scope.joins(:user).where(users: { company_id: user.company_id })
       end
     end
   end
