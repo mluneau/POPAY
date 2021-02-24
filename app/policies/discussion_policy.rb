@@ -6,11 +6,11 @@ class DiscussionPolicy < ApplicationPolicy
   end
 
   def index?
-    true
+    record.employee_id == user.id || record.hr_id == user.id
   end
 
   def show?
-    true
+    record.employee_id == user.id || record.hr_id == user.id
   end
 
   def new?

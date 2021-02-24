@@ -1,0 +1,65 @@
+.action-container > div.discussion-container {
+  padding: calc(13vh - 76px) 2vh;
+  ;
+}
+
+.message-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: scroll;
+
+  .message {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+
+    .chat-bubble {
+      background-color: lightgrey;
+      border-radius: 13px;
+      max-width: 80%;
+      padding: 8px;
+      margin-right: 10px;
+      p { margin-bottom: 0px;}
+    
+    }
+    
+    &.current_user {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+
+      .chat-bubble {
+        background-color: $green-peps;
+        margin-right: 0px;
+        margin-left: 10px;  
+      
+      }
+    }
+  } 
+}
+
+#messages {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#new_message {
+  display: flex;
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 5px;
+
+  .message_content {
+    border: 0;
+    flex-grow: 1;
+    
+    textarea {
+      border: 0;
+    }
+  }
+
+  * {
+    margin: 0px;
+  } 
+}
