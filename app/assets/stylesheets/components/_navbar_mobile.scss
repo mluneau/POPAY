@@ -1,0 +1,63 @@
+/* Mobile */
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar-mobile {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+}
+
+/* Style the links inside the navigation bar */
+.navbar-mobile a {
+  display: block;
+  color: #D8D7DE;
+  text-align: center;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+
+  &:not(#center) {
+    width: 50%;
+    svg {
+      width: 30px;
+    }
+  } 
+
+  &:hover {
+    text-decoration: none;
+    color: grey;
+  }
+}
+
+#center {
+  position: absolute;
+  top: -37.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: $green;
+  border-radius: 50%;
+}
+
+
+/* Add a color to the active/current link */
+.navbar-mobile a.active {
+  color: $green;
+}

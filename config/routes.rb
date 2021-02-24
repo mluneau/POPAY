@@ -11,12 +11,12 @@ Rails.application.routes.draw do
 
   namespace :hr do
     resource :dashboard, only: [:show]
-
     resources :users, only: [:index, :show]
     resources :transactions, only: [:index]
   end
 
   namespace :employee do
+    resource :dashboard, only: [:show]
     resources :transactions, only: [:index, :new, :create]
 
     resources :appointments, only: [:new, :create, :index, :show]
