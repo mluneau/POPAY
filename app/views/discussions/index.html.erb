@@ -1,10 +1,10 @@
 <h1>Discussion board</h1>
 
-<div>
+<div class="container action-container">
   <% @discussions.each do |discussion| %>
     <% if policy(discussion).index? %>
 
-      <div class="card-discussion">
+      <div class="discussion-card">
         <div class="contact-name">
           <%= discussion.hr.first_name %>
           <%= discussion.hr.last_name %>
