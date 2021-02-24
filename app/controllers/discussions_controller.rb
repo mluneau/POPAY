@@ -28,6 +28,7 @@ class DiscussionsController < ApplicationController
 
   def find_discussion
     @discussion = Discussion.find(params[:id])
+    authorize @discussion
   end
 
   def discussion_params

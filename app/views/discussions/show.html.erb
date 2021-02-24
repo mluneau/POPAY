@@ -1,13 +1,29 @@
 <h1><%= @discussion.topic %></h1>
 <div id="messages" data-discussion-id="<%= @discussion.id %>">
   <% @discussion.messages.each do |message| %>
-    <div class="message-container" id="message-<%= message.id %>">
-      <i class="author">
-        <span><%= message.user.first_name %></span>
-        <small><%= message.created_at.strftime("%a %b %e at %l:%M%p") %></small>
-      </i>
-      <p><%= message.content %></p>
-    </div>
+      
+    <% if current_user.id == message.user_id %>
+      
+      <div class="chat-bubble-employee" id="message-<%= message.id %>">
+      This is me:
+        <i class="time">
+          <small><%= message.created_at.strftime("%l:%M%p") %></small>
+        </i>
+        <p><%= message.content %></p>
+      </div>
+    
+    <% else %>
+    
+      <div class="chat-bubble-hr" id="message-<%= message.id %>">
+        This is hr:
+        <i class="time">
+          <small><%= message.created_at.strftime("%l:%M%p") %></small>
+        </i>
+        <p><%= message.content %></p>
+      </div>
+
+    <% end %>
+      
   <% end %>
 </div>
 

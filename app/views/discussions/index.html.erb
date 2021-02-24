@@ -1,12 +1,22 @@
-<h1>Welcome to the discussion board</h1>
+<h1>Discussion board</h1>
 
 <div>
   <% @discussions.each do |discussion| %>
     <% if policy(discussion).index? %>
-    
-      <%= link_to discussion.topic, discussion_path(discussion) %>
-    
-    
+
+      <div class="card-discussion">
+        <div class="contact-name">
+          <%= discussion.hr.first_name %>
+          <%= discussion.hr.last_name %>
+        </div>
+        <div class="topic-name" float="right">
+        </div>
+          <%= link_to discussion.topic, discussion_path(discussion) %>
+        <div>
+          <% #Icon for to the conversation %>
+        </div>
+      </div>
+
     <% end %>
     
     <br>
