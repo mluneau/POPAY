@@ -1,15 +1,25 @@
-.amount-container {
+.action-container {
   text-align: center;
-  padding: 100px 15px;
+  // padding: 120px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 76px);
 }
 
-.amount-container h2 {
-  color:#2BC798 ;
+.action-container > div {
+  background-color: white;
+  padding: calc(22vh - 76px) 15px;
+  border-radius: 13px;
+}
+
+.action-container h2 {
+  color: #2BC798 !important;
   font-size: 48px;
   margin-bottom: 25px;
 }
 
-.amount-container h1 {
+.action-container h1 {
   font-size: 48px;
 }
 
