@@ -5,7 +5,8 @@
         <%= f.input :amount, as: :range %>
       </div>
       <div data-form-target="due-date">
-        <%= f.input :due_date %>
+      <h4>Quand souhaitez-vous toucher votre acompte ?</h4>
+        <%= f.input :due_date, as: :string, required: false, input_html: {class: "datepicker", style: "display: none;"} %>
       </div>
       <div data-form-target="submit">
         <%= f.submit class: "btn btn-primary btn-confirm" %>
@@ -13,3 +14,4 @@
   <% end %>
   </div>
 </div>
+
