@@ -1,11 +1,5 @@
 /* Mobile */
 
-.navbar-container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar-mobile {
   background-color: white;
@@ -14,38 +8,56 @@
   width: 100%;
 }
 
+.navbar-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+  }
+}
+
 /* Style the links inside the navigation bar */
 .navbar-mobile a {
-  float: left;
   display: block;
-  color: #ACABB7;
+  color: #D8D7DE;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+
+  &:not(#center) {
+    width: 50%;
+    svg {
+      width: 30px;
+    }
+  } 
+
+  &:hover {
+    text-decoration: none;
+    color: grey;
+  }
 }
 
 #center {
-  color: #43AA8B;
   position: absolute;
-  top: -30px;
-  left: calc(50% - 30px);
+  top: -37.5px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: space-around;
   text-align: center;
-  /* padding: 14px 16px; */
-  text-decoration: none;
-  font-size: 50px;
+  background-color: $green;
+  border-radius: 50%;
 }
 
-/* Change the color of links on hover */
-.navbar-mobile a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 /* Add a color to the active/current link */
 .navbar-mobile a.active {
-  background-color: #ACABB7;
-  color: white;
+  color: $green;
 }
