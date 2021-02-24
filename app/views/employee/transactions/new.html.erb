@@ -7,7 +7,8 @@
         <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goToDate">Suivant</a>
       </div>
       <div data-form-target="date" class="d-none">
-        <%= f.input :due_date, input_html: { "data-form-target": "selectDate", "data-action": "change->form#updateDate" } %>
+        <h4>Quand souhaitez-vous toucher votre acompte ?</h4>
+        <%= f.input :due_date, as: :string, required: false, input_html: { "data-form-target": "selectDate", "data-action": "change->form#updateDate", class: "datepicker", style: "display: none;" } %>
         <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goToSubmit">Suivant</a>
       </div>
       <div data-form-target="submit" class="d-none">
@@ -20,3 +21,4 @@
   <% end %>
   </div>
 </div>
+
