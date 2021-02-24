@@ -1,4 +1,4 @@
-class Empoyee::AppointmentsController < ApplicationController
+class Employee::AppointmentsController < ApplicationController
   before_action :find_appointment, only: [:show]
   
   def index
