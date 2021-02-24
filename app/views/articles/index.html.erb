@@ -70,3 +70,16 @@
     </div>
   </div>
 </div>
+
+<div>
+  <% @articles.each do |article| %>
+    <h1><%= article.category %></h1>
+    <div class="article-container" id="article-<%= article.id %>">
+      <i class="title">
+        <span><%= article.title %></span>
+        <small><%= article.date %></small>
+      </i>
+      <p><%= article.content %></p>
+    </div>
+  <% end %>
+</div>
