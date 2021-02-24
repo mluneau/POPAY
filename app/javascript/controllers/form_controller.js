@@ -22,7 +22,7 @@ export default class extends Controller {
   }
 
   updateDate() {
-
-    // this.dateValueTarget.innerText = this.selectDateTarget.value
+    const date = new Date(this.selectDateTarget.value)
+    this.dateValueTarget.innerText = date.toLocaleDateString('fr-FR')
   }
 }
