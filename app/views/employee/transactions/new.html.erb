@@ -1,2 +1,8 @@
-<h1>Employee::Transactions#new</h1>
-<p>Find me in app/views/employee/transactions/new.html.erb</p>
+<h1>Create a new transation</h1>
+<%= simple_form_for(@transaction, url: employee_transactions_path) do |f| %>
+  <%= f.input :amount %>
+  <%= f.input :due_date %>
+  <%= f.input :bank_account, collection: current_user.bank_accounts %>
+  <%= f.submit %>
+<% end %>
+

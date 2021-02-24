@@ -1,11 +1,31 @@
 class Employee::TransactionsController < ApplicationController
   def index
-    @transactions = policy_scope(Transaction).where(user: current_user)
-  end
+    @transactions = policy_scope(Transaction)
 
-  def create
   end
 
   def new
+    @transaction = Transaction.new
+    authorize @transaction
   end
+
+  def create
+    @transaction = Transaction.new(transaction_params)
+    @transaction.bank_account = BankAccount.find(params[:transaction][:bank_account])
+    @transaction.user = current_user
+    authorize @transaction
+
+    if @transaction.save
+      redirect_to employee_transactions_path
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def transaction_params
+    params.require(:transaction).permit([:due_date, :amount])
+  end
+
 end
