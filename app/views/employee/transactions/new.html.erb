@@ -1,13 +1,13 @@
 <div class="container action-container">
-  <div>
+  <div data-controller="form">
     <%= simple_form_for(@transaction, url: employee_transactions_path) do |f| %>
-      <div id="amount">
-        <%= f.input :amount %>
+      <div data-form-target="amount">
+        <%= f.input :amount, as: :range %>
       </div>
-      <div id="due-date">
+      <div data-form-target="due-date">
         <%= f.input :due_date %>
       </div>
-      <div id="submit-transastions">
+      <div data-form-target="submit">
         <%= f.submit class: "btn btn-primary btn-confirm" %>
       </div>
   <% end %>
