@@ -1,2 +1,10 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="card-article">
+  <%= cl_image_tag @article.photo.key, class:"article-image"%>
+  <h3><%= @article.title %></h3>
+    <div class="article-info">
+      <p style="margin-right: 15px"><i class="fas fa-tag" style="padding-right: 4px"></i><%= @article.category %></p>
+      <p><i class="far fa-clock" style="padding-right: 4px"></i> <%= @article.time %></p>
+    </div>
+  
+  <p> <%= @article.content %></p>
+</div>
