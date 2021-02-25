@@ -9,7 +9,8 @@
 
 <div>
   <% @articles.each do |article| %>
-    <div class="card-product" style="margin-bottom: 7px; padding: 7px">
+    <%= link_to article_path(article), class:"link-card" do%>
+      <div class="card-product" style="margin-bottom: 7px; padding: 7px">
       <%= cl_image_tag article.photo.key %>
       <div class="card-product-infos">
         <h2><%= article.title %></h2>
@@ -21,6 +22,7 @@
         </div>
       </div>
     </div>
+    <% end %>
   <% end %>
 </div>
 
