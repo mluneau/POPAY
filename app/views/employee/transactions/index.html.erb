@@ -1,15 +1,25 @@
-<h1>My transactions</h1>
-<ul class="list-unstyled">
-<% @transactions.each do |transaction|  %>
-  <li>
-    <br>
-    <p><strong>Transaction Id: </strong><%= transaction.id %></p>
-    <p><strong>Due date: </strong><%= transaction.due_date %></p>
-    <p><strong>Amount: </strong><%= transaction.amount %></p>
-    <p><strong>Status: </strong><%= transaction.status %></p>
-    <% if transaction.status == "paid" %>
-      <p><strong>Transfer Date: </strong><%= transaction.transfer_date %></p>
-    <% end %>
-  </li>
-<% end %>
-</ul>
+<div class="d-flex justify-content-center" style="margin-bottom: 10px">
+  <h1>
+    <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614176946/book_icon_kltrhy.svg", width: 30, height:30) %>
+    Mes acomptes
+    <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614176946/book_icon_kltrhy.svg", width: 30, height:30) %>
+  </h1>
+</div>
+ <% @transactions.each do |transaction| %>
+  <div class="card-product " style="margin-bottom: 7px; padding: 7px">
+    <div class="card-product-infos flex-grow-1">
+      <h2 class="green-title"><%= transaction.due_date %></h2>
+      <% if transaction.status == "paid" %>
+        <p><strong>Transfer Date: </strong><%= transaction.transfer_date %></p>
+      <% end %>
+      <p></p>
+    </div>
+    <div class="amount">
+        <%= transaction.amount %> <i class="fas fa-euro-sign"></i>
+    </div>
+  </div>
+ <% end %>
+</div>
+
+
+
