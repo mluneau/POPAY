@@ -1,4 +1,3 @@
-
 .card-product {
   overflow: hidden;
   height: 120px;
@@ -6,6 +5,7 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  border-radius: 7px;
 }
 
 .card-product img {
@@ -31,6 +31,7 @@
   font-size: 14px;
   font-weight: bold;
   margin: 0;
+  color: #2BC798;
 }
 
 .card-product p {
@@ -43,4 +44,13 @@
 
 .card-product .card-product-infos {
   padding: 0px 10px 10px 10px;
+}
+
+.green-title {
+  color: #2BC798;
+}
+
+.card-product .amount {
+  font-size: 25px;
+  margin-right: 5px;
 }
