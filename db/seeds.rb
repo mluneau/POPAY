@@ -58,7 +58,6 @@ bank_account_louis_xtrem = BankAccount.create!(user: louis_xtrem, bank_name: "Go
 bank_account_max_xtrem = BankAccount.create!(user: max_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_nico_xtrem = BankAccount.create!(user: nico_xtrem, bank_name: "Société Générale", bank_address: "1, Avenue de la moulah", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_nico_xtrem2 = BankAccount.create!(user: nico_xtrem, bank_name: "BNP Paribas", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1O50")
-
 bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 
 
@@ -87,16 +86,6 @@ Transaction.create!(user: pierre_popay, amount: 700, due_date: "15/04/2021", sta
 Transaction.create!(user: max_popay, amount: 700, due_date: "15/05/2021", status: "pending", bank_account: bank_account_max_popay)
 Transaction.create!(user: nico_popay, amount: 200, due_date: "15/06/2021", status: "pending", bank_account: bank_account_nico_popay)
 
-# puts "Creating discussions for Xtrem"
-# Discussion.create!(employee_id: 5, hr_id: 7, topic:"Ski BlackCrows")
-# Discussion.create!(employee_id: 6, hr_id: 7, topic:"Week-end Ski")
-# Discussion.create!(employee_id: 8, hr_id: 7, topic:"Initiation au Kite")
-# 
-# puts "Creating discussions for Popay"
-# Discussion.create!(employee_id: 2, hr_id: 1, topic:"Thuning de ma clio")
-# Discussion.create!(employee_id: 3, hr_id: 1, topic:"Nouveau matos de Kite")
-# Discussion.create!(employee_id: 4, hr_id: 1, topic:"Paiment Figma: dev frontend")
-
 
 puts "Creating articles..."
 #article 1
@@ -124,3 +113,13 @@ photo5 = URI.open('https://images.unsplash.com/photo-1601807576163-587225545555?
 article5 = Article.new(title: "Popay vous conseille", category: "Epargne", date: "23/02/2021", content: "Fini les agios, reprenez le contrôle de vos finances en choisissant Popay dès aujourd'hui.", time: 5)
 article5.photo.attach(io: photo5, filename: 'conseille.png', content_type: 'image/png')
 article5.save!
+
+puts "Creating discussions for Xtrem"
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
+
+puts "Creating discussions for Popay"
+Discussion.create!(employee_id: pierre_popay.id, hr_id: louis_popay.id, topic:"Thuning de ma clio")
+Discussion.create!(employee_id: max_popay.id, hr_id: louis_popay.id, topic:"Nouveau matos de Kite")
+Discussion.create!(employee_id: nico_popay.id, hr_id: louis_popay.id, topic:"Paiement Figma: dev frontend")

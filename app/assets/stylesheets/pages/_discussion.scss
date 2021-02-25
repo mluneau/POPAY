@@ -1,7 +1,11 @@
 .discussion-container {
-  padding: calc(13vh - 76px) 2vh;
-  padding-top: 15px;
-
+  padding: calc(13vh - 76px) 2px;
+  padding-top: 3px;
+  .discussion-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .discussion-wrapper {
@@ -41,6 +45,10 @@
       p { margin-bottom: 0px;}
       color: white
     
+    }
+
+    .time {
+      font-size: 10px;
     }
     
     &.current_user {
