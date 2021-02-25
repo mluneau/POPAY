@@ -114,12 +114,12 @@ article5 = Article.new(title: "Popay vous conseille", category: "Epargne", date:
 article5.photo.attach(io: photo5, filename: 'conseille.png', content_type: 'image/png')
 article5.save!
 
-puts "Creating discussions for Xtrem"
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
-Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
-
-puts "Creating discussions for Popay"
-Discussion.create!(employee_id: pierre_popay.id, hr_id: louis_popay.id, topic:"Thuning de ma clio")
-Discussion.create!(employee_id: max_popay.id, hr_id: louis_popay.id, topic:"Nouveau matos de Kite")
-Discussion.create!(employee_id: nico_popay.id, hr_id: louis_popay.id, topic:"Paiement Figma: dev frontend")
+# puts "Creating discussions for Xtrem"
+# Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+# Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+# Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
+# 
+# puts "Creating discussions for Popay"
+# Discussion.create!(employee_id: pierre_popay.id, hr_id: louis_popay.id, topic:"Thuning de ma clio")
+# Discussion.create!(employee_id: max_popay.id, hr_id: louis_popay.id, topic:"Nouveau matos de Kite")
+# Discussion.create!(employee_id: nico_popay.id, hr_id: louis_popay.id, topic:"Paiement Figma: dev frontend")
