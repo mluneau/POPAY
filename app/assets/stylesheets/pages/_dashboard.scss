@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - 76px);
+  position: relative;
 }
 
 .action-container > div {
@@ -21,8 +22,11 @@
 .action-container h2 {
   color: #2BC798;
   font-size: 48px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
+
+
+
 
 
 .action-container h1 {
@@ -31,4 +35,12 @@
 
 .amount {
   font-size: 31px;
+}
+
+#back {
+  position: absolute;
+  color: #2BC798;
+  top: 63px;
+  opacity: 0.8;
+  // font-size: 13px;
 }
