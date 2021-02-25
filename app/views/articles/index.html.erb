@@ -2,15 +2,15 @@
 <div class="d-flex justify-content-center" style="margin-bottom: 10px">
   <h1>
     <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614176946/book_icon_kltrhy.svg", width: 30, height:30) %>
-    Articles
-    <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614176946/book_icon_kltrhy.svg", width: 30, height:30) %>
+    <u>Articles</u>
   </h1>
 </div>
 
 <div>
   <% @articles.each do |article| %>
-    <%= link_to article_path(article), class:"link-card" do%>
-      <div class="card-product" style="margin-bottom: 7px; padding: 7px">
+    <div class="card-product" style="height: 120px">
+      <%= link_to article_path(article), class:"link-card" do %>
+
       <%= cl_image_tag article.photo.key %>
       <div class="card-product-infos">
         <h2><%= article.title %></h2>
@@ -22,6 +22,7 @@
         </div>
       </div>
     </div>
+  
     <% end %>
   <% end %>
 </div>

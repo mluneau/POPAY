@@ -25,8 +25,6 @@ puts "Emptying Articles"
 Article.destroy_all
 
 
-
-
 puts "Creating Subscriptions..."
 premium_subscription = Subscription.create!(name: "Premium Plan", monthly_price: 1000)
 regular_subscription = Subscription.create!(name: "Regular Plan", monthly_price: 500)

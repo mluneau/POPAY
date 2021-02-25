@@ -1,11 +1,13 @@
 .card-product {
   overflow: hidden;
-  height: 120px;
+  /* height: 120px; */
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   border-radius: 7px;
+  margin-bottom: 7px;
+  padding: 14px;
 }
 
 .link-card {
@@ -51,7 +53,7 @@
 }
 
 .card-product .card-product-infos {
-  padding: 0px 10px 10px 10px;
+  padding: 5px;
 }
 
 .green-title {
@@ -59,6 +61,12 @@
 }
 
 .card-product .amount {
-  font-size: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-right: 7px; */
+  text-align: right;
+}
+
+.icon {
   margin-right: 5px;
 }
