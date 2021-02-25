@@ -15,9 +15,8 @@ puts "Emptying Companies"
 Company.destroy_all
 puts "Emptying Subscriptions"
 Subscription.destroy_all
-
-
-
+puts "Emptying Articles"
+Article.destroy_all
 
 
 puts "Creating Subscriptions..."

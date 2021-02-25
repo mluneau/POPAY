@@ -1,21 +1,24 @@
 <div class="d-flex justify-content-center" style="margin-bottom: 10px">
   <h1>
-    <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614176946/book_icon_kltrhy.svg", width: 30, height:30) %>
-    Mes acomptes
-    <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614176946/book_icon_kltrhy.svg", width: 30, height:30) %>
+    <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614261084/search_rrgkqz.svg", width: 25, height:25) %>
+    <u>Historique</u>
   </h1>
 </div>
  <% @transactions.each do |transaction| %>
   <div class="card-product " style="margin-bottom: 7px; padding: 7px">
     <div class="card-product-infos flex-grow-1">
-      <h2 class="green-title"><%= transaction.due_date %></h2>
-      <% if transaction.status == "paid" %>
-        <p><strong>Transfer Date: </strong><%= transaction.transfer_date %></p>
-      <% end %>
-      <p></p>
+      <h2 class="green-title"><u><%= transaction.due_date %></h2></u>
+      <p>Cours de CSS pour Pierre!</p>
+
+      
     </div>
     <div class="amount">
-        <%= transaction.amount %> <i class="fas fa-euro-sign"></i>
+        💰<%= transaction.amount %> <i class="fas fa-euro-sign"></i>
+        <% if transaction.status != "paid" %>
+        <p><strong>Pending</strong></p>
+        <% else %>
+        <p><strong>Paid</strong></p>
+      <% end %>
     </div>
   </div>
  <% end %>
