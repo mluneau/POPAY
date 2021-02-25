@@ -1,7 +1,6 @@
 class Employee::TransactionsController < ApplicationController
   def index
     @transactions = policy_scope(Transaction)
-
   end
 
   def new
@@ -28,5 +27,4 @@ class Employee::TransactionsController < ApplicationController
   def transaction_params
     params.require(:transaction).permit([:due_date, :amount])
   end
-
 end
