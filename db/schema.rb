@@ -120,6 +120,7 @@ ActiveRecord::Schema.define(version: 2021_02_25_112809) do
     t.bigint "bank_account_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "comment"
     t.index ["bank_account_id"], name: "index_transactions_on_bank_account_id"
     t.index ["user_id"], name: "index_transactions_on_user_id"
   end
