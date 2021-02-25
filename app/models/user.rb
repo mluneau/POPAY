@@ -21,7 +21,7 @@ class User < ApplicationRecord
     daily_income = monthly_income / 20
     effective_worked_days = 0
     beginning_of_month = Date.today.beginning_of_month
-    yesterday = Date.today - 1.day 
+    yesterday = Date.today - 1.day
 
     (beginning_of_month..yesterday).each do |date|
       effective_worked_days += 1 if date.on_weekday?
