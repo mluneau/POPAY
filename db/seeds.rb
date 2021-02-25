@@ -81,3 +81,14 @@ Transaction.create!(user: pierre_popay, amount: 700, due_date: "15/04/2021", sta
 Transaction.create!(user: max_popay, amount: 700, due_date: "15/05/2021", status: "pending", bank_account: bank_account_max_popay)
 Transaction.create!(user: nico_popay, amount: 200, due_date: "15/06/2021", status: "pending", bank_account: bank_account_nico_popay)
 
+puts "Creating discussions for Xtrem"
+Discussion.create!(employee_id: 5, hr_id: 7, topic:"Ski BlackCrows")
+Discussion.create!(employee_id: 6, hr_id: 7, topic:"Week-end Ski")
+Discussion.create!(employee_id: 8, hr_id: 7, topic:"Initiation au Kite")
+
+puts "Creating discussions for Popay"
+Discussion.create!(employee_id: 2, hr_id: 1, topic:"Thuning de ma clio")
+Discussion.create!(employee_id: 3, hr_id: 1, topic:"Nouveau matos de Kite")
+Discussion.create!(employee_id: 4, hr_id: 1, topic:"Paiment Figma: dev frontend")
+
+

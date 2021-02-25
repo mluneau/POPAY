@@ -1,7 +1,25 @@
 .action-container > div.discussion-container {
   padding: calc(13vh - 76px) 2vh;
-  ;
+  justify-content: flex-start;
+  padding-top: 15px;
 }
+
+.discussion-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .discussion {
+    display: flex;
+    margin-bottom: 2px;
+    align-items:initial;
+    justify-content:center;
+    border: 1px solid lightgray;
+    border-radius: 13px;
+    padding: 8px;
+  }
+}
+
 
 .message-wrapper {
   display: flex;
@@ -21,6 +39,7 @@
       padding: 8px;
       margin-right: 10px;
       p { margin-bottom: 0px;}
+      color: white
     
     }
     
@@ -32,7 +51,6 @@
         background-color: $green-peps;
         margin-right: 0px;
         margin-left: 10px;  
-      
       }
     }
   } 
@@ -53,13 +71,20 @@
   .message_content {
     border: 0;
     flex-grow: 1;
+    height: fit-content;
     
     textarea {
       border: 0;
+      align-self: center;
     }
   }
 
   * {
     margin: 0px;
   } 
+}
+
+input.btn.btn-primary.btn-confirm.chat {
+  height: 30px;
+  font-weight: 0;
 }
