@@ -8,7 +8,7 @@
 
 <div>
   <% @articles.each do |article| %>
-    <div class="card-product">
+    <div class="card-product" style="height: 120px">
       <%= cl_image_tag article.photo.key %>
       <div class="card-product-infos">
         <h2><%= article.title %></h2>
