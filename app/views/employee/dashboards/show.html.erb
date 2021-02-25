@@ -2,8 +2,8 @@
   <div>
     <h1>💰</h1>
     <p class="amount">Acompte disponible</p>
-    <h2>350 €</h2>
-    <p>à partir du 15 novembre 2021</p>
+    <h2> <%= @available_cash %> €</h2>
+    <p>au <%= localize(Date.today, format: "%d %B %Y") %></p>
     <%= link_to "Faire une demande", new_employee_transaction_path, class: "btn btn-primary btn-confirm"  %>
   </div>
 </div>
