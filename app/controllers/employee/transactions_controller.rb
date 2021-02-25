@@ -6,6 +6,7 @@ class Employee::TransactionsController < ApplicationController
 
   def new
     @transaction = Transaction.new
+    @available_cash = current_user.available_cash
     authorize @transaction
   end
 
