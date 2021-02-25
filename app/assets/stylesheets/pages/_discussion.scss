@@ -1,7 +1,7 @@
-.action-container > div.discussion-container {
+.discussion-container {
   padding: calc(13vh - 76px) 2vh;
-  justify-content: flex-start;
   padding-top: 15px;
+
 }
 
 .discussion-wrapper {
@@ -87,4 +87,14 @@
 input.btn.btn-primary.btn-confirm.chat {
   height: 30px;
   font-weight: 0;
+}
+
+.message-form {
+
+  button {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+  }
+
 }

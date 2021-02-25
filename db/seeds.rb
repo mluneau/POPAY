@@ -9,6 +9,12 @@ puts "and Empyting Transactions..."
 Transaction.destroy_all
 puts "Emptying Bank Accounts"
 BankAccount.destroy_all
+puts "Emptying Appointments"
+Appointment.destroy_all
+puts "Emptying Messages"
+Message.destroy_all
+puts "Emptying Discussions"
+Discussion.destroy_all
 puts "Emptying Users"
 User.destroy_all
 puts "Emptying Companies"
