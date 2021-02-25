@@ -7,80 +7,19 @@
   </h1>
 </div>
 
-<div class="card-product" style="margin-bottom: 7px; padding: 7px">
-  <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614179208/kelly-sikkema-pXmyDPziB8w-unsplash_e0vmcy.jpg") %>
-  <div class="card-product-infos">
-    <h2>L'épargne salariale</h2>
-    <p>Les sommes distribuées aux salariés peuvent être placées à votre guise en <strong>épargne salariale.</strong></p>
-  </div>
-  <div class="clock">
-    <div class="clockbis">
-    <i class="far fa-clock" style="padding-right: 4px"></i>2''
-    </div>
-  </div>
-</div>
-
-<div class="card-product" style="margin-bottom: 7px; padding: 7px">
-  <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614179212/kelly-sikkema-U20dtBwxHEU-unsplash_f9je2k.jpg") %>
-  <div class="card-product-infos">
-    <h2>Dialogue vs la Covid</h2>
-    <p>Si la crise a eu un impact positif, c’est en mettant en avant le dialogue <strong>social en entreprises.</strong></p>
-  </div>
-  <div class="clock">
-    <div class="clockbis">
-    <i class="far fa-clock" style="padding-right: 4px"></i>1''
-    </div>
-  </div>
-</div>
-
-<div class="card-product" style="margin-bottom: 7px; padding: 7px">
-  <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614179193/green-chameleon-s9CC2SKySJM-unsplash_k4fvie.jpg") %>
-  <div class="card-product-infos">
-    <h2>Acompte: vos droits</h2>
-    <p>L’acompte correspond au versement anticipé d’une partie du salaire <strong>du mois en cours.</strong></p>
-  </div>
-  <div class="clock">
-    <div class="clockbis">
-    <i class="far fa-clock" style="padding-right: 4px"></i>2''
-    </div>
-  </div>
-</div>
-
-<div class="card-product" style="margin-bottom: 7px; padding: 7px">
-  <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614179736/herson-rodriguez-w8CcH9Md4vE-unsplash_dp39w6.jpg") %>
-  <div class="card-product-infos">
-    <h2>Crédit consommation</h2>
-    <p>Une alternative inadaptée aux attentes des <strong>français. N'attendez plus et choisissez Popay.</strong></p>
-  </div>
-  <div class="clock">
-    <div class="clockbis">
-    <i class="far fa-clock" style="padding-right: 4px"></i>4''
-    </div>
-  </div>
-</div>
-
-<div class="card-product" style="margin-bottom: 7px; padding: 7px">
-  <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614179745/fabian-blank-pElSkGRA2NU-unsplash_rcszkb.jpg") %>
-  <div class="card-product-infos">
-    <h2>Popay vous conseille</h2>
-    <p>Fini les agios, reprenez le <strong>contrôle de vos finances en choisissant Popay dès aujourd'hui.</strong></p>
-  </div>
-  <div class="clock">
-    <div class="clockbis">
-    <i class="far fa-clock" style="padding-right: 4px"></i>3''
-    </div>
-  </div>
-</div>
-
 <div>
   <% @articles.each do |article| %>
-    <h1><%= article.category %></h1>
-    <div class="article-container" id="article-<%= article.id %>">
-      <i class="title">
-        <span><%= article.title %></span>
-        <small><%= article.date %></small>
-      </i>
-      <p><%= article.content %></p>
+    <div class="card-product" style="margin-bottom: 7px; padding: 7px">
+      <%= cl_image_tag article.photo.key %>
+      <div class="card-product-infos">
+        <h2><%= article.title %></h2>
+        <p><%= article.content %></p>
+      </div>
+      <div class="clock">
+        <div class="clockbis">
+          <i class="far fa-clock" style="padding-right: 4px"></i><%= article.time %>''
+        </div>
+      </div>
     </div>
   <% end %>
 </div>
