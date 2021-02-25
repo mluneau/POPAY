@@ -10,6 +10,14 @@
   padding: 14px;
 }
 
+.link-card {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 .card-product img {
   height: 90%;
   width: 120px;
