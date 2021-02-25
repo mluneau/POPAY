@@ -1,28 +1,25 @@
-<h1>Discussion board</h1>
 
 <div class="container discussion-container">
-
-    
-    <div class="discussion-wrapper">
+  <h1>Discussion board</h1>
+  <div class="discussion-wrapper">
     <% @discussions.each do |discussion| %>
-      <div class="discussion <% if policy(discussion).index? %>">
-        <div class="discussion-card">
-          <div class="contact-name">
-            <%= discussion.hr.first_name %>
-            <%= discussion.hr.last_name %>
-          </div>
-          <div class="topic-name">
-          </div>
-            <%= link_to discussion.topic, discussion_path(discussion) %>
-          <div>
-            <% #Icon for to the conversation %>
+      <% if policy(discussion).index? %>   
+        <div class="discussion">
+          <div class="discussion-card">
+            <div class="contact-name">
+              <%= discussion.hr.first_name %>
+              <%= discussion.hr.last_name %>
+            </div>
+            <div class="topic-name">
+            </div>
+              <%= link_to discussion.topic, discussion_path(discussion) %>
+            <div>
+              <% #Icon for to the conversation %>
+            </div>
           </div>
         </div>
-        <% end %>
-      </div>
-      <br>
-  <% end %>
-    </div>
-
+      <% end %>
+    <% end %>
   </div>
+
 </div>
