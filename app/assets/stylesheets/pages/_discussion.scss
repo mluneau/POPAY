@@ -1,26 +1,40 @@
 .discussion-container {
   padding: calc(13vh - 76px) 2px;
   padding-top: 3px;
+  
   .discussion-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
   }
 }
+
+.discussion-container h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}  
+  
+
 
 .discussion-wrapper {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 
+
   .discussion {
     display: flex;
-    margin-bottom: 2px;
-    align-items:initial;
-    justify-content:center;
+    margin-bottom: 7px;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid lightgray;
     border-radius: 13px;
     padding: 8px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
   }
 }
 

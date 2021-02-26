@@ -1,25 +1,24 @@
 
 <div class="container discussion-container">
-  <h3>🤝 Mes conversations</h3>
+  <h3> 💬 Mes conversations</h3>
+
   <div class="discussion-wrapper">
     <% @discussions.each do |discussion| %>
-      <% if policy(discussion).index? %>   
-        <div class="discussion">
-          <div class="discussion-card">
-            <div class="contact-name">
-              <%= discussion.hr.first_name %>
+      <%= link_to discussion_path(discussion) do %>
+        <% if policy(discussion).index? %>   
+          <div class="discussion">
+            <div class="discussion-user">
+              <img class="avatar-bordered" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png"/>
               <%= discussion.hr.last_name %>
+              <%= discussion.hr.first_name %>
             </div>
-            <div class="topic-name">
-            </div>
-              <%= link_to discussion.topic, discussion_path(discussion) %>
-            <div>
-              <% #Icon for to the conversation %>
+            <div class="discussion-topic">
+              <%= discussion.topic %>
+              >
             </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
     <% end %>
   </div>
-
 </div>

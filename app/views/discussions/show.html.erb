@@ -3,8 +3,9 @@
   <div id="messages" data-discussion-id="<%= @discussion.id %>" class="discussion-container">
     <div class="discussion-info">
       
-      <%= link_to 'Retour', discussions_path()  %>
-      <h4><%= @discussion.hr.first_name %> <%= @discussion.hr.last_name %></h4>
+      <a href="/discussions"> <i class='fas fa-arrow-left'></i> </a>
+      <!-- <%= link_to "", discussions_path()  %> -->
+      <h5><%= @discussion.hr.first_name %> <%= @discussion.hr.last_name %></h5>
 
     </div>
     <div class="message-wrapper">
