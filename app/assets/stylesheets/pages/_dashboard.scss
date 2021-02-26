@@ -7,16 +7,17 @@
   height: calc(85vh - 76px);
   margin-top: 5vh;
   position: relative;
+  box-shadow: 4px 4px 14px rgba(0,0,0,0.1);
+  border-radius: 13px;
+  background-color: white;
 }
 
 .action-container > div {
   display: flex;
   flex-direction: column;
-  background-color: white;
   padding: calc(14vh - 76px) 2vh;
   width: 90vw;
   height: calc(85vh - 76px);
-  border-radius: 13px;
 }
 
 .action-container > div > form {
