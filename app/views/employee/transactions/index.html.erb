@@ -1,28 +1,31 @@
 <div class="d-flex justify-content-center" style="margin-bottom: 10px">
-  <h1>
-    <%= cl_image_tag("https://res.cloudinary.com/dyywcjnii/image/upload/v1614261084/search_rrgkqz.svg", width: 25, height:25) %>
-    <u>Historique</u>
-  </h1>
+  <div class="d-flex">
+    <h3> 🗓   Historique</h3>
+  </div>
 </div>
 
 <% @transactions.each do |transaction| %>
   <div class="card-product w-100">
 
     <div class="transaction w-100">
-      <h2 class="green-title"><span class="icon">📅</span><%= transaction.due_date %></h2>
+      <h2 class="green-title"><span class="icon">📅</span><%= localize(transaction.due_date, format: "%d %B %Y") %></h2>
       <div class="amount">
           <span class="icon"> 💰 </span><%= transaction.amount %> <i class="fas fa-euro-sign"></i>
       </div>
     </div>
     <div class="transaction w-100">
-      <p>Cours de CSS pour Pierre!</p>
+      <p><%= transaction.comment %></p>
       <div>
-        <% if transaction.status != "paid" %>
-          <p><strong>Pending</strong></p>
+        <% if transaction.status != "payé" %>
+          <p><strong>En cours</strong></p>
         <% else %>
-          <p><strong>Paid</strong></p>
+          <p><strong>Payé</strong></p>
         <% end %>
       </div>
+    </div>
+    <div class="transaction w-100">
+      <p></p>
+      <i class="far fa-file-pdf" style="padding-top: 12px"></i>
     </div>
   
   </div>
