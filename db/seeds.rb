@@ -67,21 +67,21 @@ bank_account_nico_popay = BankAccount.create!(user: nico_popay, bank_name: "Banq
 bank_account_pierre_popay = BankAccount.create!(user: pierre_popay, bank_name: "Caisse d'épargne", bank_address: "1, Avenue du billet de 20", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 
 puts "Creating transactions for Xtrem"
-Transaction.create!(user: nico_xtrem, amount: 1500, due_date: "15/03/2021", status: "en attente", comment: "Wagon à payer", bank_account: bank_account_nico_xtrem)
+Transaction.create!(user: nico_xtrem, amount: 1500, due_date: "15/02/2021", status: "en attente", comment: "Wagon à payer", bank_account: bank_account_nico_xtrem)
 Transaction.create!(user: nico_xtrem, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "payé", comment: "Dentiste", bank_account: bank_account_nico_xtrem2)
 Transaction.create!(user: nico_xtrem, amount: 800, due_date: "15/12/2020", transfer_date: "16/01/2020", status: "payé", comment: "Cadeau mam", bank_account: bank_account_nico_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 700, due_date: "15/04/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: louis_xtrem, amount: 700, due_date: "15/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
 Transaction.create!(user: louis_xtrem, amount: 500, due_date: "16/12/2020", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: pierre_xtrem, amount: 700, due_date: "15/04/2021", status: "en attente", comment: "Rentrée des classes", bank_account: bank_account_pierre_xtrem)
-Transaction.create!(user: max_xtrem, amount: 700, due_date: "15/05/2021", status: "en attente", comment: "Netflix", bank_account: bank_account_max_xtrem)
+Transaction.create!(user: pierre_xtrem, amount: 700, due_date: "15/02/2021", status: "en attente", comment: "Rentrée des classes", bank_account: bank_account_pierre_xtrem)
+Transaction.create!(user: max_xtrem, amount: 700, due_date: "15/01/2021", status: "en attente", comment: "Netflix", bank_account: bank_account_max_xtrem)
 
 puts "Creating transactions for Popay"
-Transaction.create!(user: pierre_popay, amount: 1500, due_date: "15/03/2021", status: "en attente", comment: "Wagon à payer", bank_account: bank_account_pierre_popay)
+Transaction.create!(user: pierre_popay, amount: 1500, due_date: "15/02/2021", status: "en attente", comment: "Wagon à payer", bank_account: bank_account_pierre_popay)
 Transaction.create!(user: pierre_popay, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "payé", comment: "Dentiste", bank_account: bank_account_pierre_popay)
 Transaction.create!(user: pierre_popay, amount: 800, due_date: "15/12/2020", transfer_date: "16/01/2020", status: "payé", comment: "Cadeau mam", bank_account: bank_account_pierre_popay)
-Transaction.create!(user: louis_popay, amount: 700, due_date: "15/04/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_popay)
+Transaction.create!(user: louis_popay, amount: 700, due_date: "15/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_popay)
 Transaction.create!(user: louis_popay, amount: 500, due_date: "16/12/2020", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_popay)
-Transaction.create!(user: pierre_popay, amount: 700, due_date: "15/04/2021", status: "en attente", comment: "Rentrée des classes", bank_account: bank_account_pierre_popay)
+Transaction.create!(user: pierre_popay, amount: 700, due_date: "15/02/2021", status: "en attente", comment: "Rentrée des classes", bank_account: bank_account_pierre_popay)
 Transaction.create!(user: max_popay, amount: 700, due_date: "15/05/2021", status: "en attente", comment: "Abonnement Netflix", bank_account: bank_account_max_popay)
 Transaction.create!(user: nico_popay, amount: 200, due_date: "15/06/2021", status: "en attente", comment: "Carosserie", bank_account: bank_account_nico_popay)
 
