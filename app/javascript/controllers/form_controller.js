@@ -1,17 +1,45 @@
 import { Controller } from "stimulus";
 
 export default class extends Controller {
-  static targets = ['amount','submit', 'sliderAmount', 'displayAmount']
+  static targets = ['amountView','commentView', 'sliderAmount', 'displayAmount', 'confirmView', 'inputComment','displayComment', "navArrow"]
   connect() {
   }
-  toggleSubmitAmount() {
-    this.amountTargets.forEach(element => element.classList.toggle('d-none'))
-    this.amountTargets.forEach(element => element.classList.toggle('d-flex'))
+  goForward() {
+    if (this.amountViewTarget.classList.contains('d-flex')) {
+      this.amountViewTarget.classList.replace('d-flex', 'd-none')
+      this.commentViewTarget.classList.replace('d-none', 'd-flex')
+      this.navArrowTarget.classList.remove('d-none')
+    } else if (this.commentViewTarget.classList.contains('d-flex')) {
+      this.commentViewTarget.classList.replace('d-flex', 'd-none')
+      this.confirmViewTarget.classList.replace('d-none', 'd-flex')
+    }
+  }
+
+  goBack() {
+    if (this.confirmViewTarget.classList.contains('d-flex')) {
+      this.confirmViewTarget.classList.replace('d-flex', 'd-none')
+      this.commentViewTarget.classList.replace('d-none', 'd-flex')
+    } else if (this.commentViewTarget.classList.contains('d-flex')) {
+      this.commentViewTarget.classList.replace('d-flex', 'd-none')
+      this.amountViewTarget.classList.replace('d-none', 'd-flex')
+      this.navArrowTarget.classList.add('d-none')
+    } else {
+
+    }
+  }
+
+  toggleAmountConfirm() {
     this.submitTarget.classList.toggle('d-none')
     this.submitTarget.classList.toggle('d-flex')
+    this.confirmTarget.classList.toggle('d-none')
+    this.confirmTarget.classList.toggle('d-flex')
   }
 
   updateAmount(event) {
     this.displayAmountTargets.forEach(element => element.innerText = this.sliderAmountTarget.value)
+  }
+
+  updateComment() {
+    this.displayCommentTarget.innerText = this.inputCommentTarget.value
   }
 }

@@ -1,0 +1,5 @@
+meta_product_name: "Popay"
+meta_title: "Popay - La paie sur simple demande"
+meta_description: "Avec Popay fini l'attente de la fin du mois. En 2 clics, demandez une avance sur votre salaire et Popay s'occupe de tout"
+meta_image: "gestion.jpg" # should exist in `app/assets/images/`
+twitter_account: "@jk1789"   # required for Twitter Cards
