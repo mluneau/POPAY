@@ -6,7 +6,9 @@ export default class extends Controller {
   }
   toggleSubmitAmount() {
     this.amountTargets.forEach(element => element.classList.toggle('d-none'))
+    this.amountTargets.forEach(element => element.classList.toggle('d-flex'))
     this.submitTarget.classList.toggle('d-none')
+    this.submitTarget.classList.toggle('d-flex')
   }
 
   updateAmount(event) {
