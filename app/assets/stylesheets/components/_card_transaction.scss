@@ -1,40 +1,21 @@
 .card-product {
   overflow: hidden;
-  /* height: 120px; */
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   border-radius: 7px;
   margin-bottom: 7px;
-  padding: 14px;
+  padding: 10px;
+  flex-direction: column; 
+  align-content: space-between;
 }
 
-.link-card {
-  color: inherit;
-  &:hover {
-    text-decoration: none;
-    color: inherit;
-  }
-}
-
-.card-product img {
-  height: 90%;
-  width: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.card-product .clock {
+.card-product .transaction {
   display: flex;
-  align-items: flex-start;
-  height: 100%;
-}
-
-.card-product .clockbis {
-  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
   align-items: center;
-  margin-top: 2px;
 }
 
 .card-product h2 {
@@ -63,7 +44,6 @@
 .card-product .amount {
   font-size: 14px;
   font-weight: bold;
-  /* margin-right: 7px; */
   text-align: right;
 }
 

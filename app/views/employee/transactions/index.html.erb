@@ -6,15 +6,15 @@
 </div>
 
 <% @transactions.each do |transaction| %>
-  <div class="card-product w-100" style="flex-direction: column" style="display: flex" style="align-content: space-between">
+  <div class="card-product w-100">
 
-    <div class="d-flex flex-row justify-content-between align-items-center w-100">
+    <div class="transaction w-100">
       <h2 class="green-title"><span class="icon">📅</span><%= transaction.due_date %></h2>
       <div class="amount">
           <span class="icon"> 💰 </span><%= transaction.amount %> <i class="fas fa-euro-sign"></i>
       </div>
     </div>
-    <div class="d-flex flex-row justify-content-between align-items-center w-100">
+    <div class="transaction w-100">
       <p>Cours de CSS pour Pierre!</p>
       <div>
         <% if transaction.status != "paid" %>

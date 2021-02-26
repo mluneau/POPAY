@@ -104,7 +104,7 @@ article3.photo.attach(io: photo3, filename: 'droits.png', content_type: 'image/p
 article3.save!
 #article 4
 photo4 = URI.open('https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fGVkdWNhdGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
-article4 = Article.new(title: "Crédit consommation", category: "Frais bancaires", date: "08/02/2021", content: "Une alternative inadaptée aux attentes des français. N'attendez plus et choisissez Popay.", time: 3)
+article4 = Article.new(title: "Crédit conso", category: "Frais bancaires", date: "08/02/2021", content: "Une alternative inadaptée aux attentes des français. N'attendez plus et choisissez Popay.", time: 3)
 article4.photo.attach(io: photo4, filename: 'credit.png', content_type: 'image/png')
 article4.save!
 #article 5

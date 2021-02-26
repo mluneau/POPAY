@@ -8,21 +8,23 @@
 
 <div>
   <% @articles.each do |article| %>
-    <div class="card-product" style="height: 120px">
-      <%= link_to article_path(article), class:"link-card" do %>
+  <%= link_to article_path(article), class:"link-card" do %>
+    <div class="card-product_article">
+      
 
-      <%= cl_image_tag article.photo.key %>
-      <div class="card-product-infos">
-        <h2><%= article.title %></h2>
-        <p><%= article.content %></p>
-      </div>
-      <div class="clock">
-        <div class="clockbis">
-          <i class="far fa-clock" style="padding-right: 4px"></i><%= article.time %>''
+        <%= cl_image_tag article.photo.key %>
+        <div class="card-product-infos">
+          <h2><%= article.title %></h2>
+          <p><%= article.content %></p>
         </div>
-      </div>
-    </div>
+        <div class="clock">
+          <div class="clockbis">
+            <i class="far fa-clock" style="padding-right: 4px"></i><%= article.time %>''
+          </div>
+        </div>
   
+      
+    </div>
     <% end %>
   <% end %>
 </div>
