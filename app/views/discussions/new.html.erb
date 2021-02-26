@@ -1,2 +1,11 @@
-<h1>Discussions#new</h1>
-<p>Find me in app/views/discussions/new.html.erb</p>
+<div class="action-container">
+  <%= simple_form_for @discussion, url: discussions_path do |f| %>
+    <%= f.input :topic, label: false, placeholder: "Topic" %>
+    <%= f.input :hr_id, collection: User.where(company: current_user.company).map {|user| user.first_name} %>
+    <%= button_tag do %>
+      <i class='fas fa-paper-plane'></i>  
+    <% end %>
+  <% end %>
+  </div>
+</div>
+
