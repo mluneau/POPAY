@@ -8,7 +8,8 @@
         <h1>💰</h1>
         <p class="amount">Choisissez votre montant</p>
 
-        <h2><span data-form-target="displayAmount"><%= @available_cash / 2 %></span>   €</h2>
+        <h2><span data-form-target="displayAmount"><%= @available_cash / 2 %></span> €</h2>
+        <p><strong>Total disponible: </strong><%= @available_cash %> €</p>
         <div class="slidecontainer">
           <%= f.input :amount, label: false, as: :range, class: "slider", input_html: {"class":"slider", "data-form-target": "sliderAmount", "data-action": "input->form#updateAmount", "max": @available_cash, "step":"10", "value": @available_cash/2 }%>
         </div>
