@@ -89,27 +89,27 @@ Transaction.create!(user: nico_popay, amount: 200, due_date: "15/06/2021", statu
 puts "Creating articles..."
 #article 1
 photo1 = URI.open('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1009&q=80')
-article1 = Article.new(title: "L'épargne salariale", category: "Epargne", date: "12/01/2021", content: "Les sommes distribuées aux salariés peuvent être placées à votre guise en épargne salariale.", time: 3)
+article1 = Article.new(title: "L'épargne salariale", category: "Epargne", date: "12/01/2021", content: "Les sommes distribuées aux salariés peuvent être placées à votre guise en épargne salariale. L'acompte est un 1er versement sur l'achat d'une marchandise ou d'une prestation de services. Le professionnel et le consommateur sont chacun obligés de tenir leur engagement. Un contrat, un bon de commande, ou le fait de verser un acompte sont considérés comme un engagement.", time: 3)
 article1.photo.attach(io: photo1, filename: 'epargne.png', content_type: 'image/png')
 article1.save!
 #article 2
 photo2 = URI.open('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8ZWR1Y2F0aW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
-article2 = Article.new(title: "Dialogue vs la Covid", category: "RH", date: "15/01/2021", content: "Si la crise a eu un impact positif, c’est en mettant en avant le dialogue social en entreprises.", time: 2)
+article2 = Article.new(title: "Dialogue vs la Covid", category: "RH", date: "15/01/2021", content: "Si la crise a eu un impact positif, c’est en mettant en avant le dialogue social en entreprises. L'acompte est un 1er versement sur l'achat d'une marchandise ou d'une prestation de services. Le professionnel et le consommateur sont chacun obligés de tenir leur engagement. Un contrat, un bon de commande, ou le fait de verser un acompte sont considérés comme un engagement.", time: 2)
 article2.photo.attach(io: photo2, filename: 'dialogue.png', content_type: 'image/png')
 article2.save!
 #article 3
 photo3 = URI.open('https://images.unsplash.com/photo-1581078426770-6d336e5de7bf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGVkdWNhdGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
-article3 = Article.new(title: "Acompte: vos droits", category: "Droit", date: "21/01/2021", content: "L’acompte correspond au versement anticipé d’une partie du salaire du mois en cours.", time:4)
+article3 = Article.new(title: "Acompte: vos droits", category: "Droit", date: "21/01/2021", content: "L’acompte correspond au versement anticipé d’une partie du salaire du mois en cours. L'acompte est un 1er versement sur l'achat d'une marchandise ou d'une prestation de services. Le professionnel et le consommateur sont chacun obligés de tenir leur engagement. Un contrat, un bon de commande, ou le fait de verser un acompte sont considérés comme un engagement.", time:4)
 article3.photo.attach(io: photo3, filename: 'droits.png', content_type: 'image/png')
 article3.save!
 #article 4
 photo4 = URI.open('https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fGVkdWNhdGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
-article4 = Article.new(title: "Crédit conso", category: "Frais bancaires", date: "08/02/2021", content: "Une alternative inadaptée aux attentes des français. N'attendez plus et choisissez Popay.", time: 3)
+article4 = Article.new(title: "Crédit conso", category: "Frais bancaires", date: "08/02/2021", content: "Une alternative inadaptée aux attentes des français. N'attendez plus et choisissez Popay. L'acompte est un 1er versement sur l'achat d'une marchandise ou d'une prestation de services. Le professionnel et le consommateur sont chacun obligés de tenir leur engagement. Un contrat, un bon de commande, ou le fait de verser un acompte sont considérés comme un engagement.", time: 3)
 article4.photo.attach(io: photo4, filename: 'credit.png', content_type: 'image/png')
 article4.save!
 #article 5
 photo5 = URI.open('https://images.unsplash.com/photo-1601807576163-587225545555?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDR8fGVkdWNhdGlvbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60')
-article5 = Article.new(title: "Popay vous conseille", category: "Epargne", date: "23/02/2021", content: "Fini les agios, reprenez le contrôle de vos finances en choisissant Popay dès aujourd'hui.", time: 5)
+article5 = Article.new(title: "Popay vous conseille", category: "Epargne", date: "23/02/2021", content: "Fini les agios, reprenez le contrôle de vos finances en choisissant Popay dès aujourd'hui. L'acompte est un 1er versement sur l'achat d'une marchandise ou d'une prestation de services. Le professionnel et le consommateur sont chacun obligés de tenir leur engagement. Un contrat, un bon de commande, ou le fait de verser un acompte sont considérés comme un engagement.", time: 5)
 article5.photo.attach(io: photo5, filename: 'conseille.png', content_type: 'image/png')
 article5.save!
 
