@@ -1,1 +1,13 @@
 // Specific CSS for your home-page
+.green-triangle {
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 100vw solid transparent;
+  border-top: 80vh solid $green-peps;
+  position: fixed;
+  z-index: -1;
+}
+body {
+  background-color: white;
+}
