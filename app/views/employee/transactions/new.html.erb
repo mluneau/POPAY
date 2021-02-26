@@ -4,10 +4,10 @@
     <h1>💰</h1>
     <%= simple_form_for(@transaction, url: employee_transactions_path) do |f| %>
       <div data-form-target="amount">
-        <p class="amount">Le montant</p>
-        <h2><span data-form-target="displayAmount"><%= @available_cash %></span>   €</h2>
+        <p class="amount">Choisissez votre montant</p>
+        <h2><span data-form-target="displayAmount"><%= @available_cash / 2 %></span>   €</h2>
         <div class="slidecontainer">
-          <%= f.input :amount, label: false, as: :range, class: "slider", input_html: {"class":"slider", "data-form-target": "sliderAmount", "data-action": "input->form#updateAmount", "max": @available_cash, "step":"10", "value": @available_cash }%>
+          <%= f.input :amount, label: false, as: :range, class: "slider", input_html: {"class":"slider", "data-form-target": "sliderAmount", "data-action": "input->form#updateAmount", "max": @available_cash, "step":"10", "value": @available_cash/2 }%>
         </div>
         <a class="btn btn-outline-primary btn-confirm" data-action="click->form#toggleSubmitAmount">Suivant</a>
       </div>
