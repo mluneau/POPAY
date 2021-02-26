@@ -1,10 +1,10 @@
 <div class="action-container">
   <div data-controller="form" class="d-flex flex-column">
-    <a id="back" data-form-target="amount" class="d-none" data-action="click->form#toggleSubmitAmount"><i class="fas fa-arrow-left"></i></a>
+    <a id="back" class="d-none" data-form-target="navArrow" data-action="click->form#goBack"><i class="fas fa-arrow-left"></i></a>
 
     <%= simple_form_for @transaction, url: employee_transactions_path, class: "d-flex flex-column flex-grow-1" do |f| %>
 
-      <div data-form-target="amount" class="d-flex flex-column justify-content-between">
+      <div data-form-target="amountView" class="d-flex flex-column justify-content-between">
         <h1>💰</h1>
         <p class="amount">Choisissez votre montant</p>
 
@@ -13,20 +13,29 @@
           <%= f.input :amount, label: false, as: :range, class: "slider", input_html: {"class":"slider", "data-form-target": "sliderAmount", "data-action": "input->form#updateAmount", "max": @available_cash, "step":"10", "value": @available_cash/2 }%>
         </div>
         <div class="d-flex justify-content-around">
-          <div class="suggested-amount-bubble"><%= @available_cash / 10 %></div>
-          <div class="suggested-amount-bubble"><%= @available_cash / 5 %></div>
-          <div class="suggested-amount-bubble"><%= @available_cash / 2 %></div>
+          <div class="suggested-amount-bubble" data-form-target= "sliderAmount" ><%= @available_cash / 10 %> €</div>
+          <div class="suggested-amount-bubble" data-form-target= "sliderAmount" ><%= @available_cash / 5 %> €</div>
+          <div class="suggested-amount-bubble" data-form-target= "sliderAmount" ><%= @available_cash / 2 %> €</div>
         </div>
-        <a class="btn btn-outline-primary btn-confirm" data-action="click->form#toggleSubmitAmount">Suivant</a>
+        <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goForward">Suivant</a>
       </div>
-      <div data-form-target="submit" class="d-none flex-column flex-grow-1 justify-content-around">
-        <h1>✅</h1>
+      <div data-form-target="commentView" class="d-none flex-column flex-grow-1 justify-content-between">
+        <h1>❓</h1>
         <p class="amount">Vous avez demandé</p>
         <h2><span data-form-target="displayAmount"><%= @available_cash %></span>   €</h2>
         <p>à partir du <%= localize(Date.today, format: "%d %B %Y") %></p>
-        <%= f.input :comment, label: false, placeholder: "Un commentaire?" %>
+        <%= f.input :comment, label: false, placeholder: "Un commentaire?", input_html: {"data-form-target": "inputComment", "data-action": "input->form#updateComment"} %>
+        <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goForward">Suivant</a>
+      </div>
+      <div data-form-target="confirmView" class="d-none flex-column flex-grow-1 justify-content-between">
+        <h1>✅</h1>
+        <p class="amountView">Vous avez demandé</p>
+        <h2><span data-form-target="displayAmount"><%= @available_cash %></span>   €</h2>
+        <p>à partir du <%= localize(Date.today, format: "%d %B %Y") %></p>
+        <p><strong>Votre commentaire: </strong><br><span data-form-target="displayComment"></span></p>
         <%= f.submit "Confirmer", class: "btn btn-primary btn-confirm" %>
       </div>
+
   <% end %>
   </div>
 </div>
