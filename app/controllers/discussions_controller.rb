@@ -16,9 +16,9 @@ class DiscussionsController < ApplicationController
   def create
     @discussion = Discussion.new(discussion_params)
     authorize @discussion
-    @discussion.user = current_user
+    @discussion.employee_id = current_user.id
     if @discussion.save
-      redirect_to root_path
+      redirect_to discussion_path
     else
       render :new
     end

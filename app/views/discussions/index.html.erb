@@ -3,9 +3,9 @@
   <h3> 💬 Mes conversations</h3>
 
   <div id="new_discussion">
-    <a href="/discussion/new">
-      <i class="fas fa-pen-square"></i>    
-    </a>
+    <%= link_to new_discussion_path do %>
+      <i class="fas fa-pen-square"></i>
+    <% end %>     
   </div>
   <div class="discussion-wrapper">
     <% @discussions.each do |discussion| %>
