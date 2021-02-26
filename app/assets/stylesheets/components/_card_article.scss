@@ -7,7 +7,8 @@
   align-items: center;
   border-radius: 7px;
   margin-bottom: 7px;
-  padding: 14px;
+  padding: 10px;
+  align-items: flex-end;
 }
 
 .link-card {
@@ -19,7 +20,7 @@
 }
 
 .card-product_article img {
-  height: 90%;
+  height: 100%;
   width: 120px;
   object-fit: cover;
   border-radius: 10px;
@@ -34,7 +35,8 @@
 .card-product_article .clockbis {
   display: flex;
   align-items: center;
-  margin-top: 2px;
+  margin-top: 3px;
+  color: $mid-gray;
 }
 
 .card-product_article h2 {
@@ -53,5 +55,5 @@
 }
 
 .card-product_article .card-product-infos {
-  padding: 5px;
+  padding: 10px;
 }

@@ -6,9 +6,17 @@
   align-items: center;
   border-radius: 7px;
   margin-bottom: 7px;
-  padding: 14px;
+  padding: 10px;
+  flex-direction: column; 
+  align-content: space-between;
 }
 
+.card-product .transaction {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: center;
+}
 
 .card-product h2 {
   font-size: 14px;
@@ -33,10 +41,9 @@
   color: #2BC798;
 }
 
-.card-product_article .amount {
+.card-product .amount {
   font-size: 14px;
   font-weight: bold;
-  /* margin-right: 7px; */
   text-align: right;
 }
 
