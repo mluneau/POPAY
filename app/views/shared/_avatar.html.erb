@@ -1,6 +1,8 @@
 
-<% if user_signed_in? && current_user.avatar.attached?  %>
+<% if user_signed_in? &&   %>
+  <% if current_user.avatar.attached?  %>
   <img id="avatar-mobile" class="avatar-mobile dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="<%= cl_image_path current_user.avatar.key, height: 300, width: 300, crop: :fill %>" />
-<% else %>
+    <% else %>
   <img id="avatar-mobile" class="avatar-mobile dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png" />
+  <% end %>
 <% end %>
