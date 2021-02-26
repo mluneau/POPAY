@@ -2,6 +2,11 @@
 <div class="container discussion-container">
   <h3> 💬 Mes conversations</h3>
 
+  <div id="new_discussion">
+    <a href="/discussion/new">
+      <i class="fas fa-pen-square"></i>    
+    </a>
+  </div>
   <div class="discussion-wrapper">
     <% @discussions.each do |discussion| %>
       <%= link_to discussion_path(discussion) do %>
@@ -21,4 +26,5 @@
       <% end %>
     <% end %>
   </div>
+ 
 </div>

@@ -13,7 +13,8 @@
 .discussion-container h3 {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }  
   
 
@@ -105,11 +106,6 @@
   } 
 }
 
-input.btn.btn-primary.btn-confirm.chat {
-  height: 30px;
-  font-weight: 0;
-}
-
 .message-form {
 
   button {
@@ -117,5 +113,13 @@ input.btn.btn-primary.btn-confirm.chat {
     background-color: transparent;
     font-size: 30px;
   }
+
+}
+
+div#new_discussion {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 2px;
+  font-size: 30px;
 
 }
