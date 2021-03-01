@@ -150,7 +150,6 @@ div#new_discussion {
   justify-content: space-evenly;
   border-radius: 13px;
   background-color: lightgrey;
-  margin-bottom: 150px;
 
   .action-new {
     background-color: transparent;
@@ -162,6 +161,36 @@ div#new_discussion {
     .discussion {
     background-color: white;
     }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+
+    }
   }
 
+}
+
+form#new_discussion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-color: $green-peps;
+
+}
+
+input[type="submit"] {
+  background-color: $green-peps;
+  border: none;
+  padding: 10px;
+  border-radius: 13px;
+}
+
+.action-container .return-arrow {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    padding-left: 20px;
 }
