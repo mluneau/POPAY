@@ -1,0 +1,42 @@
+<div class="profile-header">
+  <% if current_user.avatar.attached?  %>
+  <img class="avatar-large" src="<%= cl_image_path current_user.avatar.key, height: 300, width: 300, crop: :fill %>" />
+    <% else %>
+  <img class="avatar-large" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png" />
+  <% end %>
+  <h1><%= "#{current_user.first_name} #{current_user.last_name}" %></h1>
+</div>
+<div class="profile-info">
+  <h3 class="pb-3">Informations</h3>
+  <ul class="list-unstyled">
+    <li>
+      <p><strong>Identifiant: </strong> <%= current_user.email %></p>
+    </li>
+    <li>
+      <p><strong>Nom: </strong> <%= current_user.last_name %></p>
+    </li>
+    <li>
+      <p><strong>Prénom: </strong> <%= current_user.first_name %></p>
+    </li>
+    <li>
+      <p>
+        <p><strong>Rôle: </strong> <%= current_user.position == 'hr' ? "Responsable RH" : "Employé" %></p>
+      </p>
+    </li>
+    <li>
+      <p><strong>IBAN: </strong> <%= current_user.bank_accounts.first.iban %></p>
+    </li>
+    <li>
+      <p><strong>Revenus annuels: </strong> <%= current_user.annual_income %> €</p>
+    </li>
+  </ul>
+  <div class="profile-form">
+    <%= simple_form_for Discussion.new, url: discussions_path(Discussion.new) do |f| %>
+      <%= f.input :topic, as: :hidden, input_html: { "value": "RH - Modification de données"} %>
+      <%= f.input :hr_id, as: :hidden, input_html: {"value": User.where(position: "hr").first.id} %>
+      <%= f.submit "Demander une modification", class: "btn btn-primary btn-sm" %>
+    <% end %>
+  </div>
+
+
+</div>
