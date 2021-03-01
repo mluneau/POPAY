@@ -4,9 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :position, presence: true, inclusion: { in: ApplicationController::USER_POSITION }
-
-
   has_many :appointments, foreign_key: :employee_id
   has_many :hr_appointments, foreign_key: :hr_id, class_name: "Appointment"
 
