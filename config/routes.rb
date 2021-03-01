@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:show, :index]
 
-  resources :discussions, only: [:new, :create, :index, :show, :delete] do
+  resources :discussions, only: [:new, :create, :index, :show] do
     resources :messages, only: :create
   end
 
