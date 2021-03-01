@@ -1,0 +1,18 @@
+// app/assets/config/manifest.json.erb
+{
+  "background_color": "white",
+  "description": "Avec Popay fini l'attente de la fin du mois. En 2 clics, demandez une avance sur votre salaire et Popay s'occupe de tout",
+  "display": "fullscreen",
+  "name": "Popay",
+  "icons": [
+    <% files = Dir.entries(Rails.root.join("app/assets/images/icons/")).select {|f| !File.directory? f} %>
+    <% files.each_with_index do |file, index| %>
+      <% match = file.match(/.+-(?<size>\d{2,3}x\d{2,3}).png/) %>
+      {
+        "src": "<%= image_path "icons/#{file}" %>",
+        "sizes": "<%= match && match[:size] %>",
+        "type": "image/png"
+      }<%= "," unless (files.size - 1) == index %>
+    <% end %>
+  ]
+}
