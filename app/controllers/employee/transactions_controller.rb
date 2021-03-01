@@ -9,6 +9,13 @@ class Employee::TransactionsController < ApplicationController
     authorize @transaction
   end
 
+  def show
+    @disable_triangle_background = true
+    @enable_squared_background = true
+    @transaction = Transaction.find(params[:id])
+    authorize @transaction
+  end
+
   def create
     @transaction = Transaction.new(transaction_params)
     # @transaction.bank_account = BankAccount.find(params[:transaction][:bank_account])
@@ -17,7 +24,8 @@ class Employee::TransactionsController < ApplicationController
     authorize @transaction
 
     if @transaction.save
-      redirect_to employee_transactions_path
+      redirect_to employee_transaction_path(@transaction)
+      return
     else
       render :new
     end
