@@ -1,2 +1,18 @@
-<h1>Appointments#new</h1>
-<p>Find me in app/views/appointments/new.html.erb</p>
+<div class="action-container">
+  <div class="return-arrow">
+    <a href="/discussions"> <i class='fas fa-arrow-left'></i> </a>
+  </div>
+
+  <div class="option-tabs">
+    <div class="action-new discussion ">
+      <a href="/discussions/new">Discussion</a>
+    </div>
+    <div class="action-new appointment <%= "bg-white" if controller_name == "appointments" %>">
+      <a href="#">Rendez-vous</a>
+    </div>
+  </div>
+    <%= simple_form_for @appointment, url: employee_appointments_path do |f| %>
+      <%= f.input :hr_id, label: false, placeholder: "HR", collection: current_user.company.users.where(position: 'hr'), label_method: :full_name %>
+      <%= f.submit %>
+    <% end %>
+</div>
