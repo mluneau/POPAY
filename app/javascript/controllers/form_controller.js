@@ -12,6 +12,7 @@ export default class extends Controller {
     }
   }
 
+
   goBack() {
     if (this.commentViewTarget.classList.contains('d-flex')) {
       this.commentViewTarget.classList.replace('d-flex', 'd-none')
@@ -27,11 +28,17 @@ export default class extends Controller {
     this.confirmTarget.classList.toggle('d-flex')
   }
 
-  updateAmount(event) {
+  updateAmount() {
     this.displayAmountTargets.forEach(element => element.innerText = this.sliderAmountTarget.value)
   }
 
   updateComment() {
     this.displayCommentTarget.innerText = this.inputCommentTarget.value
+  }
+
+  setAmount(event) {
+    console.log(event.target.dataset.value)
+    this.displayAmountTargets.forEach(element => element.innerText = event.target.dataset.value)
+    this.goForward()
   }
 }
