@@ -194,3 +194,16 @@ input[type="submit"] {
     width: 90vw;
     padding-left: 20px;
 }
+
+
+input#discussion_topic {
+  border-color: $green-peps;
+  border-radius: 4px;
+
+}
+
+.form-control {
+  border-radius: 4px;
+  border-color: $green-peps;
+
+}

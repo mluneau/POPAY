@@ -19,6 +19,10 @@ class User < ApplicationRecord
   has_many :transactions
   has_one_attached :avatar
 
+  def full_name
+    "#{first_name} #{last_name}"
+  end
+
   def available_cash
     monthly_income = annual_income / 12
     daily_income = monthly_income / 20
