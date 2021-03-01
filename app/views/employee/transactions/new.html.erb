@@ -25,7 +25,7 @@
         <p class="amount">Vous avez demandé</p>
         <h2><span data-form-target="displayAmount"><%= @available_cash %></span>   €</h2>
         <p>à partir du <%= localize(Date.today, format: "%d %B %Y") %></p>
-        <%= f.input :comment, label: false, placeholder: "Un commentaire?", input_html: {"data-form-target": "inputComment", "data-action": "input->form#updateComment"} %>
+        <%= f.input :comment, label: false, placeholder: "Laissez un commentaire ?", input_html: {"data-form-target": "inputComment", "data-action": "input->form#updateComment"} %>
         <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goForward">Suivant</a>
       </div>
       <div data-form-target="confirmView" class="d-none flex-column flex-grow-1 justify-content-between">
@@ -33,7 +33,7 @@
         <p class="amountView">Vous avez demandé</p>
         <h2><span data-form-target="displayAmount"><%= @available_cash %></span>   €</h2>
         <p>à partir du <%= localize(Date.today, format: "%d %B %Y") %></p>
-        <p><strong>Votre commentaire: </strong><br><span data-form-target="displayComment"></span></p>
+        <p><strong>Votre commentaire </strong><br><span data-form-target="displayComment"></span></p>
         <%= f.submit "Confirmer", class: "btn btn-primary btn-confirm" %>
       </div>
 

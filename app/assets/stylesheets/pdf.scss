@@ -1,0 +1,16 @@
+#pdf_photo {
+align-content: center;
+justify-content: center;
+
+ img {
+   width: 100%;
+   height: 100%;
+ }
+}
+
+#pdf_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+}

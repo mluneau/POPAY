@@ -13,4 +13,8 @@ class TransactionPolicy < ApplicationPolicy
     record.user == user
   end
 
+  def confirmation?
+    record.user == user
+  end
+
 end

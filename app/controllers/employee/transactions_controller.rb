@@ -1,6 +1,6 @@
 class Employee::TransactionsController < ApplicationController
   def index
-    @transactions = policy_scope(Transaction)
+    @transactions = policy_scope(Transaction).order(due_date: :desc)
   end
 
   def new
@@ -21,6 +21,13 @@ class Employee::TransactionsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def confirmation
+    @transaction = Transaction.find(params[:id])
+    @transaction.user = current_user
+    authorize @transaction
+    render pdf: "confirmation_#{@transaction.due_date}"   # Excluding ".pdf" extension.
   end
 
   private
