@@ -1,16 +1,15 @@
-#pdf_photo {
-align-content: center;
-justify-content: center;
-
- img {
-   width: 100%;
-   height: 100%;
- }
+#head_pdf {
+  display: flex;
+  justify-content: space-between;
 }
 
 #pdf_title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex !important;
+  // justify-content: center !important;
   text-decoration: underline;
+}
+
+#separateur {
+  border-bottom: 5px solid black;
+  padding-bottom: 10px;
 }

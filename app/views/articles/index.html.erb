@@ -7,22 +7,18 @@
 
 <!-- browse buttons -->
 
-<div class="d-flex justify-content-around">
-  <% unless @category == "all" %>
-    <%= link_to "All", article_path, class: 'btn btn-ghost' %>
-  <% end %>
+<div class="flex-start justify-content-around">
+  <%= link_to "Tous", articles_path, class: 'button_category' %>
   <% ApplicationController::ARTICLE_CATEGORIES.each do |article_category| %>
-    <%= link_to article_category, article_path(category: article_category), class: "btn btn-ghost#{'-selected' if params[:category] == sport_category}" %>
+  <%= link_to article_category, articles_path(category: article_category), class: "button_category" %>
   <% end %>
 </div>
-
 
 <div>
   <% @articles.each do |article| %>
   <%= link_to article_path(article), class:"link-card" do %>
     <div class="card-product_article">
       
-
         <%= cl_image_tag article.photo.key %>
         <div class="card-product-infos">
           <h2><%= article.title %></h2>
