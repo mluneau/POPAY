@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:show, :index]
 
-  resources :discussions, only: [:new, :create, :index, :show, :delete] do
+  resources :discussions, only: [:new, :create, :index, :show] do
     resources :messages, only: :create
   end
 
@@ -17,10 +17,10 @@ Rails.application.routes.draw do
 
   namespace :employee do
     resource :dashboard, only: [:show]
+    resources :appointments, only: [:new, :create]
     resources :transactions, only: [:index, :new, :create, :show] do
       member { get :confirmation }
     end
-    resources :appointments, only: [:new, :create, :index, :show]
   end
 
   resources :bank_accounts, only: [:new, :create]

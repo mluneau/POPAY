@@ -1,11 +1,19 @@
 <div class="action-container">
-  <%= simple_form_for @discussion, url: discussions_path do |f| %>
-    <%= f.input :topic, label: false, placeholder: "Topic" %>
-    <%= f.input :hr_id, collection: User.where(company: current_user.company).map {|user| user.first_name} %>
-    <%= button_tag do %>
-      <i class='fas fa-paper-plane'></i>  
-    <% end %>
-  <% end %>
+  <div class="return-arrow">
+    <a href="/discussions"> <i class='fas fa-arrow-left'></i> </a>
   </div>
-</div>
 
+  <div class="option-tabs">
+    <div class="action-new discussion <%= "bg-white" if controller_name == "discussions" %>">
+      <a href="#">Discussion</a>
+    </div>
+    <div class="action-new appointment">
+      <a href="/employee/appointments/new">Rendez-vous</a>
+    </div>
+  </div>
+    <%= simple_form_for @discussion, url: discussions_path(@discussion) do |f| %>
+      <%= f.input :topic, label: false, placeholder: "Topic" %>
+      <%= f.input :hr_id, label: false, placeholder: "HR", collection: current_user.company.users.where(position: 'hr'), label_method: :full_name %>
+      <%= f.submit %>
+    <% end %>
+</div>

@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  validates :position, presence: true, inclusion: { in: ApplicationController::USER_POSITION }
+
+
   has_many :appointments, foreign_key: :employee_id
   has_many :hr_appointments, foreign_key: :hr_id, class_name: "Appointment"
 
@@ -15,6 +18,10 @@ class User < ApplicationRecord
   has_many :messages
   has_many :transactions
   has_one_attached :avatar
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 
   def available_cash
     monthly_income = annual_income / 12

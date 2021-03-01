@@ -15,10 +15,10 @@ class DiscussionsController < ApplicationController
 
   def create
     @discussion = Discussion.new(discussion_params)
+    @discussion.employee = current_user
     authorize @discussion
-    @discussion.employee_id = current_user.id
     if @discussion.save
-      redirect_to discussion_path
+      redirect_to discussion_path(@discussion)
     else
       render :new
     end
@@ -33,6 +33,6 @@ class DiscussionsController < ApplicationController
 
   def discussion_params
     params.require(:discussion)
-          .permit([:topic])
+          .permit(:topic, :hr_id)
   end
 end
