@@ -1,17 +1,14 @@
 <div class="action-container">
   <div class="return-arrow">
-    
     <a href="/discussions"> <i class='fas fa-arrow-left'></i> </a>
-    <!-- <%= link_to "", discussions_path()  %> -->
   </div>
 
   <div class="option-tabs">
     <div class="action-new discussion <%= "bg-white" if controller_name == "discussions" %>">
-      
-      <p>Discussions</p>
+      <a href="#">Discussion</a>
     </div>
     <div class="action-new appointment">
-      <p>Rendez-vous</p>
+      <a href="/employee/appointments/new">Rendez-vous</a>
     </div>
   </div>
     <%= simple_form_for @discussion, url: discussions_path(@discussion) do |f| %>

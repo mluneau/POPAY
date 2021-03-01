@@ -15,9 +15,9 @@ class Employee::AppointmentsController < ApplicationController
 
   def create
     @appointment = Appointment.new(appointment_params)
+    @appointment.employee = current_user
     authorize @appointment
-    @appointment.user   = current_user
-    if @discussion.save
+    if @appointment.save
       redirect_to root_path
     else
       render :new
@@ -33,6 +33,6 @@ class Employee::AppointmentsController < ApplicationController
 
   def appointment_params
     params.require(:appointment)
-          .permit([:meeting_date])
+          .permit([:meeting_date, :hr_id])
   end
 end
