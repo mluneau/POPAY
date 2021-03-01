@@ -12,8 +12,8 @@
     </div>
   </div>
     <%= simple_form_for @discussion, url: discussions_path(@discussion) do |f| %>
-      <%= f.input :topic, label: false, placeholder: "Topic" %>
+      <%= f.input :topic, label: false, placeholder: "Topic", input_html: { "value": params[:topic]} %>
       <%= f.input :hr_id, label: false, placeholder: "HR", collection: current_user.company.users.where(position: 'hr'), label_method: :full_name %>
-      <%= f.submit %>
+      <%= f.submit "Lancer une discussion", class: "btn btn-primary btn-confirm" %>
     <% end %>
 </div>

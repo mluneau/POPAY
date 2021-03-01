@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   resources :companies, only: [:new, :create]
 
 
-
+  get 'profile', to: "pages#profile"
   get 'about_us', to: "pages#about_us"
 
 end

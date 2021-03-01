@@ -1,0 +1,27 @@
+.green-square-small {
+  width: 100vw;
+  height: 0px;
+  border-left: 0px solid transparent;
+  border-bottom: 30vh solid #2BC798;
+  position: fixed;
+  z-index: -1;
+}
+
+.profile-header {
+  height: 30vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+.profile-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+form#new_discussion {
+  margin-top: 0;
+  margin-bottom: 0;
+}

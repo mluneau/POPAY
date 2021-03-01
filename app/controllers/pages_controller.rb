@@ -3,4 +3,9 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def profile
+    @disable_triangle_background = true
+    @enable_squared_background_small = true
+  end
 end
