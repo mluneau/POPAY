@@ -17,14 +17,17 @@ Rails.application.routes.draw do
 
   namespace :employee do
     resource :dashboard, only: [:show]
-    resources :transactions, only: [:index, :new, :create, :show]
-
+    resources :transactions, only: [:index, :new, :create, :show] do
+      member { get :confirmation }
+    end
     resources :appointments, only: [:new, :create, :index, :show]
   end
 
   resources :bank_accounts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
   resources :companies, only: [:new, :create]
+
+
 
   get 'about_us', to: "pages#about_us"
 
