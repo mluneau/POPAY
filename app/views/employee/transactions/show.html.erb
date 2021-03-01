@@ -1,0 +1,18 @@
+<div class="transaction-confirmation__title">
+  <h5><i class="fas fa-check-circle"></i></h5>
+  <h5>Demande validée !</h5>
+  <h2>Merci pour votre confiance ! 🙏</h2>
+</div>
+
+<div class="transaction-confirmation__info">
+  <h5>Demande d'acompte</h5>
+  <p><small><strong>Date de la demande :</strong> <%= localize(@transaction.created_at, format: "%d %B %Y") %></small></p>
+  <p><small><strong>Acompte de :</strong> <%= @transaction.amount %> € </small></p>
+  <% if @transaction.comment != "" %>
+    <p><small><strong>Votre commentaire :</strong> <%= @transaction.comment %></small></p>
+  <% else %>
+    <p><small><strong>Votre commentaire :</strong> Pas de commentaire</small></p>
+  <% end %>
+
+
+</div>
