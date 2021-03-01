@@ -9,12 +9,15 @@ class TransactionPolicy < ApplicationPolicy
     end
   end
 
-  def create?
-    record.user == user
+  def new?
+    user.transactions.empty? || user.transactions.last.created_at.month != Date.today.month
   end
 
   def show?
-    create?
+    record.user == user
   end
 
+  def create?
+    new? && show?
+  end
 end

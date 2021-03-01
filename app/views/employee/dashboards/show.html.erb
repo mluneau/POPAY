@@ -5,8 +5,14 @@
       Acompte disponible <br>
       <small>au <%= localize(Date.today, format: "%d %B %Y") %></small>
     </p>
-    <h2> <%= @available_cash %> €</h2>
 
-    <%= link_to "Faire une demande", new_employee_transaction_path, class: "btn btn-primary btn-confirm"  %>
+    <% if policy(Transaction.new).new? %>
+      <h2> <%= @available_cash %> €</h2>
+      <%= link_to "Faire une demande", new_employee_transaction_path, class: "btn btn-primary btn-confirm" %>
+    <% else %>
+      <h2> <%= @available_cash %> €*</h2>
+      <p style="margin:0;"><small><strong>*Vous avez déjà sollicité un acompte pour le mois de <%= localize(Date.today, format: "%B").capitalize %></strong> </small></p>
+      <button class="btn btn-primary btn-confirm" style="margin:0;" disabled>Faire une demande</button>
+    <% end %>
   </div>
 </div>
