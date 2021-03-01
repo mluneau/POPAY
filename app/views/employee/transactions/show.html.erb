@@ -3,16 +3,30 @@
   <h5>Demande validée !</h5>
   <h2>Merci pour votre confiance ! 🙏</h2>
 </div>
+<h5>Demande d'acompte</h5>
+<div class="transaction-confirmation__info_container">
 
-<div class="transaction-confirmation__info">
-  <h5>Demande d'acompte</h5>
-  <p><small><strong>Date de la demande :</strong> <%= localize(@transaction.created_at, format: "%d %B %Y") %></small></p>
-  <p><small><strong>Acompte de :</strong> <%= @transaction.amount %> € </small></p>
-  <% if @transaction.comment != "" %>
-    <p><small><strong>Votre commentaire :</strong> <%= @transaction.comment %></small></p>
-  <% else %>
-    <p><small><strong>Votre commentaire :</strong> Pas de commentaire</small></p>
-  <% end %>
+  <div class="transaction-confirmation__info">
 
-
+    <ul class="list-unstyled">
+      <p><strong>Informations</strong></p>
+      <li>
+        <p><small><strong>Date de la demande :</strong> <%= localize(@transaction.created_at, format: "%d %B %Y") %></small></p>
+      </li>
+      <li>
+        <p><small><strong>Acompte de :</strong> <%= @transaction.amount %> € </small></p>
+      </li>
+      <li>
+        <% if @transaction.comment != "" %>
+          <p><small><strong>Votre commentaire :</strong> <%= @transaction.comment %></small></p>
+        <% else %>
+          <p><small><strong>Votre commentaire :</strong> Pas de commentaire</small></p>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+  <div class="transaction-confirmation__pdf">
+    <p><strong>Compte rendu</strong></p>
+    <div class="text-center" id="pdf-logo"><div><i class="far fa-file-pdf" style="padding-top: 12px"></i></div> </div>
+  </div>
 </div>

@@ -12,9 +12,41 @@
   padding-top: 5vh;
 }
 
+.transaction-confirmation__info_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.transaction-confirmation__info {
+  border-right: 1px solid #251F47;
+  padding-right: 25px;
+  width: 250px;
+}
+
 .transaction-confirmation__info h5 {
   margin-bottom: 4vh;
   text-align: center;
+}
+
+.transaction-confirmation__pdf {
+  flex-grow: 1;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-confirmation__pdf p {
+  margin-bottom: 0;
+
+}
+
+#pdf-logo {
+  font-size: 60px;
+  flex-grow:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .transaction-confirmation__info p {
