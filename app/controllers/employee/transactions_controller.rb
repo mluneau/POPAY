@@ -1,11 +1,18 @@
 class Employee::TransactionsController < ApplicationController
   def index
-    @transactions = policy_scope(Transaction)
+    @transactions = policy_scope(Transaction).order(due_date: :desc)
   end
 
   def new
     @transaction = Transaction.new
     @available_cash = current_user.available_cash
+    authorize @transaction
+  end
+
+  def show
+    @disable_triangle_background = true
+    @enable_squared_background = true
+    @transaction = Transaction.find(params[:id])
     authorize @transaction
   end
 
@@ -17,10 +24,17 @@ class Employee::TransactionsController < ApplicationController
     authorize @transaction
 
     if @transaction.save
-      redirect_to employee_transactions_path
+      redirect_to employee_transaction_path(@transaction)
     else
-      render :new
+      redirect_to root_path
     end
+  end
+
+  def confirmation
+    @transaction = Transaction.find(params[:id])
+    @transaction.user = current_user
+    authorize @transaction
+    render pdf: "confirmation_#{@transaction.due_date}"   # Excluding ".pdf" extension.
   end
 
   private

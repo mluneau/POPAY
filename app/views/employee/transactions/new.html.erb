@@ -9,10 +9,11 @@
         <p class="amount">Choisissez votre montant</p>
 
         <h2><span data-form-target="displayAmount"><%= @available_cash / 2 %></span> €</h2>
-        <p><strong>Total disponible: </strong><%= @available_cash %> €</p>
+
         <div class="slidecontainer">
           <%= f.input :amount, label: false, as: :range, class: "slider", input_html: {"class":"slider", "data-form-target": "sliderAmount", "data-action": "input->form#updateAmount", "max": @available_cash, "step":"10", "value": @available_cash/2 }%>
         </div>
+        <p><strong>Total disponible: </strong><%= @available_cash %> €</p>
         <div class="d-flex justify-content-around">
           <div class="suggested-amount-bubble" data-form-target= "sliderAmount" ><%= @available_cash / 10 %> €</div>
           <div class="suggested-amount-bubble" data-form-target= "sliderAmount" ><%= @available_cash / 5 %> €</div>
@@ -21,22 +22,13 @@
         <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goForward">Suivant</a>
       </div>
       <div data-form-target="commentView" class="d-none flex-column flex-grow-1 justify-content-between">
-        <h1>❓</h1>
+        <h1>✅</h1>
         <p class="amount">Vous avez demandé</p>
         <h2><span data-form-target="displayAmount"><%= @available_cash %></span>   €</h2>
         <p>à partir du <%= localize(Date.today, format: "%d %B %Y") %></p>
-        <%= f.input :comment, label: false, placeholder: "Un commentaire?", input_html: {"data-form-target": "inputComment", "data-action": "input->form#updateComment"} %>
-        <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goForward">Suivant</a>
+        <%= f.input :comment, label: false, placeholder: "Laissez un commentaire?", input_html: {"data-form-target": "inputComment", "data-action": "input->form#updateComment"} %>
+        <%= f.submit "Confirmer", class: "btn btn-primary btn-confirm", input_html: {"data-action": "click->form#goForward" } %>
       </div>
-      <div data-form-target="confirmView" class="d-none flex-column flex-grow-1 justify-content-between">
-        <h1>✅</h1>
-        <p class="amountView">Vous avez demandé</p>
-        <h2><span data-form-target="displayAmount"><%= @available_cash %></span>   €</h2>
-        <p>à partir du <%= localize(Date.today, format: "%d %B %Y") %></p>
-        <p><strong>Votre commentaire: </strong><br><span data-form-target="displayComment"></span></p>
-        <%= f.submit "Confirmer", class: "btn btn-primary btn-confirm" %>
-      </div>
-
   <% end %>
   </div>
 </div>

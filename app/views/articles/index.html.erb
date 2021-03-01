@@ -5,6 +5,18 @@
   </div>
 </div>
 
+<!-- browse buttons -->
+
+<div class="d-flex justify-content-around">
+  <% unless @category == "all" %>
+    <%= link_to "All", article_path, class: 'btn btn-ghost' %>
+  <% end %>
+  <% ApplicationController::ARTICLE_CATEGORIES.each do |article_category| %>
+    <%= link_to article_category, article_path(category: article_category), class: "btn btn-ghost#{'-selected' if params[:category] == sport_category}" %>
+  <% end %>
+</div>
+
+
 <div>
   <% @articles.each do |article| %>
   <%= link_to article_path(article), class:"link-card" do %>

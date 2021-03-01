@@ -9,22 +9,14 @@ export default class extends Controller {
       this.amountViewTarget.classList.replace('d-flex', 'd-none')
       this.commentViewTarget.classList.replace('d-none', 'd-flex')
       this.navArrowTarget.classList.remove('d-none')
-    } else if (this.commentViewTarget.classList.contains('d-flex')) {
-      this.commentViewTarget.classList.replace('d-flex', 'd-none')
-      this.confirmViewTarget.classList.replace('d-none', 'd-flex')
     }
   }
 
   goBack() {
-    if (this.confirmViewTarget.classList.contains('d-flex')) {
-      this.confirmViewTarget.classList.replace('d-flex', 'd-none')
-      this.commentViewTarget.classList.replace('d-none', 'd-flex')
-    } else if (this.commentViewTarget.classList.contains('d-flex')) {
+    if (this.commentViewTarget.classList.contains('d-flex')) {
       this.commentViewTarget.classList.replace('d-flex', 'd-none')
       this.amountViewTarget.classList.replace('d-none', 'd-flex')
       this.navArrowTarget.classList.add('d-none')
-    } else {
-
     }
   }
 
