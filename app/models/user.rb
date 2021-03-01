@@ -27,6 +27,6 @@ class User < ApplicationRecord
       effective_worked_days += 1 if date.on_weekday?
     end
 
-    effective_worked_days * daily_income + 500
+    effective_worked_days * daily_income
   end
 end

@@ -25,9 +25,8 @@ class Employee::TransactionsController < ApplicationController
 
     if @transaction.save
       redirect_to employee_transaction_path(@transaction)
-      return
     else
-      render :new
+      redirect_to root_path
     end
   end
 

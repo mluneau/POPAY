@@ -1,6 +1,6 @@
 class Employee::DashboardsController < ApplicationController
   def show
     authorize :dashboard, :show?
-    @available_cash = current_user.available_cash
+    @available_cash = policy(Transaction.new).new? ? current_user.available_cash : 0
   end
 end
