@@ -1,0 +1,29 @@
+<div class="action-container">
+
+  <div class="option-tabs">
+    <div class="action-new discussion">
+      Discussions
+    </div>
+    <div class="action-new appointment">
+      <%= link_to new_employee_appointment do %>
+        Rendez-vous
+      <% end %>
+    </div>
+  </div>
+
+    <%= simple_form_for @discussion, url: discussions_path do |f| %>
+      <%= f.input :topic, label: false, placeholder: "Topic" %>
+      <%= f.input :hr_id, label: false, placeholder: "HR", collection: User.where(company: current_user.company).where(position: position = 'hr').map {|user| user.first_name} %>
+      
+    <% end %>
+  </div>
+
+</div>
+
+
+
+<!-- 
+<%= button_tag do %>
+        <i class='fas fa-paper-plane'></i>  
+<% end %>
+-->

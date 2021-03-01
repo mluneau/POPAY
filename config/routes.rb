@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     resource :dashboard, only: [:show]
     resources :transactions, only: [:index, :new, :create]
 
-    resources :appointments, only: [:new, :create, :index, :show]
+    resources :appointments, only: [:new, :create]
   end
 
   resources :bank_accounts, only: [:new, :create]

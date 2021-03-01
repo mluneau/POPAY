@@ -14,7 +14,7 @@
 .discussion-container h3 {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }  
   
@@ -125,5 +125,43 @@ div#new_discussion {
   flex-direction: row-reverse;
   margin-right: 2px;
   font-size: 30px;
+
+}
+
+
+.action-container {
+  display: flex;
+  flex-direction: column;
+  // padding: 120px 15px;
+  height: calc(85vh - 76px);
+  margin-top: 5vh;
+  position: relative;
+  box-shadow: 4px 4px 14px rgba(0,0,0,0.1);
+  border-radius: 13px;
+  background-color: white;
+}
+
+.action-container .option-tabs {
+  display: flex;
+  flex-direction: row;
+  padding: calc(13vh - 82px) 1vh;
+  width: 80vw;
+  height: auto;
+  justify-content: space-evenly;
+  border-radius: 13px;
+  background-color: lightgrey;
+  margin-bottom: 150px;
+
+  .action-new {
+    background-color: transparent;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 13px;
+
+    .discussion {
+    background-color: white;
+    }
+  }
 
 }
