@@ -34,7 +34,7 @@
     <%= simple_form_for Discussion.new, url: discussions_path(Discussion.new) do |f| %>
       <%= f.input :topic, as: :hidden, input_html: { "value": "RH - Modification de données"} %>
       <%= f.input :hr_id, as: :hidden, input_html: {"value": User.where(position: "hr").first.id} %>
-      <%= f.submit "Lancer une discussion", class: "btn btn-primary btn-sm" %>
+      <%= f.submit "Demander une modification", class: "btn btn-primary btn-sm" %>
     <% end %>
   </div>
 
