@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   namespace :employee do
     resource :dashboard, only: [:show]
-    resources :transactions, only: [:index, :new, :create]
+    resources :transactions, only: [:index, :new, :create, :show]
 
     resources :appointments, only: [:new, :create, :index, :show]
   end

@@ -13,4 +13,8 @@ class TransactionPolicy < ApplicationPolicy
     record.user == user
   end
 
+  def show?
+    create?
+  end
+
 end

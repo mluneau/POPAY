@@ -11,3 +11,12 @@
 body {
   background-color: white;
 }
+
+.green-square {
+  width: 100vw;
+  height: 0px;
+  border-left: 0px solid transparent;
+  border-bottom: 50vh solid #2BC798;
+  position: fixed;
+  z-index: -1;
+}
