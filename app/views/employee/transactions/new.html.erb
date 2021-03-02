@@ -11,7 +11,7 @@
         <h2><span data-form-target="displayAmount"><%= @available_cash / 2 %></span> €</h2>
 
         <div class="slidecontainer">
-          <%= f.input :amount, label: false, as: :range, class: "slider", input_html: {"class":"slider", "data-form-target": "sliderAmount", "data-action": "input->form#updateAmount", "max": @available_cash, "step":"10", "value": @available_cash/2 }%>
+          <%= f.input :amount, label: false, as: :range, class: "slider", input_html: {"class":"slider", "data-form-target": "sliderAmount", "data-action": "input->form#updateAmount", "max": @available_cash, "step":"5", "value": @available_cash/2 }%>
         </div>
         <p><strong>Total disponible: </strong><%= @available_cash %> €</p>
         <div class="d-flex justify-content-around">
