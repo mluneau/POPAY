@@ -45,13 +45,13 @@ nico_popay = User.create!(email: "nicolas@popay.org", company: popay,  password:
 
 puts "Creating users for Xtrem..."
 
-louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "A", position: "employee", annual_income: 27000 )
-pierre_xtrem = User.create!(email: "pierre@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 25000)
-max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"password", first_name: 'Maxence', last_name: "L", position: "hr", annual_income: 30000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "G", position: "employee", annual_income: 20000)
+louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "A", position: "employee", annual_income: 27000, telephone: '+33670076118' )
+pierre_xtrem = User.create!(email: "pierre@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"password", first_name: 'Maxence', last_name: "L", position: "hr", annual_income: 34000, telephone: '+33761528065')
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "G", position: "employee", annual_income: 20000, telephone: '+33640120596')
 -----------------------------------------------------------------------------------------------------------------------
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+jean_xtrem = User.create!(email: "jean@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+jean_xtrem = User.create!(email: "jeanlas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
@@ -67,6 +67,7 @@ nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
 -----------------------------------------------------------------------------------------------------------------------
+
 
 
 puts "Creating bank accounts for Xtrem..."
@@ -95,20 +96,35 @@ bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "
 -----------------------------------------------------------------------------------------------------------------------
 
 
+
 puts "Creating bank accounts for Popay..."
 bank_account_louis_popay = BankAccount.create!(user: louis_popay, bank_name: "BNP Paribas", bank_address: "2 avenue du pognon", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
 bank_account_max_popay = BankAccount.create!(user: max_popay, bank_name: "Crédit Agricole", bank_address: "6 rue du billet de 100", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_nico_popay = BankAccount.create!(user: nico_popay, bank_name: "Banque Populaire", bank_address: "15 avenue de la moulah", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_pierre_popay = BankAccount.create!(user: pierre_popay, bank_name: "Caisse d'épargne", bank_address: "1, Avenue du billet de 20", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 
+
+
 puts "Creating transactions for Xtrem"
+
+-----------------------------------------------------------------------------------------------------------------------------
+### User 1 ###
 Transaction.create!(user: nico_xtrem, amount: 1500, due_date: "15/02/2021", status: "en attente", comment: "Wagon à payer", bank_account: bank_account_nico_xtrem)
 Transaction.create!(user: nico_xtrem, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "payé", comment: "Dentiste", bank_account: bank_account_nico_xtrem2)
 Transaction.create!(user: nico_xtrem, amount: 800, due_date: "15/12/2020", transfer_date: "16/01/2020", status: "payé", comment: "Cadeau mam", bank_account: bank_account_nico_xtrem)
+-----------------------------------------------------------------------------------------------------------------------------
+### User 2 ###
 Transaction.create!(user: louis_xtrem, amount: 700, due_date: "15/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
 Transaction.create!(user: louis_xtrem, amount: 500, due_date: "16/12/2020", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
+-----------------------------------------------------------------------------------------------------------------------------
+### User 3 ###
 Transaction.create!(user: pierre_xtrem, amount: 700, due_date: "15/02/2021", status: "en attente", comment: "Rentrée des classes", bank_account: bank_account_pierre_xtrem)
+-----------------------------------------------------------------------------------------------------------------------------
+### User 4 ###
 Transaction.create!(user: max_xtrem, amount: 700, due_date: "15/01/2021", status: "en attente", comment: "Netflix", bank_account: bank_account_max_xtrem)
+-----------------------------------------------------------------------------------------------------------------------------
+### User 5 ###
+
 
 puts "Creating transactions for Popay"
 Transaction.create!(user: pierre_popay, amount: 1500, due_date: "15/02/2021", status: "en attente", comment: "Wagon à payer", bank_account: bank_account_pierre_popay)
