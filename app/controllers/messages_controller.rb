@@ -2,12 +2,17 @@ class MessagesController < ApplicationController
   before_action :authenticate_user!
 
   def create
-    @discussion = Discussion.find(params[:discussion_id])    
+    @discussion = Discussion.find(params[:discussion_id])
     @message = Message.new(message_params)
     authorize @message
     @message.user = current_user
     @message.discussion = @discussion
     if @message.save
+      Notification.create(
+        user: User.find(@message.discussion.hr_id),
+        content: "Vous avez un nouveau message de la part de #{current_user.full_name}",
+        category: "message"
+        )
       redirect_to discussion_path(@discussion, anchor: "messages")
     else
       render :new
