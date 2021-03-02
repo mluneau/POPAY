@@ -1,4 +1,4 @@
-class Hr::DashboardsController < ApplicationController
+class Hr::DashboardsController < Hr::BaseController
 
   def show
     authorize :dashboard, :show?

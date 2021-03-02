@@ -14,6 +14,7 @@ class User < ApplicationRecord
   has_many :bank_accounts, dependent: :destroy
   has_many :messages
   has_many :transactions
+  has_many :notifications, dependent: :destroy
   has_one_attached :avatar
 
   def full_name
@@ -31,6 +32,6 @@ class User < ApplicationRecord
       effective_worked_days += 1 if date.on_weekday?
     end
 
-    (effective_worked_days * daily_income)/10 * 10
+    (effective_worked_days * daily_income) / 10 * 10
   end
 end
