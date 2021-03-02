@@ -48,8 +48,25 @@ puts "Creating users for Xtrem..."
 louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "A", position: "employee", annual_income: 27000 )
 pierre_xtrem = User.create!(email: "pierre@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 25000)
 max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"password", first_name: 'Maxence', last_name: "L", position: "hr", annual_income: 30000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "G", position: "employee", annual_income: 20000)
+-----------------------------------------------------------------------------------------------------------------------
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+-----------------------------------------------------------------------------------------------------------------------
 
 
 puts "Creating bank accounts for Xtrem..."
@@ -58,6 +75,24 @@ bank_account_max_xtrem = BankAccount.create!(user: max_xtrem, bank_name: "LCL", 
 bank_account_nico_xtrem = BankAccount.create!(user: nico_xtrem, bank_name: "Société Générale", bank_address: "1, Avenue de la moulah", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_nico_xtrem2 = BankAccount.create!(user: nico_xtrem, bank_name: "BNP Paribas", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1O50")
 bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+-----------------------------------------------------------------------------------------------------------------------
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
+-----------------------------------------------------------------------------------------------------------------------
 
 
 puts "Creating bank accounts for Popay..."
