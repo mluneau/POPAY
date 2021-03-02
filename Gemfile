@@ -72,3 +72,5 @@ gem 'cloudinary', '~> 1.16.0'
 # Generate PDF
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+
+gem "chartkick"

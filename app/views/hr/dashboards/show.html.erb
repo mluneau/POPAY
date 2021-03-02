@@ -1,1 +1,25 @@
-<h1>Dashboard show</h1>
+<div class="dash-container">
+  <div class="dday"><%= localize(Date.today, format: "%B %Y").capitalize %></div>
+  <div class="card-topics d-flex justify-content-around">
+    <div class="card-data">Salariés éligibles</div>
+    <div class="card-data"># salariés actifs</div>
+    <div class="card-data"># acomptes moyens</div>
+    <div class="card-data">Total acomptes</div>
+  </div>
+  <div class="graphs d-flex justify-content-around">
+    <div class="graph-nb-acomptes">
+      <div class="graph-nb-acomptes-title">Evolution du # d'acomptes / mois</div>
+      <div class="graph-nb-acomptes-graph"></div>
+    </div>
+    <div class="graph-total-acomptes">
+      <div class="graph-total-acomptes-title">Evolution total acomptes / mois</div>
+      <div class="graph-total-acomptes-graph"></div>
+    </div>
+  </div>
+  <div class="last-acomptes">Derniers acomptes :</div>
+  <div class="last-acomptes-list">
+    <% @five_last_transactions.each do |transaction| %>
+      <div></div>
+    <% end %>
+  </div>
+</div>
