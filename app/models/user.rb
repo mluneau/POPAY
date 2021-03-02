@@ -14,6 +14,7 @@ class User < ApplicationRecord
   has_many :bank_accounts, dependent: :destroy
   has_many :messages
   has_many :transactions
+  has_many :notifications, dependent: :destroy
   has_one_attached :avatar
 
   def full_name
