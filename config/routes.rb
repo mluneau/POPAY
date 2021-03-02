@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'dashboards/show'
+  get 'dashboard/show'
   devise_for :users
   root to: 'employee/dashboards#show'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
@@ -6,7 +8,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:show, :index]
 
   resources :discussions, only: [:new, :create, :index, :show] do
-    resources :messages, only: :create
+    resource :messages, only: :create
   end
 
   namespace :hr do

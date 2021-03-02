@@ -1,16 +1,34 @@
-<h1>All transactions</h1>
-<ul class="list-unstyled">
-<% @transactions.each do |transaction|  %>
-  <li>
-    <br>
-    <p><strong>Transaction Id: </strong><%= transaction.id %></p>
-    <p><strong>Bank Account: </strong><%= transaction.bank_account.bank_name %> - <%= transaction.bank_account.iban %></p>
-    <p><strong>Due date: </strong><%= transaction.due_date %></p>
-    <p><strong>Amount: </strong><%= transaction.amount %></p>
-    <p><strong>Status: </strong><%= transaction.status %></p>
-    <% if transaction.status == "paid" %>
-      <p><strong>Transfer Date: </strong><%= transaction.transfer_date %></p>
-    <% end %>
-  </li>
+<div class="d-flex justify-content-center" style="margin-bottom: 10px">
+  <div class="d-flex">
+    <h3 class="text-white"> 🗓   Historique</h3>
+  </div>
+</div>
+
+<% @transactions.each do |transaction| %>
+  <div class="card-product w-100">
+
+    <div class="transaction w-100">
+      <h2 class="green-title"><span class="icon">📅</span><%= localize(transaction.due_date, format: "%d %B %Y") %></h2>
+      <div class="amount">
+          <span class="icon"> 💰 </span><%= transaction.amount %> <i class="fas fa-euro-sign"></i>
+      </div>
+    </div>
+    <div class="transaction w-100">
+      <p><%= transaction.comment %></p>
+      <div>
+        <% if transaction.status != "payé" %>
+          <p class="btn btn-warning" id="btn_historique"><strong>En cours</strong></p>
+        <% else %>
+          <p class="btn btn-primary" id="btn_historique"><strong>Payé</strong></p>
+        <% end %>
+      </div>
+    </div>
+    <div class="transaction w-100">
+      <i class="far fa-file-pdf" style="padding-top: 12px"></i>
+    </div>
+
+  </div>
 <% end %>
-</ul>
+
+
+
