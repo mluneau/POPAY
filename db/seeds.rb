@@ -49,7 +49,22 @@ louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"p
 pierre_xtrem = User.create!(email: "pierre@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
 max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"password", first_name: 'Maxence', last_name: "L", position: "hr", annual_income: 30000, telephone: '+33761528065')
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000, telephone: '+33640120596')
-
+paul_xtrem = User.create!(email: "paul@xtrem.org", company: xtrem,  password:"password", first_name: 'Paul', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+jack_xtrem = User.create!(email: "jack@xtrem.org", company: xtrem,  password:"password", first_name: 'Jack', last_name: "P", position: "employee", annual_income: 35000, telephone: '+33686240099')
+saul_xtrem = User.create!(email: "saul@xtrem.org", company: xtrem,  password:"password", first_name: 'Saul', last_name: "K", position: "employee", annual_income: 22000, telephone: '+33686240099')
+john_xtrem = User.create!(email: "john@xtrem.org", company: xtrem,  password:"password", first_name: 'John', last_name: "W", position: "employee", annual_income: 21000, telephone: '+33686240099')
+alphonse_xtrem = User.create!(email: "alphonse@xtrem.org", company: xtrem,  password:"password", first_name: 'Alphonse', last_name: "I", position: "employee", annual_income: 22500, telephone: '+33686240099')
+robin_xtrem = User.create!(email: "robin@xtrem.org", company: xtrem,  password:"password", first_name: 'Robin', last_name: "I", position: "employee", annual_income: 25000, telephone: '+33686240099')
+philippe_xtrem = User.create!(email: "philippe@xtrem.org", company: xtrem,  password:"password", first_name: 'Philippe', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+marie_xtrem = User.create!(email: "marie@xtrem.org", company: xtrem,  password:"password", first_name: 'Marie', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+maria_xtrem = User.create!(email: "maria@xtrem.org", company: xtrem,  password:"password", first_name: 'Maria', last_name: "O", position: "employee", annual_income: 20000, telephone: '+33686240099')
+alexandra_xtrem = User.create!(email: "alexandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Alexandra', last_name: "A", position: "employee", annual_income: 19000, telephone: '+33686240099')
+ismael_xtrem = User.create!(email: "ismael@xtrem.org", company: xtrem,  password:"password", first_name: 'Ismael', last_name: "R", position: "employee", annual_income: 21200, telephone: '+33686240099')
+rachida_xtrem = User.create!(email: "rachida@xtrem.org", company: xtrem,  password:"password", first_name: 'Rachida', last_name: "T", position: "employee", annual_income: 22000, telephone: '+33686240099')
+fatima_xtrem = User.create!(email: "fatima@xtrem.org", company: xtrem,  password:"password", first_name: 'Fatima', last_name: "R", position: "employee", annual_income: 29000, telephone: '+33686240099')
+sandra_xtrem = User.create!(email: "sandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Sandra', last_name: "R", position: "employee", annual_income: 28000, telephone: '+33686240099')
+carlos_xtrem = User.create!(email: "carlos@xtrem.org", company: xtrem,  password:"password", first_name: 'Carlos', last_name: "T", position: "employee", annual_income: 27000, telephone: '+33686240099')
+fiona_xtrem = User.create!(email: "fiona@xtrem.org", company: xtrem,  password:"password", first_name: 'Fiona', last_name: "U", position: "employee", annual_income: 26000, telephone: '+33686240099')
 
 
 puts "Creating bank accounts for Xtrem..."
