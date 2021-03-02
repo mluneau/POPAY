@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+  <%= link_to destroy_user_session_path, method: :delete do %>
+    <div class="login-mobile"><i class="fas fa-power-off"></i></div>
+  <% end %>
+<% else %>
+  <%= link_to new_user_session_path do %>
+    <div class="login-mobile"><i class="fas fa-sign-in-alt"></i></div>
+  <% end %>
+<% end %>
