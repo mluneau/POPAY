@@ -10,7 +10,7 @@ class TransactionPolicy < ApplicationPolicy
   end
 
   def new?
-    user.transactions.empty? || user.transactions.last.created_at.month != Date.today.month
+    user.transactions.empty? || user.transactions.last.due_date.month != Date.today.month
   end
 
   def show?
