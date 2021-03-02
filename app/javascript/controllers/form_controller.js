@@ -39,6 +39,7 @@ export default class extends Controller {
   setAmount(event) {
     console.log(event.target.dataset.value)
     this.displayAmountTargets.forEach(element => element.innerText = event.target.dataset.value)
+    this.sliderAmountTarget.value = event.target.dataset.value
     this.goForward()
   }
 }
