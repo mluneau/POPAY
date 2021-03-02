@@ -32,6 +32,7 @@ class Employee::TransactionsController < ApplicationController
         content: "Nouvelle demande d'acompte de #{current_user.full_name} d'un montant de #{@transaction.amount} € le #{localize(@transaction.due_date, format: "%d %B %Y")}"
         )
       redirect_to employee_transaction_path(@transaction)
+      Sms::Sender.new(tel: current_user.telephone, first_name: current_user.first_name, amount: @transaction.amount).call
     else
       redirect_to root_path
     end
