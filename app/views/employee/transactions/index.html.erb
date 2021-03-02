@@ -24,7 +24,9 @@
       </div>
     </div>
     <div class="transaction w-100">
-      <i class="far fa-file-pdf" style="padding-top: 12px"></i>
+      <%= link_to confirmation_employee_transaction_path(transaction), target: :_blank do %>
+        <i class="far fa-file-pdf" style="padding-top: 12px"></i>
+      <% end %>
     </div>
 
   </div>
