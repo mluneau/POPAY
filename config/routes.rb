@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :articles, only: [:show, :index]
 
   resources :discussions, only: [:new, :create, :index, :show] do
-    resources :messages, only: :create
+    resource :messages, only: :create
   end
 
   namespace :hr do
