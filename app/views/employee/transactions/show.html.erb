@@ -17,6 +17,9 @@
         <p><small><strong>Acompte de :</strong> <%= @transaction.amount %> € </small></p>
       </li>
       <li>
+        <p><small><strong>Compte bancaire :</strong> <%= @transaction.bank_account.bank_name %> - <%= @transaction.bank_account.iban %> </small></p>
+      </li>
+      <li>
         <% if @transaction.comment != "" %>
           <p><small><strong>Votre commentaire :</strong> <%= @transaction.comment %></small></p>
         <% else %>
