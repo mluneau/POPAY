@@ -24,6 +24,13 @@ class Employee::TransactionsController < ApplicationController
     authorize @transaction
 
     if @transaction.save
+      Notification.create(
+        user: User.joins(:company)
+                  .where(users: { company: current_user.company, position: "hr" })
+                  .first,
+        category: "transaction",
+        content: "Nouvelle demande d'acompte de #{current_user.full_name} d'un montant de #{@transaction.amount} € le #{localize(@transaction.due_date, format: "%d %B %Y")}"
+        )
       redirect_to employee_transaction_path(@transaction)
     else
       redirect_to root_path
