@@ -25,6 +25,7 @@ class Employee::TransactionsController < ApplicationController
 
     if @transaction.save
       redirect_to employee_transaction_path(@transaction)
+      Sms::Sender.new(tel: current_user.telephone, first_name: current_user.first_name, amount: @transaction.amount).call
     else
       redirect_to root_path
     end
