@@ -45,29 +45,67 @@ nico_popay = User.create!(email: "nicolas@popay.org", company: popay,  password:
 
 puts "Creating users for Xtrem..."
 
+-----------------------------------------------------------------------------------------------------------------------
+### User 1 ###
 louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "A", position: "employee", annual_income: 27000, telephone: '+33670076118' )
+-----------------------------------------------------------------------------------------------------------------------
+### User 2 ###
 pierre_xtrem = User.create!(email: "pierre@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 3 ###
 max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"password", first_name: 'Maxence', last_name: "L", position: "hr", annual_income: 34000, telephone: '+33761528065')
+-----------------------------------------------------------------------------------------------------------------------
+### User 4 ###
 nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "G", position: "employee", annual_income: 20000, telephone: '+33640120596')
 -----------------------------------------------------------------------------------------------------------------------
-jean_xtrem = User.create!(email: "jean@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-jean_xtrem = User.create!(email: "jeanlas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 20000)
+### User 5 ###
+paul_xtrem = User.create!(email: "paul@xtrem.org", company: xtrem,  password:"password", first_name: 'Paul', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
 -----------------------------------------------------------------------------------------------------------------------
-
+### User 6 ###
+jack_xtrem = User.create!(email: "jack@xtrem.org", company: xtrem,  password:"password", first_name: 'Jack', last_name: "P", position: "employee", annual_income: 35000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 7 ###
+saul_xtrem = User.create!(email: "saul@xtrem.org", company: xtrem,  password:"password", first_name: 'Saul', last_name: "K", position: "employee", annual_income: 22000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 8 ###
+john_xtrem = User.create!(email: "john@xtrem.org", company: xtrem,  password:"password", first_name: 'John', last_name: "W", position: "employee", annual_income: 21000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 9 ###
+alphonse_xtrem = User.create!(email: "alphonse@xtrem.org", company: xtrem,  password:"password", first_name: 'Alphonse', last_name: "I", position: "employee", annual_income: 22500, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 10 ###
+robin_xtrem = User.create!(email: "robin@xtrem.org", company: xtrem,  password:"password", first_name: 'Robin', last_name: "I", position: "employee", annual_income: 25000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 11 ###
+philippe_xtrem = User.create!(email: "philippe@xtrem.org", company: xtrem,  password:"password", first_name: 'Philippe', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 12 ###
+marie_xtrem = User.create!(email: "marie@xtrem.org", company: xtrem,  password:"password", first_name: 'Marie', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 13 ###
+maria_xtrem = User.create!(email: "maria@xtrem.org", company: xtrem,  password:"password", first_name: 'Maria', last_name: "O", position: "employee", annual_income: 20000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 14 ###
+alexandra_xtrem = User.create!(email: "alexandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Alexandra', last_name: "A", position: "employee", annual_income: 19000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 15 ###
+ismael_xtrem = User.create!(email: "ismael@xtrem.org", company: xtrem,  password:"password", first_name: 'Ismael', last_name: "R", position: "employee", annual_income: 21200, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 16 ###
+rachida_xtrem = User.create!(email: "rachida@xtrem.org", company: xtrem,  password:"password", first_name: 'Rachida', last_name: "T", position: "employee", annual_income: 22000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 17 ###
+fatima_xtrem = User.create!(email: "fatima@xtrem.org", company: xtrem,  password:"password", first_name: 'Fatima', last_name: "R", position: "employee", annual_income: 29000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 18 ###
+sandra_xtrem = User.create!(email: "sandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Sandra', last_name: "R", position: "employee", annual_income: 28000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 19 ###
+carlos_xtrem = User.create!(email: "carlos@xtrem.org", company: xtrem,  password:"password", first_name: 'Carlos', last_name: "T", position: "employee", annual_income: 27000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
+### User 20 ###
+fiona_xtrem = User.create!(email: "fiona@xtrem.org", company: xtrem,  password:"password", first_name: 'Fiona', last_name: "U", position: "employee", annual_income: 26000, telephone: '+33686240099')
+-----------------------------------------------------------------------------------------------------------------------
 
 
 puts "Creating bank accounts for Xtrem..."
@@ -134,106 +172,100 @@ Transaction.create!(user: max_xtrem, amount: 420, due_date: "28/12/2020", transf
 Transaction.create!(user: max_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_max_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 5 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_paul_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_paul_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_paul_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_paul_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 6 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_jack_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_jack_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_jack_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_jack_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 7 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_saul_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_saul_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_saul_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_saul_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 8 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: john_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_john_xtrem)
+Transaction.create!(user: john_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_john_xtrem)
+Transaction.create!(user: john_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_john_xtrem)
+Transaction.create!(user: john_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_john_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 9 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: alphonse_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_alphonse_xtrem)
+Transaction.create!(user: alphonse_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_alphonse_xtrem)
+Transaction.create!(user: alphonse_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_alphonse_xtrem)
+Transaction.create!(user: alphonse_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_alphonse_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 10 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: robin_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_robin_xtrem)
+Transaction.create!(user: robin_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_robin_xtrem)
+Transaction.create!(user: robin_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_robin_xtrem)
+Transaction.create!(user: robin_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_robin_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 11 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: philippe_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_philippe_xtrem)
+Transaction.create!(user: philippe_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_philippe_xtrem)
+Transaction.create!(user: philippe_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_philippe_xtrem)
+Transaction.create!(user: philippe_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_philippe_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 12 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: marie_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_marie_xtrem)
+Transaction.create!(user: marie_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_marie_xtrem)
+Transaction.create!(user: marie_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_marie_xtrem)
+Transaction.create!(user: marie_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_marie_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 13 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: maria_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_maria_xtrem)
+Transaction.create!(user: maria_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_maria_xtrem)
+Transaction.create!(user: maria_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_maria_xtrem)
+Transaction.create!(user: maria_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_maria_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 14 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: alexandra_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_alexandra_xtrem)
+Transaction.create!(user: alexandra_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_alexandra_xtrem)
+Transaction.create!(user: alexandra_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_alexandra_xtrem)
+Transaction.create!(user: alexandra_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_alexandra_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 15 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: ismael_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_ismael_xtrem)
+Transaction.create!(user: ismael_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_ismael_xtrem)
+Transaction.create!(user: ismael_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_ismael_xtrem)
+Transaction.create!(user: ismael_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_ismael_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 16 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: rachida_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_rachida_xtrem)
+Transaction.create!(user: rachida_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_rachida_xtrem)
+Transaction.create!(user: rachida_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_rachida_xtrem)
+Transaction.create!(user: rachida_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_rachida_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 17 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: fatima_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_fatima_xtrem)
+Transaction.create!(user: fatima_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_fatima_xtrem)
+Transaction.create!(user: fatima_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_fatima_xtrem)
+Transaction.create!(user: fatima_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_fatima_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 18 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
------------------------------------------------------------------------------------------------------------------------------
-### User 18 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: sandra_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_sandra_xtrem)
+Transaction.create!(user: sandra_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_sandra_xtrem)
+Transaction.create!(user: sandra_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_sandra_xtrem)
+Transaction.create!(user: sandra_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_sandra_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 19 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: carlos_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_carlos_xtrem)
+Transaction.create!(user: carlos_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_carlos_xtrem)
+Transaction.create!(user: carlos_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_carlos_xtrem)
+Transaction.create!(user: carlos_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_carlos_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 ### User 20 ###
-Transaction.create!(user: louis_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_louis_xtrem)
-Transaction.create!(user: louis_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_louis_xtrem)
+Transaction.create!(user: fiona_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_fiona_xtrem)
+Transaction.create!(user: fiona_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_fiona_xtrem)
+Transaction.create!(user: fiona_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_fiona_xtrem)
+Transaction.create!(user: fiona_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_fiona_xtrem)
 -----------------------------------------------------------------------------------------------------------------------------
 
 
