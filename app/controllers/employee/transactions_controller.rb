@@ -1,6 +1,6 @@
 class Employee::TransactionsController < ApplicationController
   def index
-    @transactions = policy_scope(Transaction).order(due_date: :desc)
+    @transactions = policy_scope(Transaction).where(user: current_user).order(due_date: :desc)
   end
 
   def new
