@@ -4,6 +4,7 @@
   <h2>Merci pour votre confiance ! 🙏</h2>
 </div>
 <h5>Demande d'acompte</h5>
+
 <div class="transaction-confirmation__info_container">
 
   <div class="transaction-confirmation__info">
@@ -30,6 +31,11 @@
   </div>
   <div class="transaction-confirmation__pdf">
     <p><strong>Compte rendu</strong></p>
-    <div class="text-center" id="pdf-logo"><div><i class="far fa-file-pdf" style="padding-top: 12px"></i></div> </div>
+    <div class="text-center" id="pdf-logo">
+    <%= link_to confirmation_employee_transaction_path(@transaction), target: :_blank do %>
+      <div><i class="far fa-file-pdf" style="padding-top: 12px"></i>
+      <% end %>
+      </div> 
+    </div>
   </div>
 </div>
