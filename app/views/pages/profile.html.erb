@@ -24,7 +24,7 @@
       </p>
     </li>
     <li>
-      <p><strong>IBAN: </strong> <%= current_user.bank_accounts.first.iban %></p>
+      <p><strong>Compte: </strong> <%= current_user.bank_accounts.first.bank_name %> - <%= current_user.bank_accounts.first.iban %></p>
     </li>
     <li>
       <p><strong>Revenus annuels: </strong> <%= current_user.annual_income %> €</p>
@@ -33,10 +33,8 @@
   <div class="profile-form">
     <%= simple_form_for Discussion.new, url: discussions_path(Discussion.new) do |f| %>
       <%= f.input :topic, as: :hidden, input_html: { "value": "Modification de données"} %>
-      <%= f.input :hr_id, as: :hidden, input_html: {"value": User.where(position: "hr").first.id} %>
+      <%= f.input :hr_id, as: :hidden, input_html: { "value": User.joins(:company).where(users: {company: current_user.company, position:"hr"}).first.id} %>
       <%= f.submit "Demander une modification", class: "btn btn-primary btn-sm" %>
     <% end %>
   </div>
-
-
 </div>
