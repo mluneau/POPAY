@@ -76,5 +76,8 @@ gem 'cloudinary', '~> 1.16.0'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
+gem "chartkick"
+
 #twilio
 gem 'twilio-ruby'
+
