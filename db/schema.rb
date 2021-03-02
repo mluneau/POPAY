@@ -148,6 +148,7 @@ ActiveRecord::Schema.define(version: 2021_03_02_145046) do
     t.bigint "company_id", null: false
     t.string "first_name"
     t.string "last_name"
+    t.string "telephone"
     t.index ["company_id"], name: "index_users_on_company_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
