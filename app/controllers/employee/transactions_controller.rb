@@ -24,13 +24,14 @@ class Employee::TransactionsController < ApplicationController
     authorize @transaction
 
     if @transaction.save
-      Notification.create(
+      @notification = Notification.new(
         user: User.joins(:company)
                   .where(users: { company: current_user.company, position: "hr" })
                   .first,
         category: "transaction",
         content: "Nouvelle demande d'acompte de #{current_user.full_name} d'un montant de #{@transaction.amount} € le #{localize(@transaction.due_date, format: "%d %B %Y")}"
-        )
+      )
+      @notification.save
       redirect_to employee_transaction_path(@transaction)
       Sms::Sender.new(tel: current_user.telephone, first_name: current_user.first_name, amount: @transaction.amount).call
     else
