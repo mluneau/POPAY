@@ -114,33 +114,28 @@ bank_account_max_xtrem = BankAccount.create!(user: max_xtrem, bank_name: "LCL", 
 bank_account_nico_xtrem = BankAccount.create!(user: nico_xtrem, bank_name: "Société Générale", bank_address: "1, Avenue de la moulah", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_nico_xtrem2 = BankAccount.create!(user: nico_xtrem, bank_name: "BNP Paribas", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1O50")
 bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
------------------------------------------------------------------------------------------------------------------------
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-bank_account_pierre_xtrem = BankAccount.create!(user: pierre_xtrem, bank_name: "HSBC", bank_address: "1, Avenue du biff", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
------------------------------------------------------------------------------------------------------------------------
-
-
+bank_account_paul_xtrem = BankAccount.create!(user: paul_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_jack_xtrem = BankAccount.create!(user: jack_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_saul_xtrem = BankAccount.create!(user: saul_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_john_xtrem = BankAccount.create!(user: john_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_alphonse_xtrem = BankAccount.create!(user: alphonse_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_robin_xtrem = BankAccount.create!(user: robin_xtrem, bank_name: "LCL", bank_address: "1, Avenue des champs Elysées", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_philippe_xtrem = BankAccount.create!(user: philippe_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_marie_xtrem = BankAccount.create!(user: marie_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_maria_xtrem = BankAccount.create!(user: maria_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_alexandra_xtrem = BankAccount.create!(user: alexandra_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_ismael_xtrem = BankAccount.create!(user: ismael_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_rachida_xtrem = BankAccount.create!(user: rachida_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_fatima_xtrem = BankAccount.create!(user: fatima_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_sandra_xtrem = BankAccount.create!(user: sandra_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_carlos_xtrem = BankAccount.create!(user: carlos_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
+bank_account_fiona_xtrem = BankAccount.create!(user: fiona_xtrem, bank_name: "Goldman Sachs", bank_address: "1, Wall Street", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
 
 puts "Creating bank accounts for Popay..."
 bank_account_louis_popay = BankAccount.create!(user: louis_popay, bank_name: "BNP Paribas", bank_address: "2 avenue du pognon", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU2")
 bank_account_max_popay = BankAccount.create!(user: max_popay, bank_name: "Crédit Agricole", bank_address: "6 rue du billet de 100", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_nico_popay = BankAccount.create!(user: nico_popay, bank_name: "Banque Populaire", bank_address: "15 avenue de la moulah", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
 bank_account_pierre_popay = BankAccount.create!(user: pierre_popay, bank_name: "Caisse d'épargne", bank_address: "1, Avenue du billet de 20", swift: "ABCDEFG", iban: "FR76 16289 1O27 1OU4")
-
 
 
 puts "Creating transactions for Xtrem"
