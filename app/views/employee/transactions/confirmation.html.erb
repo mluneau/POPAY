@@ -24,7 +24,7 @@
       Prénom: <%= @transaction.user.first_name %>
     </h3>
     <h3 id="separateur">
-    Date de la demande: <%= @transaction.due_date %>
+    Date de la demande: <%= localize(@transaction.due_date, format: "%d %B %Y") %>
     </h3>
     <p>
     Le présent document atteste du versement d'un acompte du montant de <strong><%= @transaction.amount %></strong> €, en date du <strong><%= @transaction.due_date %></strong> au titre d'acompte pour le mois correspondant.
