@@ -29,7 +29,7 @@ class Employee::TransactionsController < ApplicationController
         user: User.joins(:company)
                   .where(users: { company: current_user.company, position: "hr" })
                   .first,
-        category: "transaction",
+        category: "nouvelle transaction",
         content: "Nouvelle demande d'acompte de #{current_user.full_name} d'un montant de #{@transaction.amount} € le #{localize(@transaction.due_date, format: "%d %B %Y")}"
       )
       @notification.save
