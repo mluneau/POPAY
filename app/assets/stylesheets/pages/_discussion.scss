@@ -1,7 +1,7 @@
 .discussion-container {
   padding: calc(13vh - 76px) 2px;
   padding-top: 3px;
-  
+
   .discussion-info {
     display: flex;
     flex-direction: row;
@@ -16,15 +16,22 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }  
   
-
+.link-discussion {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    color: $green-peps;
+  }
+}
 
 .discussion-wrapper {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  
+
   .discussion {
     display: flex;
     margin-bottom: 7px;
