@@ -80,10 +80,12 @@
 }
 
 #messages {
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  width: 100%;
+
 }
 
 #new_message {
