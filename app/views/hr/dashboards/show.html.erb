@@ -4,10 +4,14 @@
   <div class="dash-container">
     <div class="dday"><%= localize(Date.today, format: "%B %Y").capitalize %></div>
     <div class="card-dashboard-rh d-flex justify-content-between">
-      <div class="card-data"><span>Salariés éligibles</span></div>
-      <div class="card-data"># salariés actifs</div>
-      <div class="card-data"># acomptes moyens</div>
-      <div class="card-data">Total acomptes</div>
+      <div class="card-data">Salariés éligibles
+        <div><%= current_user.company.number_of_employees %></div></div>
+      <div class="card-data"># salariés actifs
+      <div><%= @number_of_active_employees %></div></div>
+      <div class="card-data"># acomptes moyens
+        <div><%= @average_amount_this_month %></div></div>
+      <div class="card-data">Total acomptes
+        <div><%= @average_amount_this_month %></div></div>
     </div>
     <div class="graphs d-flex justify-content-between">
       <div class="graph-acomptes">
@@ -20,10 +24,14 @@
       </div>
     </div>
     <div class="last-acomptes">Derniers acomptes :</div>
-    <div class="last-acomptes-list">
-      <% @five_last_transactions.each do |transaction| %>
-        <div></div>
-      <% end %>
-    </div>
+    <% @five_last_transactions.each do |transaction| %>
+      <div class="last-acomptes-list d-flex justify-content-between">
+        <div><%= transaction.user.first_name %></div>
+        <div><%= transaction.user.last_name %></div>
+        <div><%= transaction.amount %></div>
+        <div><%= transaction.due_date %></div>
+        <div><%= transaction.status %></div>
+      </div>
+    <% end %>
   </div>
 </div>
