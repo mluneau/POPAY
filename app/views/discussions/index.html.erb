@@ -14,16 +14,16 @@
             <div>
               <img class="avatar-bordered" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png"/>
               <% if current_user.position == "employee" %>
-                <%= discussion.hr.first_name %>
-                <%= discussion.hr.last_name %>
+                <small><%= "#{discussion.hr.first_name[0]}." %>
+                <%= discussion.hr.last_name %></small>
               <% else %>
                 <%= discussion.employee.first_name %>
                 <%= discussion.employee.last_name %>
               <% end %>
             </div>
             <div>
-              <%= discussion.topic %>
-              >
+              <small><%= discussion.topic %>
+              ></small>
             </div>
           </div>
         <% end %>

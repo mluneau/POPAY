@@ -81,7 +81,7 @@ rachida_xtrem = User.create!(email: "rachida@xtrem.org", company: xtrem,  passwo
 ### User 17 ###
 fatima_xtrem = User.create!(email: "fatima@xtrem.org", company: xtrem,  password:"password", first_name: 'Fatima', last_name: "Raddi", position: "employee", annual_income: 29000, telephone: '+33686240099')
 ### User 18 ###
-sandra_xtrem = User.create!(email: "sandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Sandra', last_name: "Aguilar", position: "hr", annual_income: 28000, telephone: '+33686240099')
+sandra_xtrem = User.create!(email: "sandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Sandra', last_name: "Aguilar (DAF)", position: "hr", annual_income: 28000, telephone: '+33686240099')
 ### User 19 ###
 carlos_xtrem = User.create!(email: "carlos@xtrem.org", company: xtrem,  password:"password", first_name: 'Carlos', last_name: "Tellez", position: "employee", annual_income: 27000, telephone: '+33686240099')
 ### User 20 ###
