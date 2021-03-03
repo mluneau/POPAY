@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Montant</th>
+      <th scope="col">Date de demande</th>
+      <th scope="col">Statut</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% transactions.each do |transaction| %>
+    <tr>
+      <th scope="row">
+        <% if transaction.user.avatar.attached?  %>
+          <img id="avatar-mobile" class="avatar-mobile" src="<%= cl_image_path current_user.avatar.key, height: 300, width: 300, crop: :fill %>" />
+        <% else %>
+          <img id="avatar-mobile" class="avatar-mobile" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png" />
+        <% end %>
+      </th>
+
+      <td><%= transaction.user.full_name %></td>
+      <td><%= transaction.amount %></td>
+      <td><%= localize(transaction.due_date, format: "%d %B %Y") %></td>
+      <td><%= transaction.status == "paid" ? "Payé" : "En attente" %></td>
+    </tr>
+    <% end %>`
+
+  </tbody>
+</table>

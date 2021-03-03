@@ -26,14 +26,6 @@
       </div>
     </div>
     <div class="last-acomptes">Derniers acomptes :</div>
-    <% @five_last_transactions.each do |transaction| %>
-      <div class="last-acomptes-list d-flex justify-content-between">
-        <div><%= transaction.user.first_name %></div>
-        <div><%= transaction.user.last_name %></div>
-        <div><%= transaction.amount %></div>
-        <div><%= transaction.due_date %></div>
-        <div><%= transaction.status %></div>
-      </div>
-    <% end %>
+      <%= render partial: 'shared/transaction_table', locals: { transactions: @five_last_transactions } %>
   </div>
 </div>
