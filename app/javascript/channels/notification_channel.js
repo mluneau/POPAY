@@ -1,8 +1,16 @@
 import consumer from "./consumer";
 
 const initNotificationCable = () => {
-
-  consumer.subscriptions.create({channel: "NotificationChannel", id: 24})
+  const mainContainer = document.getElementById('main-container');
+  consumer.subscriptions.create(
+    {channel: "NotificationChannel"},
+    {
+      connected() {console.log('connected')},
+      received(data) {
+        mainContainer.insertAdjacentHTML('beforebegin', data);
+      }
+    }
+    )
 }
 
-export { initNotificationCable }
+initNotificationCable();

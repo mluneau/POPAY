@@ -25,6 +25,7 @@ class Employee::TransactionsController < ApplicationController
 
     if @transaction.save
       @notification = Notification.new(
+        sender: current_user,
         user: User.joins(:company)
                   .where(users: { company: current_user.company, position: "hr" })
                   .first,
@@ -32,8 +33,18 @@ class Employee::TransactionsController < ApplicationController
         content: "Nouvelle demande d'acompte de #{current_user.full_name} d'un montant de #{@transaction.amount} € le #{localize(@transaction.due_date, format: "%d %B %Y")}"
       )
       @notification.save
+      NotificationChannel.broadcast_to(
+        @notification.user,
+        render_to_string(partial: "shared/notification", locals: { notification: @notification })
+        # {
+        #   content: @notification.content,
+        #   sender: { id: @notification.sender.id, name: @notification.sender.full_name }
+        # }
+      )
       redirect_to employee_transaction_path(@transaction)
-      Sms::Sender.new(tel: current_user.telephone, first_name: current_user.first_name, amount: @transaction.amount).call
+      if current_user.telephone
+        Sms::Sender.new(tel: current_user.telephone, first_name: current_user.first_name, amount: @transaction.amount).call
+      end
     else
       redirect_to root_path
     end
