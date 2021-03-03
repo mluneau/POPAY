@@ -16,12 +16,12 @@
     <div class="graphs d-flex justify-content-between">
       <div class="graph-acomptes">
         <div class="graph-nb-acomptes-title">Evolution du nombre d'acomptes / mois</div>
-          <%= column_chart Transaction.group_by_month(:due_date, format: "%b %Y").count %>
+          <%= column_chart Transaction.joins(:user).where(users: {company: current_user.company}).group_by_month(:due_date, format: "%b %Y").count, colors: ["#2BC798"] %>
       </div>
       <div class="graph-acomptes">
         <div class="graph-total-acomptes-title">Evolution total montant / mois (€)</div>
         <div class="graph-total-acomptes-graph">
-          <%= column_chart Transaction.group_by_month(:due_date, format: "%b %Y").sum(:amount) %>
+          <%= column_chart Transaction.joins(:user).where(users: {company: current_user.company}).group_by_month(:due_date, format: "%b %Y").sum(:amount), colors: ["#2BC798"] %>
       </div>
       </div>
     </div>
