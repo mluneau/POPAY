@@ -141,25 +141,25 @@ Transaction.create!(user: max_xtrem, amount: 200, due_date: "06/01/2021", transf
 Transaction.create!(user: max_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_max_xtrem)
 Transaction.create!(user: max_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_max_xtrem)
 ### User 5 ###
-Transaction.create!(user: paul_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_paul_xtrem)
-Transaction.create!(user: paul_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_paul_xtrem)
-Transaction.create!(user: paul_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_paul_xtrem)
-Transaction.create!(user: paul_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_paul_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 70, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_paul_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 235, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_paul_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 120, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_paul_xtrem)
+Transaction.create!(user: paul_xtrem, amount: 50, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_paul_xtrem)
 ### User 6 ###
-Transaction.create!(user: jack_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_jack_xtrem)
-Transaction.create!(user: jack_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_jack_xtrem)
-Transaction.create!(user: jack_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_jack_xtrem)
-Transaction.create!(user: jack_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_jack_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 90, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_jack_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 140, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_jack_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 220, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_jack_xtrem)
+Transaction.create!(user: jack_xtrem, amount: 65, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_jack_xtrem)
 ### User 7 ###
-Transaction.create!(user: saul_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_saul_xtrem)
-Transaction.create!(user: saul_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_saul_xtrem)
-Transaction.create!(user: saul_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_saul_xtrem)
-Transaction.create!(user: saul_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_saul_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 40, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_saul_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 90, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_saul_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 40, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_saul_xtrem)
+Transaction.create!(user: saul_xtrem, amount: 100, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_saul_xtrem)
 ### User 8 ###
-Transaction.create!(user: john_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_john_xtrem)
-Transaction.create!(user: john_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_john_xtrem)
-Transaction.create!(user: john_xtrem, amount: 420, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_john_xtrem)
-Transaction.create!(user: john_xtrem, amount: 130, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_john_xtrem)
+Transaction.create!(user: john_xtrem, amount: 65, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_john_xtrem)
+Transaction.create!(user: john_xtrem, amount: 165, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_john_xtrem)
+Transaction.create!(user: john_xtrem, amount: 35, due_date: "28/12/2020", transfer_date: "28/12/2020", status: "payé", comment: "Abonnement sportif", bank_account: bank_account_john_xtrem)
+Transaction.create!(user: john_xtrem, amount: 115, due_date: "15/10/2020", transfer_date: "15/12/2020", status: "payé", comment: "Ecran Telephone", bank_account: bank_account_john_xtrem)
 ### User 9 ###
 Transaction.create!(user: alphonse_xtrem, amount: 250, due_date: "14/02/2021", status: "en attente", comment: "Diner aux chandelles", bank_account: bank_account_alphonse_xtrem)
 Transaction.create!(user: alphonse_xtrem, amount: 200, due_date: "06/01/2021", transfer_date: "16/01/2020", status: "payé", comment: "Courses", bank_account: bank_account_alphonse_xtrem)
@@ -265,50 +265,78 @@ article5.save!
 
 puts "Creating discussions for Xtrem"
 
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 2 ###
-Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
-### Discussion 3 ###
-Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-### Discussion 1 ###
-Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### User 1 ###
+pierre_discussion1 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+pierre_discussion2 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
+pierre_discussion3 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abbonnement Fitness")
+### User 2 ###
+louis_discussion1 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+louis_discussion2 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
+louis_discussion3 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abbonnement Fitness")
+### User 3 ###
+nico_discussion1 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
+nico_discussion2 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
+nico_discussion3 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abbonnement Fitness")
+### User 4 ###
+paul_discussion1 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+paul_discussion2 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+paul_discussion3 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 5 ###
+jack_discussion1 = Discussion.create!(employee_id: jack_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+jack_discussion2 = Discussion.create!(employee_id: jack_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+jack_discussion3 = Discussion.create!(employee_id: jack_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 6 ###
+saul_discussion1 = Discussion.create!(employee_id: saul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+saul_discussion2 = Discussion.create!(employee_id: saul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+saul_discussion3 = Discussion.create!(employee_id: saul_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 7 ###
+john_discussion1 = Discussion.create!(employee_id: john_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+john_discussion2 = Discussion.create!(employee_id: john_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+john_discussion3 = Discussion.create!(employee_id: john_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 8 ###
+alphonse_discussion1 = Discussion.create!(employee_id: alphonse_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+alphonse_discussion2 = Discussion.create!(employee_id: alphonse_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+alphone_discussion3 = Discussion.create!(employee_id: alphonse_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 9 ###
+robin_discussion1 = Discussion.create!(employee_id: robin_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+robin_discussion2 = Discussion.create!(employee_id: robin_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+robin_discussion3 = Discussion.create!(employee_id: robin_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 10 ###
+phillipe_discussion1 = Discussion.create!(employee_id: pahillipe_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+phillipe_discussion2 = Discussion.create!(employee_id: pahillipe_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+phillipe_discussion3 = Discussion.create!(employee_id: phillipe_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 13 ###
+marie_discussion1 = Discussion.create!(employee_id: marie_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+marie_discussion2 = Discussion.create!(employee_id: marie_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+marie_discussion3 = Discussion.create!(employee_id: marie_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 12 ###
+maria_discussion1 = Discussion.create!(employee_id: maria_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+maria_discussion2 = Discussion.create!(employee_id: maria_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+maria_discussion3 = Discussion.create!(employee_id: maria_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 13 ###
+alexandra_discussion1 = Discussion.create!(employee_id: alexandra_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+alexandra_discussion2 = Discussion.create!(employee_id: alexandra_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+alexandra_discussion3 = Discussion.create!(employee_id: alexandra_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 14 ###
+ismael_discussion1 = Discussion.create!(employee_id: ismael_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+ismael_discussion2 = Discussion.create!(employee_id: ismael_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+ismael_discussion3 = Discussion.create!(employee_id: ismael_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 15 ###
+rachida_discussion1 = Discussion.create!(employee_id: rachida_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+rachida_discussion2 = Discussion.create!(employee_id: rachida_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+rachida_discussion3 = Discussion.create!(employee_id: rachida_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 16 ###
+fatima_discussion1 = Discussion.create!(employee_id: fatima_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+fatima_discussion2 = Discussion.create!(employee_id: fatima_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+fatima_discussion3 = Discussion.create!(employee_id: fatima_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 17 ###
+carlos_discussion1 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+carlos_discussion2 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+carlos_discussion3 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### User 18 ###
+fiona_discussion1 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+fiona_discussion2 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
+fiona_discussion3 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 
 
 puts "Creating discussions for Popay"
