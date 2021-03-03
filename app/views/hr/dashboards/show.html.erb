@@ -1,25 +1,29 @@
-<div class="dash-container">
-  <div class="dday"><%= localize(Date.today, format: "%B %Y").capitalize %></div>
-  <div class="card-dashboard-rh d-flex justify-content-around">
-    <div class="card-data">Salariés éligibles</div>
-    <div class="card-data"># salariés actifs</div>
-    <div class="card-data"># acomptes moyens</div>
-    <div class="card-data">Total acomptes</div>
-  </div>
-  <div class="graphs d-flex justify-content-around">
-    <div class="graph-acomptes">
-      <div class="graph-nb-acomptes-title">Evolution du # d'acomptes / mois</div>
-      <div class="graph-nb-acomptes-graph"></div>
+
+<div class="d-flex">
+  <%= render 'shared/sidebar' %>
+  <div class="dash-container">
+    <div class="dday"><%= localize(Date.today, format: "%B %Y").capitalize %></div>
+    <div class="card-dashboard-rh d-flex justify-content-between">
+      <div class="card-data"><span>Salariés éligibles</span></div>
+      <div class="card-data"># salariés actifs</div>
+      <div class="card-data"># acomptes moyens</div>
+      <div class="card-data">Total acomptes</div>
     </div>
-    <div class="graph-acomptes">
-      <div class="graph-total-acomptes-title">Evolution total acomptes / mois</div>
-      <div class="graph-total-acomptes-graph"></div>
+    <div class="graphs d-flex justify-content-between">
+      <div class="graph-acomptes">
+        <div class="graph-nb-acomptes-title">Evolution du # d'acomptes / mois</div>
+        <div class="graph-nb-acomptes-graph"></div>
+      </div>
+      <div class="graph-acomptes">
+        <div class="graph-total-acomptes-title">Evolution total acomptes / mois</div>
+        <div class="graph-total-acomptes-graph"></div>
+      </div>
     </div>
-  </div>
-  <div class="last-acomptes">Derniers acomptes :</div>
-  <div class="last-acomptes-list">
-    <% @five_last_transactions.each do |transaction| %>
-      <div></div>
-    <% end %>
+    <div class="last-acomptes">Derniers acomptes :</div>
+    <div class="last-acomptes-list">
+      <% @five_last_transactions.each do |transaction| %>
+        <div></div>
+      <% end %>
+    </div>
   </div>
 </div>
