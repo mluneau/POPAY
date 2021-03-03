@@ -77,7 +77,7 @@ gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
 
 gem "chartkick"
-
+gem 'groupdate'
 #twilio
 gem 'twilio-ruby'
 
