@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+puts "Empyting Notifications..."
+Notification.destroy_all
 puts "Empyting Transactions..."
 Transaction.destroy_all
 puts "Emptying Bank Accounts"
