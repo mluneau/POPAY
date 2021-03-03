@@ -47,45 +47,45 @@ nico_popay = User.create!(email: "nicolas@popay.org", company: popay,  password:
 
 puts("Creating users for Xtrem...")
 ### User 1 ###
-louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "A", position: "employee", annual_income: 27000, telephone: '+33670076118')
+louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "Ajacques", position: "employee", annual_income: 27000, telephone: '+33670076118')
 ### User 2 ###
-pierre_xtrem = User.create!(email: "pierre@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+pierre_xtrem = User.create!(email: "pierre@xtrem.org", company: xtrem,  password:"password", first_name: 'Pierre', last_name: "Olive", position: "employee", annual_income: 25000, telephone: '+33686240099')
 ### User 3 ###
-max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"password", first_name: 'Maxence', last_name: "L", position: "hr", annual_income: 34000, telephone: '+33761528065')
+max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"password", first_name: 'Maxence', last_name: "Luneau", position: "hr", annual_income: 34000, telephone: '+33761528065')
 ### User 4 ###
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "G", position: "employee", annual_income: 20000, telephone: '+33640120596')
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "Gauguez", position: "employee", annual_income: 20000, telephone: '+33640120596')
 ### User 5 ###
-paul_xtrem = User.create!(email: "paul@xtrem.org", company: xtrem,  password:"password", first_name: 'Paul', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+paul_xtrem = User.create!(email: "paul@xtrem.org", company: xtrem,  password:"password", first_name: 'Paul', last_name: "Ordiz", position: "employee", annual_income: 25000, telephone: '+33686240099')
 ### User 6 ###
-jack_xtrem = User.create!(email: "jack@xtrem.org", company: xtrem,  password:"password", first_name: 'Jack', last_name: "P", position: "employee", annual_income: 35000, telephone: '+33686240099')
+jack_xtrem = User.create!(email: "jack@xtrem.org", company: xtrem,  password:"password", first_name: 'Jack', last_name: "Perrin", position: "employee", annual_income: 35000, telephone: '+33686240099')
 ### User 7 ###
-saul_xtrem = User.create!(email: "saul@xtrem.org", company: xtrem,  password:"password", first_name: 'Saul', last_name: "K", position: "employee", annual_income: 22000, telephone: '+33686240099')
+saul_xtrem = User.create!(email: "saul@xtrem.org", company: xtrem,  password:"password", first_name: 'Saul', last_name: "Koutarides", position: "employee", annual_income: 22000, telephone: '+33686240099')
 ### User 8 ###
-john_xtrem = User.create!(email: "john@xtrem.org", company: xtrem,  password:"password", first_name: 'John', last_name: "W", position: "employee", annual_income: 21000, telephone: '+33686240099')
+john_xtrem = User.create!(email: "john@xtrem.org", company: xtrem,  password:"password", first_name: 'John', last_name: "Wayne", position: "employee", annual_income: 21000, telephone: '+33686240099')
 ### User 9 ###
-alphonse_xtrem = User.create!(email: "alphonse@xtrem.org", company: xtrem,  password:"password", first_name: 'Alphonse', last_name: "I", position: "employee", annual_income: 22500, telephone: '+33686240099')
+alphonse_xtrem = User.create!(email: "alphonse@xtrem.org", company: xtrem,  password:"password", first_name: 'Alphonse', last_name: "Ier", position: "employee", annual_income: 22500, telephone: '+33686240099')
 ### User 10 ###
-robin_xtrem = User.create!(email: "robin@xtrem.org", company: xtrem,  password:"password", first_name: 'Robin', last_name: "I", position: "employee", annual_income: 25000, telephone: '+33686240099')
+robin_xtrem = User.create!(email: "robin@xtrem.org", company: xtrem,  password:"password", first_name: 'Robin', last_name: "Hood", position: "employee", annual_income: 25000, telephone: '+33686240099')
 ### User 11 ###
-philippe_xtrem = User.create!(email: "philippe@xtrem.org", company: xtrem,  password:"password", first_name: 'Philippe', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+philippe_xtrem = User.create!(email: "philippe@xtrem.org", company: xtrem,  password:"password", first_name: 'Philippe', last_name: "O'Malley", position: "employee", annual_income: 25000, telephone: '+33686240099')
 ### User 12 ###
-marie_xtrem = User.create!(email: "marie@xtrem.org", company: xtrem,  password:"password", first_name: 'Marie', last_name: "O", position: "employee", annual_income: 25000, telephone: '+33686240099')
+marie_xtrem = User.create!(email: "marie@xtrem.org", company: xtrem,  password:"password", first_name: 'Marie', last_name: "Osmond", position: "employee", annual_income: 25000, telephone: '+33686240099')
 ### User 13 ###
-maria_xtrem = User.create!(email: "maria@xtrem.org", company: xtrem,  password:"password", first_name: 'Maria', last_name: "O", position: "employee", annual_income: 20000, telephone: '+33686240099')
+maria_xtrem = User.create!(email: "maria@xtrem.org", company: xtrem,  password:"password", first_name: 'Maria', last_name: "Perez", position: "employee", annual_income: 20000, telephone: '+33686240099')
 ### User 14 ###
-alexandra_xtrem = User.create!(email: "alexandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Alexandra', last_name: "A", position: "employee", annual_income: 19000, telephone: '+33686240099')
+alexandra_xtrem = User.create!(email: "alexandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Alexandra', last_name: "Duddinski", position: "employee", annual_income: 19000, telephone: '+33686240099')
 ### User 15 ###
-ismael_xtrem = User.create!(email: "ismael@xtrem.org", company: xtrem,  password:"password", first_name: 'Ismael', last_name: "R", position: "employee", annual_income: 21200, telephone: '+33686240099')
+ismael_xtrem = User.create!(email: "ismael@xtrem.org", company: xtrem,  password:"password", first_name: 'Ismael', last_name: "Renard", position: "employee", annual_income: 21200, telephone: '+33686240099')
 ### User 16 ###
-rachida_xtrem = User.create!(email: "rachida@xtrem.org", company: xtrem,  password:"password", first_name: 'Rachida', last_name: "T", position: "employee", annual_income: 22000, telephone: '+33686240099')
+rachida_xtrem = User.create!(email: "rachida@xtrem.org", company: xtrem,  password:"password", first_name: 'Rachida', last_name: "Tir", position: "employee", annual_income: 22000, telephone: '+33686240099')
 ### User 17 ###
-fatima_xtrem = User.create!(email: "fatima@xtrem.org", company: xtrem,  password:"password", first_name: 'Fatima', last_name: "R", position: "employee", annual_income: 29000, telephone: '+33686240099')
+fatima_xtrem = User.create!(email: "fatima@xtrem.org", company: xtrem,  password:"password", first_name: 'Fatima', last_name: "Raddi", position: "employee", annual_income: 29000, telephone: '+33686240099')
 ### User 18 ###
-sandra_xtrem = User.create!(email: "sandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Sandra', last_name: "R", position: "employee", annual_income: 28000, telephone: '+33686240099')
+sandra_xtrem = User.create!(email: "sandra@xtrem.org", company: xtrem,  password:"password", first_name: 'Sandra', last_name: "Aguilar", position: "hr", annual_income: 28000, telephone: '+33686240099')
 ### User 19 ###
-carlos_xtrem = User.create!(email: "carlos@xtrem.org", company: xtrem,  password:"password", first_name: 'Carlos', last_name: "T", position: "employee", annual_income: 27000, telephone: '+33686240099')
+carlos_xtrem = User.create!(email: "carlos@xtrem.org", company: xtrem,  password:"password", first_name: 'Carlos', last_name: "Tellez", position: "employee", annual_income: 27000, telephone: '+33686240099')
 ### User 20 ###
-fiona_xtrem = User.create!(email: "fiona@xtrem.org", company: xtrem,  password:"password", first_name: 'Fiona', last_name: "U", position: "employee", annual_income: 26000, telephone: '+33686240099')
+fiona_xtrem = User.create!(email: "fiona@xtrem.org", company: xtrem,  password:"password", first_name: 'Fiona', last_name: "Hopkins", position: "employee", annual_income: 26000, telephone: '+33686240099')
 
 
 puts("Creating bank accounts for Xtrem...")
@@ -262,14 +262,60 @@ article5 = Article.new(title: "Popay vous conseille", category: "Epargne", date:
 article5.photo.attach(io: photo5, filename: 'conseille.png', content_type: 'image/png')
 article5.save!
 
+
 puts "Creating discussions for Xtrem"
 
+### Discussion 1 ###
 Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 2 ###
 Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+### Discussion 3 ###
 Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+### Discussion 1 ###
+Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
+
 
 puts "Creating discussions for Popay"
 
+### Discussion 1 ###
 Discussion.create!(employee_id: pierre_popay.id, hr_id: louis_popay.id, topic:"Thuning de ma clio")
+### Discussion 2 ###
 Discussion.create!(employee_id: max_popay.id, hr_id: louis_popay.id, topic:"Nouveau matos de Kite")
+### Discussion 3 ###
 Discussion.create!(employee_id: nico_popay.id, hr_id: louis_popay.id, topic:"Paiement Figma: dev frontend")
