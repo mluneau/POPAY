@@ -13,6 +13,6 @@
   </div>
     <%= simple_form_for @appointment, url: employee_appointments_path do |f| %>
       <%= f.input :hr_id, label: false, placeholder: "HR", collection: current_user.company.users.where(position: 'hr'), label_method: :full_name %>
-      <%= f.submit %>
+      <%= f.submit "Demander un rendez-vous", class: "btn btn-primary btn-confirm" %>
     <% end %>
 </div>
