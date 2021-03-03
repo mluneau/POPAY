@@ -16,11 +16,15 @@
     <div class="graphs d-flex justify-content-between">
       <div class="graph-acomptes">
         <div class="graph-nb-acomptes-title">Evolution du # d'acomptes / mois</div>
-        <div class="graph-nb-acomptes-graph"></div>
+        <div class="graph-nb-acomptes-graph">
+          <%= column_chart Transaction.group_by_month(:due_date, format: "%b %Y").count %>
+        </div>
       </div>
       <div class="graph-acomptes">
         <div class="graph-total-acomptes-title">Evolution total acomptes / mois</div>
-        <div class="graph-total-acomptes-graph"></div>
+        <div class="graph-total-acomptes-graph">
+          <%= column_chart Transaction.group_by_month(:due_date, format: "%b %Y").sum(:amount) %>
+        </div>
       </div>
     </div>
     <div class="last-acomptes">Derniers acomptes :</div>
