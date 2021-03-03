@@ -1,6 +1,6 @@
 #dashboard-hr .container {
   max-width: 100%;
-  padding: 20px 0 100px;
+  padding: 98px 0 20px !important;
 }
 
 .dash-container {
@@ -10,6 +10,7 @@
   padding: 20px;
   margin-right: 40px;
   flex-grow: 1;
+  margin-top: 10px;
 }
 
 .dday {
@@ -20,6 +21,7 @@
 
 .card-data {
   height: 60px;
+  color: gray;
   width: 20%;
   border-radius: 5px;
   font-size: 14px;
@@ -33,6 +35,9 @@
 
 #data_of_the_month {
   padding-top: 5px;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .graph-acomptes {
@@ -42,6 +47,7 @@
   font-weight: 500;
   padding: 10px;
   width: 47%;
+  color: gray;
   font-size: 14px;
   border: 1px solid lightgray;
   box-shadow: $box-shadow;
@@ -60,3 +66,28 @@
     }
 }
 
+#btn_pastel_orange {
+  background-color: lightsalmon;
+  width: 80px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color:black;
+  opacity: 0.4;
+  text-align: center;
+  padding: 5px; 
+  margin: 0;
+}
+
+#btn_pastel_green {
+  background-color: lightgreen;
+  width: 80px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  color:black;
+  opacity: 0.4;
+  text-align: center;
+  padding: 5px; 
+  margin: 0;
+}
