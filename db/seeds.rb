@@ -37,10 +37,10 @@ popay = Company.create!(name: "Popay Inc.", number_of_employees: 5, subscription
 
 
 puts "Creating users for Popay..."
-louis_popay = User.create!(email: "louis@popay.org", company: popay, password:"password", first_name: 'Louis', last_name: "A", position: "hr", annual_income: 17000  )
-pierre_popay = User.create!(email: "pierre@popay.org", company: popay,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 27000 )
-max_popay = User.create!(email: "maxence@popay.org", company: popay,  password:"password", first_name: 'Maxence', last_name: "L", position: "employee", annual_income: 37000 )
-nico_popay = User.create!(email: "nicolas@popay.org", company: popay,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 47000 )
+louis_popay = User.create!(email: "louis@popay.org", company: popay, password:"password", first_name: 'Louis', last_name: "A", position: "hr", annual_income: 17000, telephone: '+33670076118'  )
+pierre_popay = User.create!(email: "pierre@popay.org", company: popay,  password:"password", first_name: 'Pierre', last_name: "O", position: "employee", annual_income: 27000, telephone: '+33686240099' )
+max_popay = User.create!(email: "maxence@popay.org", company: popay,  password:"password", first_name: 'Maxence', last_name: "L", position: "employee", annual_income: 37000, telephone: '+33761528065' )
+nico_popay = User.create!(email: "nicolas@popay.org", company: popay,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 47000, telephone: '+33640120596')
 
 
 
