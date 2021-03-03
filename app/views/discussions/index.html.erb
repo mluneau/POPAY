@@ -8,13 +8,18 @@
   </div>
   <div class="discussion-wrapper">
     <% @discussions.each do |discussion| %>
-      <%= link_to discussion_path(discussion) do %>
+      <%= link_to discussion_path(discussion), class: "link-discussion" do %>
         <% if policy(discussion).index? %>   
           <div class="discussion">
             <div>
               <img class="avatar-bordered" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png"/>
-              <%= discussion.hr.first_name %>
-              <%= discussion.hr.last_name %>
+              <% if current_user.position == "employee" %>
+                <%= discussion.hr.first_name %>
+                <%= discussion.hr.last_name %>
+              <% else %>
+                <%= discussion.employee.first_name %>
+                <%= discussion.employee.last_name %>
+              <% end %>
             </div>
             <div>
               <%= discussion.topic %>
