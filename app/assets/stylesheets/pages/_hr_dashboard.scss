@@ -1,13 +1,44 @@
+#dashboard-hr .container {
+  max-width: 100%;
+  padding: 20px 0 100px;
+}
+
 .dash-container {
   height: calc(85vh - 76px);
-  margin-top: 5vh;
   box-shadow: 4px 4px 14px rgba(0, 0, 0, .1);
   border-radius: 13px;
   background-color: white;
-  padding: 15px;
+  padding: 25px;
+  flex-grow: 1;
+}
+
+.dday {
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .card-data {
-  height: 100px;
-  text-align: center;
+  height: 90px;
+  width: 20%;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  padding: 10px;
+  border: 1px solid lightgray;
+  box-shadow: $box-shadow;
+  margin-bottom: 10px;
+}
+
+.graph-acomptes {
+  margin-top: 25px;
+  padding: 10px;
+  height: 200px;
+  width: 47%;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  box-shadow: $box-shadow;
+}
+
+.last-acomptes {
+  padding-top: 25px;
 }
