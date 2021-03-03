@@ -8,7 +8,7 @@
   </div>
   <div class="discussion-wrapper">
     <% @discussions.each do |discussion| %>
-      <%= link_to discussion_path(discussion) do %>
+      <%= link_to discussion_path(discussion), class: "link-discussion" do %>
         <% if policy(discussion).index? %>   
           <div class="discussion">
             <div>
