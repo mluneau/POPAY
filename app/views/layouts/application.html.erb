@@ -40,15 +40,15 @@
 
   <body id="<%= "dashboard-hr" if params[:controller] == "hr/dashboards" %>">
     <%= render 'shared/navbar_desktop' %>
-    <%= render 'shared/header_mobile' %>
+    <%= render 'shared/header_mobile' unless @disable_header_mobile %>
     <%= render 'shared/flashes' %>
     <%= render 'shared/background_triangle' unless @disable_triangle_background %>
     <%= render 'shared/squared_background' if @enable_squared_background %>
     <%= render 'shared/squared_background_small' if @enable_squared_background_small %>
-    <div class="container" id="main-container" style="padding-top: 20px; padding-bottom:100px">
+    <div class="<%= 'container' unless @disable_container %>" id="main-container">
     <%= yield %>
     </div>
     <%# render 'shared/footer' %>
-    <%= render 'shared/navbar_mobile' unless params[:controller] == "hr/dashboards" %>
+    <%= render 'shared/navbar_mobile' unless params[:controller] == "hr/dashboards" || @disable_navbar %>
   </body>
 </html>

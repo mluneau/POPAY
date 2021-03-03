@@ -21,8 +21,42 @@ body {
   z-index: -1;
 }
 
-
-
 .text-white {
   padding: 7px;
+}
+
+#title {
+ font-size: 70px;
+ color: #2BC798
+}
+
+#tagline {
+  font-size: 24px;
+  color: white;
+}
+
+.text {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.big-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/uploads/1413395496082cbc91228/43e39040?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+  background-size: cover;
+  position: relative;
+  justify-content: space-between;
+  height: 100vh;
+  padding-top: 17vh;
+  padding-bottom: 10vh;
+  
+}
+
+.connect {
+  color: white;
+  font-size: x-large;
+  
 }
