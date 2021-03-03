@@ -4,35 +4,45 @@
 }
 
 .dash-container {
-  height: calc(85vh - 76px);
+  height: calc(85vh);
   box-shadow: 4px 4px 14px rgba(0, 0, 0, .1);
   border-radius: 13px;
   background-color: white;
-  padding: 25px;
+  padding: 20px;
+  margin-right: 40px;
   flex-grow: 1;
 }
 
 .dday {
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-decoration: underline;
 }
 
 .card-data {
-  height: 90px;
+  height: 60px;
   width: 20%;
+  border-radius: 5px;
   font-size: 14px;
-  text-align: left;
-  font-weight: 400;
-  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  padding: 5px;
   border: 1px solid lightgray;
   box-shadow: $box-shadow;
   margin-bottom: 10px;
 }
 
+#data_of_the_month {
+  padding-top: 5px;
+}
+
 .graph-acomptes {
-  margin-top: 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
   padding: 10px;
-  height: 200px;
+  height: 150px;
   width: 47%;
   font-size: 14px;
   border: 1px solid lightgray;
@@ -41,8 +51,13 @@
 
 .last-acomptes {
   padding-top: 25px;
+  font-weight: 500;
+  text-decoration: underline;
 }
 
 .last-acomptes-list {
   text-align: left;
+    .div {
+      width: 15%;
+    }
 }
