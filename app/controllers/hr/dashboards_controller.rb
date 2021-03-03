@@ -9,9 +9,9 @@ class Hr::DashboardsController < Hr::BaseController
     
     @number_of_active_employees = @this_month_transactions.count
 
-    @average_amount_this_month = @this_month_transactions.average(:amount)
+    @average_amount_this_month = @this_month_transactions.average(:amount).to_i
 
-    @total_acompts_this_month = @this_month_transactions.sum(:amount)
+    @total_acompts_this_month = @this_month_transactions.sum(:amount).to_i
 
   end
 

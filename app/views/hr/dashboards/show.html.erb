@@ -5,23 +5,22 @@
     <div class="dday"><%= localize(Date.today, format: "%B %Y").capitalize %></div>
     <div class="card-dashboard-rh d-flex justify-content-between">
       <div class="card-data">Salariés éligibles
-        <div><%= current_user.company.number_of_employees %></div></div>
-      <div class="card-data"># salariés actifs
-      <div><%= @number_of_active_employees %></div></div>
-      <div class="card-data"># acomptes moyens
-        <div><%= @average_amount_this_month %></div></div>
-      <div class="card-data">Total acomptes
-        <div><%= @average_amount_this_month %></div></div>
+        <div id="data_of_the_month"><%= current_user.company.number_of_employees %></div></div>
+      <div class="card-data">Salariés actifs
+      <div id="data_of_the_month"><%= @number_of_active_employees %></div></div>
+      <div class="card-data">Acompte moyen
+        <div id="data_of_the_month"><%= @average_amount_this_month %> €</div></div>
+      <div class="card-data">Total débloqué
+        <div id="data_of_the_month"><%= @average_amount_this_month %> €</div></div>
     </div>
     <div class="graphs d-flex justify-content-between">
       <div class="graph-acomptes">
-        <div class="graph-nb-acomptes-title">Evolution du # d'acomptes / mois</div>
-        <div class="graph-nb-acomptes-graph">
+        <div class="graph-nb-acomptes-title">Evolution du nombre d'acomptes / mois</div>
           <%= column_chart Transaction.group_by_month(:due_date, format: "%b %Y").count %>
         </div>
       </div>
       <div class="graph-acomptes">
-        <div class="graph-total-acomptes-title">Evolution total acomptes / mois</div>
+        <div class="graph-total-acomptes-title">Evolution total montant / mois (€)</div>
         <div class="graph-total-acomptes-graph">
           <%= column_chart Transaction.group_by_month(:due_date, format: "%b %Y").sum(:amount) %>
         </div>
