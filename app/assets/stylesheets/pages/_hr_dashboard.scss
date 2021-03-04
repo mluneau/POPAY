@@ -18,7 +18,8 @@
 }
 
 .dday {
-  font-weight: 500;
+  font-weight: 600;
+  color: $green;
   margin-bottom: 15px;
   text-decoration: underline;
 }
@@ -28,9 +29,9 @@
   color: gray;
   width: 20%;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 400;
   padding: 5px;
   border: 1px solid lightgray;
   box-shadow: $box-shadow;
@@ -38,10 +39,9 @@
 }
 
 #data_of_the_month {
-  padding-top: 5px;
   color: black;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .graph-acomptes {
@@ -61,6 +61,7 @@
   padding-top: 25px;
   font-weight: 500;
   text-decoration: underline;
+  padding-bottom: 20px;
 }
 
 .last-acomptes-list {
