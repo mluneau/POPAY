@@ -1,0 +1,12 @@
+<div class="d-flex h-100">
+  <% if current_user.position == "hr" %>
+    <%= render "shared/sidebar" %>
+  <% end %>
+  <div class="d-flex flex-column flex-grow-1">
+    <div class="d-flex flex-column justify-content-start mt-2">
+      <% @notifications.each do |notification| %>
+        <%= render partial: 'shared/notification', locals: {notification: notification, notif_index: true} %>
+      <% end %>
+    </div>
+  </div>
+</div>

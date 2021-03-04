@@ -46,7 +46,7 @@
     <%= render 'shared/squared_background' if @enable_squared_background %>
     <%= render 'shared/squared_background_small' if @enable_squared_background_small %>
     <div class="<%= 'container' unless @disable_container %>" id="main-container">
-    <%= yield %>
+      <%= yield %>
     </div>
     <%# render 'shared/footer' %>
     <%= render 'shared/navbar_mobile' unless params[:controller] == "hr/dashboards" || @disable_navbar %>
