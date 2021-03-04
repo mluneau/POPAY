@@ -61,8 +61,19 @@
 
 .button_category {
   color: white;
+  font-size: 17px;
   text-decoration: bold;
   justify-content: space-around;
-  padding-right: 8px;
-  padding-left: 3px
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 5px;
+}
+
+.button_category-selected {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  &:hover {
+    color: white;
+  }
 }

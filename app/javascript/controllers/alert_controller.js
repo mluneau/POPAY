@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = ['alert']
   connect() {
     console.log(this.alertTarget)
-    setTimeout(this.hide.bind(this), 5000)
+    setTimeout(this.hide.bind(this), 3000)
   }
 
   hide() {
