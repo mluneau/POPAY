@@ -5,7 +5,8 @@
     <div class=navbar-container>
     <span>
       <a href="/employee/transactions" class="<%= 'active' if controller_name == 'transactions' %>">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#6F6E80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+        <%= image_tag "icons/history", alt: "alttext" %>
+        <!-- <div class="icon history green"></div> -->
         Historique
       </a>
       <a href="/discussions" class="<%= 'active' if controller_name == 'discussions' %>">
