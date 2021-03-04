@@ -38,7 +38,7 @@ popay = Company.create!(name: "Popay Inc.", number_of_employees: 5, subscription
 
 
 puts "Creating users for Popay..."
-louis_popay = User.create!(email: "louis@popay.org", company: popay, password:"password", first_name: 'Louis', last_name: "A", position: "hr", annual_income: 17000, telephone: '+33670076118' )
+louis_popay = User.create!(email: "louis@popay.org", company: popay, password:"password", first_name: 'Louis', last_name: "A", position: "hr", annual_income: 17000, telephone: '+33640120596' )
 file = URI.open("https://res.cloudinary.com/dyywcjnii/image/upload/v1614851187/whbvbv6x7kbwpipxrjdl.jpg")
 louis_popay.avatar.attach(io: file, filename: 'louis.jpg', content_type: 'image/png')
 
@@ -50,13 +50,13 @@ max_popay = User.create!(email: "maxence@popay.org", company: popay,  password:"
 file = URI.open("https://res.cloudinary.com/dyywcjnii/image/upload/v1614851213/wycjifgculuv1oa8sbae.png")
 max_popay.avatar.attach(io: file, filename: 'maxence.jpg', content_type: 'image/png')
 
-nico_popay = User.create!(email: "nicolas@popay.org", company: popay,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 47000, telephone: '+33640120596')
+nico_popay = User.create!(email: "nicolas@popay.org", company: popay,  password:"password", first_name: 'Pierre', last_name: "G", position: "employee", annual_income: 47000, telephone: '+33670076118')
 file = URI.open("https://res.cloudinary.com/dyywcjnii/image/upload/v1614851220/xbgdxsl8qyoqeern3o4f.jpg")
 nico_popay.avatar.attach(io: file, filename: 'nicolas.jpg', content_type: 'image/png')
 
 puts("Creating users for Xtrem...")
 ### User 1 ###
-louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "Ajacques", position: "employee", annual_income: 27000, telephone: '+33670076118')
+louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "Ajacques", position: "employee", annual_income: 27000, telephone: '+33640120596')
 file = URI.open("https://res.cloudinary.com/dyywcjnii/image/upload/v1614851187/whbvbv6x7kbwpipxrjdl.jpg")
 louis_xtrem.avatar.attach(io: file, filename: 'louis.jpg', content_type: 'image/png')
 ### User 2 ###
@@ -68,7 +68,7 @@ max_xtrem = User.create!(email: "maxence@xtrem.org", company: xtrem,  password:"
 file = URI.open("https://res.cloudinary.com/dyywcjnii/image/upload/v1614851213/wycjifgculuv1oa8sbae.png")
 max_xtrem.avatar.attach(io: file, filename: 'maxence.jpg', content_type: 'image/png')
 ### User 4 ###
-nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "Gauguez", position: "employee", annual_income: 20000, telephone: '+33640120596')
+nico_xtrem = User.create!(email: "nicolas@xtrem.org", company: xtrem,  password:"password", first_name: 'Nicolas', last_name: "Gauguez", position: "employee", annual_income: 20000, telephone: '+33670076118')
 file = URI.open("https://res.cloudinary.com/dyywcjnii/image/upload/v1614851220/xbgdxsl8qyoqeern3o4f.jpg")
 nico_xtrem.avatar.attach(io: file, filename: 'nicolas.jpg', content_type: 'image/png')
 ### User 5 ###
