@@ -22,11 +22,11 @@
         <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goForward">Suivant</a>
       </div>
       <div data-form-target="commentView" class="d-none flex-column flex-grow-1 justify-content-between">
-        <h1>✅</h1>
+        <h1> </h1>
         <p class="amount">Vous avez demandé</p>
         <h2><span data-form-target="displayAmount"></span>   €</h2>
         <p>à partir du <%= localize(Date.today, format: "%d %B %Y") %></p>
-        <%= f.input :comment, label: false, placeholder: "Laissez un commentaire?", input_html: {"data-form-target": "inputComment", "data-action": "input->form#updateComment"} %>
+        <%= f.input :comment, label: false, placeholder: "Un commentaire ?", input_html: {"data-form-target": "inputComment", "data-action": "input->form#updateComment"} %>
         <%= f.submit "Confirmer", class: "btn btn-primary btn-confirm", input_html: {"data-action": "click->form#goForward" } %>
       </div>
   <% end %>

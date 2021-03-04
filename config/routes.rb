@@ -31,6 +31,5 @@ Rails.application.routes.draw do
   get 'profile', to: "pages#profile"
   get 'home', to: "pages#home"
   get 'about_us', to: "pages#about_us"
-  get 'home', to: "pages#home"
 
 end
