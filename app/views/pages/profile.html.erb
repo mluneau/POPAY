@@ -7,34 +7,21 @@
   <h1><%= "#{current_user.first_name} #{current_user.last_name}" %></h1>
 </div>
 <div class="profile-info">
-  <h3 class="pb-3">Informations</h3>
-  <ul class="list-unstyled">
-    <li>
+  <h3 class="pb-1">Informations</h3>
+  <div>
       <p><strong>Identifiant: </strong> <%= current_user.email %></p>
-    </li>
-    <li>
       <p><strong>Nom: </strong> <%= current_user.last_name %></p>
-    </li>
-    <li>
       <p><strong>Prénom: </strong> <%= current_user.first_name %></p>
-    </li>
-    <li>
       <p>
         <p><strong>Rôle: </strong> <%= current_user.position == 'hr' ? "Responsable RH" : "Employé" %></p>
       </p>
-    </li>
-    <li>
       <p><strong>Compte: </strong> <%= current_user.bank_accounts.first.bank_name %> - <%= current_user.bank_accounts.first.iban %></p>
-    </li>
-    <li>
       <p><strong>Revenus annuels: </strong> <%= current_user.annual_income %> €</p>
-    </li>
-  </ul>
   <div class="profile-form">
     <%= simple_form_for Discussion.new, url: discussions_path(Discussion.new) do |f| %>
-      <%= f.input :topic, as: :hidden, input_html: { "value": "Modification de données"} %>
+      <%= f.input :topic, as: :hidden, input_html: { "value": "Modification de données RH"} %>
       <%= f.input :hr_id, as: :hidden, input_html: { "value": User.joins(:company).where(users: {company: current_user.company, position:"hr"}).first.id} %>
-      <%= f.submit "Demander une modification", class: "btn btn-primary btn-sm" %>
+      <%= f.submit "Demander une modification", class: "btn btn-primary btn-sm btn-block" %>
     <% end %>
   </div>
 </div>
