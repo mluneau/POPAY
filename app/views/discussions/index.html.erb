@@ -1,34 +1,41 @@
-<div class="container discussion-container">
-  <h3 class="text-white"> 💬 Conversations</h3>
+<div class="d-flex">
 
-  <div id="new_discussion">
-    <%= link_to new_discussion_path do %>
-      <i class="fas fa-pen-square"></i>
-    <% end %>     
-  </div>
-  <div class="discussion-wrapper">
-    <% @discussions.each do |discussion| %>
-      <%= link_to discussion_path(discussion), class: "link-discussion" do %>
-        <% if policy(discussion).index? %>   
-          <div class="discussion">
-            <div>
-              <img class="avatar-bordered" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png"/>
-              <% if current_user.position == "employee" %>
-                <small><%= "#{discussion.hr.first_name[0]}." %>
-                <%= discussion.hr.last_name %></small>
-              <% else %>
-                <%= discussion.employee.first_name %>
-                <%= discussion.employee.last_name %>
-              <% end %>
+<% if current_user.position == "hr" %>
+<%= render "shared/sidebar" %>
+<% end %>
+
+<div class="flex-grow-1 discussion-container">
+    <h3 class="text-white"> 💬 Conversations</h3>
+
+    <div id="new_discussion">
+      <%= link_to new_discussion_path do %>
+        <i class="fas fa-pen-square"></i>
+      <% end %>     
+    </div>
+    <div class="discussion-wrapper">
+      <% @discussions.each do |discussion| %>
+        <%= link_to discussion_path(discussion), class: "link-discussion" do %>
+          <% if policy(discussion).index? %>   
+            <div class="discussion">
+              <div>
+                <img class="avatar-bordered" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png"/>
+                <% if current_user.position == "employee" %>
+                  <small><%= "#{discussion.hr.first_name[0]}." %>
+                  <%= discussion.hr.last_name %></small>
+                <% else %>
+                  <%= discussion.employee.first_name %>
+                  <%= discussion.employee.last_name %>
+                <% end %>
+              </div>
+              <div>
+                <small><%= discussion.topic %>
+                ></small>
+              </div>
             </div>
-            <div>
-              <small><%= discussion.topic %>
-              ></small>
-            </div>
-          </div>
+          <% end %>
         <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
- 
-</div>
+
+  </div>
