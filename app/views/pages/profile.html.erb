@@ -8,7 +8,6 @@
 </div>
 <div class="profile-info">
   <h3 class="pb-1">Informations</h3>
-  <div>
       <p><strong>Identifiant: </strong> <%= current_user.email %></p>
       <p><strong>Nom: </strong> <%= current_user.last_name %></p>
       <p><strong>Prénom: </strong> <%= current_user.first_name %></p>
@@ -23,5 +22,5 @@
       <%= f.input :hr_id, as: :hidden, input_html: { "value": User.joins(:company).where(users: {company: current_user.company, position:"hr"}).first.id} %>
       <%= f.submit "Demander une modification", class: "btn btn-primary btn-sm btn-block" %>
     <% end %>
-  </div>
+</div>
 </div>
