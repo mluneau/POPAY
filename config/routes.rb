@@ -15,6 +15,8 @@ Rails.application.routes.draw do
     resources :transactions, only: [:index]
   end
 
+  resources :notifications, only: [:index]
+
   namespace :employee do
     resource :dashboard, only: [:show]
     resources :appointments, only: [:new, :create]

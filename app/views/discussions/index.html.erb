@@ -5,21 +5,18 @@
 <% end %>
 
 <div class="flex-grow-1 discussion-container">
-  
   <% unless @disable_container  %>
     <h3 class="text-white mt-0"> 💬 Conversations</h3> 
-  
-
     <div id="new_discussion">
       <%= link_to new_discussion_path do %>
         <i class="fas fa-pen-square"></i>
-      <% end %>     
+      <% end %>
     </div>
   <% end %>
     <div class="discussion-wrapper">
       <% @discussions.each do |discussion| %>
         <%= link_to discussion_path(discussion), class: "link-discussion" do %>
-          <% if policy(discussion).index? %>   
+          <% if policy(discussion).index? %>
             <div class="discussion">
               <div>
                 <img class="avatar-bordered" src="https://creai-grand-est.fr/bundles/admin/images/user-empty-avatar.png"/>
@@ -32,6 +29,7 @@
                 <% end %>
               </div>
               <div>
+
                 
                 <% if current_user.position == "employee" %>
                   <small><%= discussion.topic %>
