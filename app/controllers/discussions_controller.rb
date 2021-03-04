@@ -3,6 +3,7 @@ class DiscussionsController < ApplicationController
 
   def index
     @discussions = policy_scope(Discussion)
+    @disable_container = @current_user.position == "hr"
   end
 
   def show

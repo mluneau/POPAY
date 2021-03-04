@@ -6,6 +6,7 @@
   border-right: 100vw solid transparent;
   border-top: 80vh solid $green-peps;
   position: fixed;
+  top: 0;
   z-index: -1;
 }
 body {
@@ -31,8 +32,19 @@ body {
 }
 
 #tagline {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: inherit;
   color: white;
+  margin-top: 7rem;
+}
+
+#tagline2 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: inherit;
+  color: white;
+  margin-top: 0.5rem;
 }
 
 .text {
