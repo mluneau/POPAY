@@ -10,6 +10,7 @@ export default class extends Controller {
       this.commentViewTarget.classList.replace('d-none', 'd-flex')
       this.navArrowTarget.classList.remove('d-none')
     }
+    this.updateAmount()
   }
 
 
@@ -37,7 +38,6 @@ export default class extends Controller {
   }
 
   setAmount(event) {
-    console.log(event.target.dataset.value)
     this.displayAmountTargets.forEach(element => element.innerText = event.target.dataset.value)
     this.sliderAmountTarget.value = event.target.dataset.value
     this.goForward()
