@@ -268,15 +268,15 @@ puts "Creating discussions for Xtrem"
 ### User 1 ###
 pierre_discussion1 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
 pierre_discussion2 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
-pierre_discussion3 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abbonnement Fitness")
+pierre_discussion3 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 2 ###
 louis_discussion1 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 louis_discussion2 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
-louis_discussion3 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abbonnement Fitness")
+louis_discussion3 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 3 ###
 nico_discussion1 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
 nico_discussion2 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
-nico_discussion3 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abbonnement Fitness")
+nico_discussion3 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 4 ###
 paul_discussion1 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
 paul_discussion2 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
