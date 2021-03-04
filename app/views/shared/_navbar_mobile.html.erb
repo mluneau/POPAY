@@ -4,13 +4,15 @@
   <div class="navbar-mobile">
     <div class=navbar-container>
     <span>
-      <a href="/employee/transactions" class="<%= 'active' if controller_name == 'transactions' %>">
-        <%= image_tag "icons/history", alt: "alttext" %>
+      <a href="/employee/transactions" class="navbar-item <%= 'active' if controller_name == 'transactions' %>">
+        <i class="fas fa-list-ul"></i>
+        <%#= image_tag "icons/history", alt: "alttext" %>
         <!-- <div class="icon history green"></div> -->
         Historique
       </a>
-      <a href="/discussions" class="<%= 'active' if controller_name == 'discussions' %>">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#6F6E80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <a href="/discussions" class="navbar-item <%= 'active' if controller_name == 'discussions' %>">
+        <%# <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#6F6E80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> %>
+        <i class="far fa-comment-alt"></i>
         Messages
       </a>
     </span>
@@ -19,12 +21,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
       <% end %>
 
-      <a href="/articles" class="<%= 'active' if controller_name == 'articles' %>">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#6F6E80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+      <a href="/articles" class="navbar-item <%= 'active' if controller_name == 'articles' %>">
+        <%# <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#6F6E80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg> %>
+        <i class="far fa-eye"></i>
         Articles
       </a>
-      <a href="/profile" class="<%= 'active' if controller_name == 'pages' %>">
-        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#6F6E80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <a href="/profile" class="navbar-item <%= 'active' if controller_name == 'pages' %>">
+        <%# <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#6F6E80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> %>
+        <i class="far fa-user"></i>
         Profil
       </a>
     </span>
