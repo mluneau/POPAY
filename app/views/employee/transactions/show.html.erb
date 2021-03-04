@@ -8,26 +8,15 @@
 <div class="transaction-confirmation__info_container">
 
   <div class="transaction-confirmation__info">
-
-    <ul class="list-unstyled">
       <p><strong>Informations</strong></p>
-      <li>
-        <p><small><strong>Date de la demande :</strong> <%= localize(@transaction.created_at, format: "%d %B %Y") %></small></p>
-      </li>
-      <li>
-        <p><small><strong>Acompte de :</strong> <%= @transaction.amount %> € </small></p>
-      </li>
-      <li>
-        <p><small><strong>Compte bancaire :</strong> <%= @transaction.bank_account.bank_name %> - <%= @transaction.bank_account.iban %> </small></p>
-      </li>
-      <li>
-        <% if @transaction.comment != "" %>
-          <p><small><strong>Votre commentaire :</strong> <%= @transaction.comment %></small></p>
-        <% else %>
-          <p><small><strong>Votre commentaire :</strong> Pas de commentaire</small></p>
-        <% end %>
-      </li>
-    </ul>
+      <p><small><strong>Date de la demande :</strong> <%= localize(@transaction.created_at, format: "%d %B %Y") %></small></p>
+      <p><small><strong>Acompte de :</strong> <%= @transaction.amount %> € </small></p>
+      <p><small><strong>Compte bancaire :</strong> <%= @transaction.bank_account.bank_name %> - <%= @transaction.bank_account.iban %> </small></p>
+      <% if @transaction.comment != "" %>
+        <p><small><strong>Votre commentaire :</strong> <%= @transaction.comment %></small></p>
+      <% else %>
+        <p><small><strong>Votre commentaire :</strong> Pas de commentaire</small></p>
+      <% end %>
   </div>
   <div class="transaction-confirmation__pdf">
     <p><strong>Compte rendu</strong></p>
@@ -35,7 +24,7 @@
     <%= link_to confirmation_employee_transaction_path(@transaction), target: :_blank do %>
       <div><i class="far fa-file-pdf" style="padding-top: 12px"></i>
       <% end %>
-      </div> 
+      </div>
     </div>
   </div>
 </div>

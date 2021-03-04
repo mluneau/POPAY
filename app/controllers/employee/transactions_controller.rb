@@ -35,7 +35,7 @@ class Employee::TransactionsController < ApplicationController
       @notification.save
       NotificationChannel.broadcast_to(
         @notification.user,
-        render_to_string(partial: "shared/notification", locals: { notification: @notification })
+        render_to_string(partial: "shared/notification", locals: { notification: @notification, notif_index: false })
         # {
         #   content: @notification.content,
         #   sender: { id: @notification.sender.id, name: @notification.sender.full_name }
