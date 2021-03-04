@@ -15,9 +15,9 @@
         </div>
         <p><strong>Total disponible: </strong><%= @available_cash %> €</p>
         <div class="d-flex justify-content-around">
-          <div class="suggested-amount-bubble" data-form-target="sliderAmount1" data-value="<%= @available_cash / 10 %>" data-action="click->form#setAmount" ><%= @available_cash / 10 %> €</div>
-          <div class="suggested-amount-bubble" data-form-target="sliderAmount2" data-value="<%= @available_cash / 5 %>" data-action="click->form#setAmount" ><%= @available_cash / 5 %> €</div>
-          <div class="suggested-amount-bubble" data-form-target="sliderAmount3" data-value="<%= @available_cash / 2 %>" data-action="click->form#setAmount" ><%= @available_cash / 2 %> €</div>
+          <div class="suggested-amount-bubble" data-value="<%= (@available_cash / 10).round(-1) %>" data-action="click->form#setAmount" ><%= (@available_cash / 10).round(-1) %> €</div>
+          <div class="suggested-amount-bubble" data-value="<%= (@available_cash / 5).round(-1) %>" data-action="click->form#setAmount" ><%= (@available_cash / 5).round(-1) %> €</div>
+          <div class="suggested-amount-bubble" data-value="<%= (@available_cash / 2).round(-1) %>" data-action="click->form#setAmount" ><%= (@available_cash / 2).round(-1) %> €</div>
         </div>
         <a class="btn btn-outline-primary btn-confirm" data-action="click->form#goForward">Suivant</a>
       </div>
