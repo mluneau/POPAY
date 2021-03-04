@@ -7,7 +7,7 @@
 <div class="flex-grow-1 discussion-container">
   
   <% unless @disable_container  %>
-    <h3 class="text-white"> 💬 Conversations</h3> 
+    <h3 class="text-white mt-0"> 💬 Conversations</h3> 
   
 
     <div id="new_discussion">
@@ -32,8 +32,14 @@
                 <% end %>
               </div>
               <div>
-                <small><%= discussion.topic %>
-                ></small>
+                
+                <% if current_user.position == "employee" %>
+                  <small><%= discussion.topic %>
+                  ></small>
+                <% else %>
+                  <%= discussion.topic %>
+                  >
+                <% end %>
               </div>
             </div>
           <% end %>
