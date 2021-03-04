@@ -32,8 +32,14 @@
                 <% end %>
               </div>
               <div>
-                <small><%= discussion.topic %>
-                ></small>
+                
+                <% if current_user.position == "employee" %>
+                  <small><%= discussion.topic %>
+                  ></small>
+                <% else %>
+                  <%= discussion.topic %>
+                  >
+                <% end %>
               </div>
             </div>
           <% end %>
