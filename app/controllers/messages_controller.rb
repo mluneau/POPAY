@@ -17,7 +17,7 @@ class MessagesController < ApplicationController
       @notification.save
       NotificationChannel.broadcast_to(
         @notification.user,
-        render_to_string(partial: "shared/notification", locals: { notification: @notification })
+        render_to_string(partial: "shared/notification", locals: { notification: @notification, notif_index: false })
       )
       redirect_to discussion_path(@discussion, anchor: "messages")
     else
