@@ -15,7 +15,7 @@
 .transaction-confirmation__info_container {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .transaction-confirmation__info {
@@ -24,6 +24,9 @@
   width: 250px;
 }
 
+.transaction-confirmation__info p {
+  font-size: 14px
+}
 .transaction-confirmation__info h5 {
   margin-bottom: 4vh;
   text-align: center;
