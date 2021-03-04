@@ -16,7 +16,7 @@
     <div class="transaction w-100">
       <p><%= transaction.comment %></p>
       <div>
-        <% if transaction.status != "payé" %>
+        <% if transaction.status != "paid" %>
           <p class="btn btn-warning" id="btn_historique"><strong>En cours</strong></p>
         <% else %>
           <p class="btn btn-primary" id="btn_historique"><strong>Payé</strong></p>
