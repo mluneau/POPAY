@@ -7,10 +7,10 @@
 
 <!-- browse buttons -->
 
-<div class="flex-start justify-content-around">
+<div class="d-flex justify-content-around">
   <%= link_to "Tous", articles_path, class: 'button_category' %>
   <% ApplicationController::ARTICLE_CATEGORIES.each do |article_category| %>
-  <%= link_to article_category, articles_path(category: article_category), class: "button_category" %>
+  <%= link_to article_category, articles_path(category: article_category), class: "button_category#{'-selected' if params[:category] == article_category}" %>
   <% end %>
 </div>
 
