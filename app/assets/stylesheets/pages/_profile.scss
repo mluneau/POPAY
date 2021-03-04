@@ -18,10 +18,11 @@
 
 .profile-form {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .profile-form > form#new_discussion {
-  margin-top: 0;
+  margin-top: -25px;
   margin-bottom: 0;
+  width: 100%;
 }
