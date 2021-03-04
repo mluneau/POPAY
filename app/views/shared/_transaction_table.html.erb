@@ -23,7 +23,7 @@
       <td><%= transaction.amount %> €</td>
       <td><%= localize(transaction.due_date, format: "%d %B %Y") %></td>
       <td>
-        <% if transaction.status != "payé" %>
+        <% if transaction.status != "paid" %>
           <p id="btn_pastel_orange"><strong>En cours</strong></p>
         <% else %>
           <p id="btn_pastel_green"><strong>Payé</strong></p>
