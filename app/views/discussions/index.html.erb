@@ -5,13 +5,17 @@
 <% end %>
 
 <div class="flex-grow-1 discussion-container">
-    <h3 class="text-white"> 💬 Conversations</h3>
+  
+  <% unless @disable_container  %>
+    <h3 class="text-white"> 💬 Conversations</h3> 
+  
 
     <div id="new_discussion">
       <%= link_to new_discussion_path do %>
         <i class="fas fa-pen-square"></i>
       <% end %>     
     </div>
+  <% end %>
     <div class="discussion-wrapper">
       <% @discussions.each do |discussion| %>
         <%= link_to discussion_path(discussion), class: "link-discussion" do %>
