@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
       @notification = Notification.create(
         sender: current_user,
         user: User.find(@message.discussion.hr_id),
-        content: "Vous avez un nouveau message de la part de #{current_user.full_name}",
+        content: "Vous avez un nouveau message de la part de #{current_user.full_name}: '#{@message.content}'",
         category: "Nouveau message"
       )
       @notification.save
