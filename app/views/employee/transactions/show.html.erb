@@ -10,10 +10,10 @@
   <div class="transaction-confirmation__info">
       <p><strong>Informations</strong></p>
       <p><strong>Date de la demande :</strong> <%= localize(@transaction.created_at, format: "%d %B %Y") %></p>
-      <p><strong>Acompte de :</strong> <%= @transaction.amount %> € <</p>
+      <p><strong>Acompte de :</strong> <%= @transaction.amount %> € </p>
       <p><strong>Compte bancaire :</strong> <%= @transaction.bank_account.bank_name %> - <%= @transaction.bank_account.iban %></p>
       <% if @transaction.comment != "" %>
-        <p><strong>Votre commentaire :</strong> <%= @transaction.comment %><</p>
+        <p><strong>Votre commentaire :</strong> <%= @transaction.comment %></p>
       <% else %>
         <p><strong>Votre commentaire :</strong> Pas de commentaire</p>
       <% end %>
