@@ -325,6 +325,13 @@ fiona_discussion2 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandr
 fiona_discussion3 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 
 
+puts "Creating Messages for discussion Louis Xtrem"
+
+### Messages demo ###
+Message.create!(content: "Peut-on se voir pour ma situation financière", discussion_id: louis_discussion1.id, user_id: louis_xtrem.id, created_at: "9:34")
+Message.create!(content: "Bien sûr, demain 18h00 te convient?", discussion_id: louis_discussion1.id, user_id: max_xtrem.id, created_at: "10h53")
+
+
 puts "Creating discussions for Popay"
 
 ### Discussion 1 ###
