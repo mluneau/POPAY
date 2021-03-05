@@ -56,7 +56,7 @@ nico_popay.avatar.attach(io: file, filename: 'nicolas.jpg', content_type: 'image
 
 puts("Creating users for Xtrem...")
 ### User 1 ###
-louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "Ajacques", position: "employee", annual_income: 27000, telephone: '+33640120596')
+louis_xtrem = User.create!(email: "louis@xtrem.org", company: xtrem, password:"password", first_name: 'Louis', last_name: "Ajacques", position: "employee", annual_income: 27000, telephone: '+33761528065')
 file = URI.open("https://res.cloudinary.com/dyywcjnii/image/upload/v1614851187/whbvbv6x7kbwpipxrjdl.jpg")
 louis_xtrem.avatar.attach(io: file, filename: 'louis.jpg', content_type: 'image/png')
 ### User 2 ###
@@ -78,7 +78,7 @@ jack_xtrem = User.create!(email: "jack@xtrem.org", company: xtrem,  password:"pa
 ### User 7 ###
 saul_xtrem = User.create!(email: "saul@xtrem.org", company: xtrem,  password:"password", first_name: 'Saul', last_name: "Koutarides", position: "employee", annual_income: 22000, telephone: '+33686240099')
 ### User 8 ###
-john_xtrem = User.create!(email: "john@xtrem.org", company: xtrem,  password:"password", first_name: 'John', last_name: "Wayne", position: "employee", annual_income: 21000, telephone: '+33686240099')
+john_xtrem = User.create!(email: "john@xtrem.org", company: xtrem,  password:"password", first_name: 'John', last_name: "Stieglitz", position: "employee", annual_income: 21000, telephone: '+33686240099')
 ### User 9 ###
 alphonse_xtrem = User.create!(email: "alphonse@xtrem.org", company: xtrem,  password:"password", first_name: 'Alphonse', last_name: "Ier", position: "employee", annual_income: 22500, telephone: '+33686240099')
 ### User 10 ###
@@ -137,7 +137,7 @@ bank_account_pierre_popay = BankAccount.create!(user: pierre_popay, bank_name: "
 
 puts "Creating transactions for Xtrem"
 ### User 1 ###
-Transaction.create!(user: nico_xtrem, amount: 1500, due_date: "25/02/2021", status: "pending", comment: "Wagon à payer", bank_account: bank_account_nico_xtrem)
+Transaction.create!(user: nico_xtrem, amount: 1500, due_date: "25/02/2021", status: "paid", comment: "Wagon à payer", bank_account: bank_account_nico_xtrem)
 Transaction.create!(user: nico_xtrem, amount: 800, due_date: "19/01/2021", transfer_date: "19/01/2021", status: "paid", comment: "Dentiste", bank_account: bank_account_nico_xtrem)
 Transaction.create!(user: nico_xtrem, amount: 230, due_date: "11/12/2020", transfer_date: "11/12/2020", status: "paid", comment: "Cadeau mam", bank_account: bank_account_nico_xtrem2)
 Transaction.create!(user: nico_xtrem, amount: 120, due_date: "08/11/2020", transfer_date: "08/10/2020", status: "paid", comment: "Disney +", bank_account: bank_account_nico_xtrem2)
@@ -211,7 +211,7 @@ Transaction.create!(user: fiona_xtrem, amount: 130, due_date: "15/10/2020", tran
 
 puts("Creating transactions for Popay")
 
-Transaction.create!(user: pierre_popay, amount: 1500, due_date: "15/02/2021", status: "pending", comment: "Wagon à payer", bank_account: bank_account_pierre_popay)
+Transaction.create!(user: pierre_popay, amount: 1500, due_date: "15/02/2021", status: "paid", comment: "Wagon à payer", bank_account: bank_account_pierre_popay)
 Transaction.create!(user: pierre_popay, amount: 1000, due_date: "15/01/2021", transfer_date: "16/01/2021", status: "paid", comment: "Dentiste", bank_account: bank_account_pierre_popay)
 Transaction.create!(user: pierre_popay, amount: 800, due_date: "15/12/2020", transfer_date: "16/01/2020", status: "paid", comment: "Cadeau mam", bank_account: bank_account_pierre_popay)
 Transaction.create!(user: louis_popay, amount: 700, due_date: "15/02/2021", status: "paid", comment: "Diner aux chandelles", bank_account: bank_account_louis_popay)
