@@ -254,74 +254,73 @@ puts "Creating discussions for Xtrem"
 
 ### User 1 ###
 pierre_discussion1 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Ski BlackCrows")
-pierre_discussion2 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
+pierre_discussion2 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Acompte disponible")
 pierre_discussion3 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 2 ###
-louis_discussion1 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
-louis_discussion2 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
+louis_discussion2 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Acompte disponible")
 louis_discussion3 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 3 ###
 nico_discussion1 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Initiation au Kite")
-nico_discussion2 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Accompte disponible")
+nico_discussion2 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: max_xtrem.id, topic:"Acompte disponible")
 nico_discussion3 = Discussion.create!(employee_id: nico_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 4 ###
-paul_discussion1 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+paul_discussion1 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 paul_discussion2 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 paul_discussion3 = Discussion.create!(employee_id: paul_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 5 ###
-jack_discussion1 = Discussion.create!(employee_id: jack_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+jack_discussion1 = Discussion.create!(employee_id: jack_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 jack_discussion2 = Discussion.create!(employee_id: jack_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 jack_discussion3 = Discussion.create!(employee_id: jack_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 6 ###
-saul_discussion1 = Discussion.create!(employee_id: saul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+saul_discussion1 = Discussion.create!(employee_id: saul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 saul_discussion2 = Discussion.create!(employee_id: saul_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 saul_discussion3 = Discussion.create!(employee_id: saul_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 7 ###
-john_discussion1 = Discussion.create!(employee_id: john_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+john_discussion1 = Discussion.create!(employee_id: john_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 john_discussion2 = Discussion.create!(employee_id: john_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 john_discussion3 = Discussion.create!(employee_id: john_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 8 ###
-alphonse_discussion1 = Discussion.create!(employee_id: alphonse_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+alphonse_discussion1 = Discussion.create!(employee_id: alphonse_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 alphonse_discussion2 = Discussion.create!(employee_id: alphonse_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 alphone_discussion3 = Discussion.create!(employee_id: alphonse_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 9 ###
-robin_discussion1 = Discussion.create!(employee_id: robin_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+robin_discussion1 = Discussion.create!(employee_id: robin_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 robin_discussion2 = Discussion.create!(employee_id: robin_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 robin_discussion3 = Discussion.create!(employee_id: robin_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 10 ###
-philippe_discussion1 = Discussion.create!(employee_id: philippe_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+philippe_discussion1 = Discussion.create!(employee_id: philippe_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 philippe_discussion2 = Discussion.create!(employee_id: philippe_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 philippe_discussion3 = Discussion.create!(employee_id: philippe_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 13 ###
-marie_discussion1 = Discussion.create!(employee_id: marie_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+marie_discussion1 = Discussion.create!(employee_id: marie_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 marie_discussion2 = Discussion.create!(employee_id: marie_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 marie_discussion3 = Discussion.create!(employee_id: marie_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 12 ###
-maria_discussion1 = Discussion.create!(employee_id: maria_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+maria_discussion1 = Discussion.create!(employee_id: maria_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 maria_discussion2 = Discussion.create!(employee_id: maria_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 maria_discussion3 = Discussion.create!(employee_id: maria_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 13 ###
-alexandra_discussion1 = Discussion.create!(employee_id: alexandra_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+alexandra_discussion1 = Discussion.create!(employee_id: alexandra_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 alexandra_discussion2 = Discussion.create!(employee_id: alexandra_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 alexandra_discussion3 = Discussion.create!(employee_id: alexandra_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 14 ###
-ismael_discussion1 = Discussion.create!(employee_id: ismael_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+ismael_discussion1 = Discussion.create!(employee_id: ismael_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 ismael_discussion2 = Discussion.create!(employee_id: ismael_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 ismael_discussion3 = Discussion.create!(employee_id: ismael_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 15 ###
-rachida_discussion1 = Discussion.create!(employee_id: rachida_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+rachida_discussion1 = Discussion.create!(employee_id: rachida_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 rachida_discussion2 = Discussion.create!(employee_id: rachida_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 rachida_discussion3 = Discussion.create!(employee_id: rachida_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 16 ###
-fatima_discussion1 = Discussion.create!(employee_id: fatima_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+fatima_discussion1 = Discussion.create!(employee_id: fatima_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 fatima_discussion2 = Discussion.create!(employee_id: fatima_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 fatima_discussion3 = Discussion.create!(employee_id: fatima_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 17 ###
-carlos_discussion1 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+carlos_discussion1 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 carlos_discussion2 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 carlos_discussion3 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 ### User 18 ###
-fiona_discussion1 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandra_xtrem.id, topic:"Accompte Novembre")
+fiona_discussion1 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 fiona_discussion2 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 fiona_discussion3 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
 
