@@ -257,6 +257,7 @@ pierre_discussion1 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max
 pierre_discussion2 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: max_xtrem.id, topic:"Acompte disponible")
 pierre_discussion3 = Discussion.create!(employee_id: pierre_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 2 ###
+louis_discussion1 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Point financier")
 louis_discussion2 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: max_xtrem.id, topic:"Acompte disponible")
 louis_discussion3 = Discussion.create!(employee_id: louis_xtrem.id, hr_id: sandra_xtrem.id, topic:"Abonnement Fitness")
 ### User 3 ###
@@ -323,6 +324,12 @@ carlos_discussion3 = Discussion.create!(employee_id: carlos_xtrem.id, hr_id: max
 fiona_discussion1 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandra_xtrem.id, topic:"Acompte Novembre")
 fiona_discussion2 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: sandra_xtrem.id, topic:"Ecran Telephone")
 fiona_discussion3 = Discussion.create!(employee_id: fiona_xtrem.id, hr_id: max_xtrem.id, topic:"Week-end Ski")
+
+puts "Creating Messages for discussion Louis Xtrem"
+
+### Messages demo ###
+Message.create!(content: "Peut-on se voir pour ma situation financière", discussion_id: louis_discussion1.id, user_id: louis_xtrem.id)
+Message.create!(content: "Bien sûr, demain 18h00 te convient?", discussion_id: louis_discussion1.id, user_id: max_xtrem.id)
 
 
 puts "Creating discussions for Popay"
